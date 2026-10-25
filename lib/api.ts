@@ -59,6 +59,11 @@ export async function apiFetch<T = unknown>(path: string, init: RequestInit = {}
     res = await fetch(path, {
       ...init,
       credentials: "include",
+      // no-store: defeats Next.js 16 dev-server caching of proxied API responses.
+      // Without this, /api/candidate/portal returns stale data even after the
+      // backend state changes, so the candidate portal never advances from
+      // 'preparing' to 'in_progress' during polling.
+      cache: "no-store",
       headers: {
         "Content-Type": "application/json",
         ...(init.headers || {}),
@@ -87,3 +92,26 @@ export async function apiFetch<T = unknown>(path: string, init: RequestInit = {}
 
 // NOTE (Part 3): multipart uploads must NOT set Content-Type — the browser adds the
 // boundary. Add a separate `apiUpload` helper when essay upload lands.
+
+/**
+ * FastAPI can return `detail` as a string (HTTPException) or an array of
+ * Pydantic validation objects (422). Normalize to a single readable string.
+ */
+export function normalizeDetail(detail: unknown): string {
+  if (detail == null) return "Unknown error";
+  if (typeof detail === "string") return detail;
+  if (Array.isArray(detail)) {
+    return detail
+      .map((e: any) => {
+        const loc = Array.isArray(e?.loc) ? e.loc.filter((x: any) => x !== "body").join(".") : "";
+        const msg = e?.msg ?? JSON.stringify(e);
+        return loc ? `${loc}: ${msg}` : msg;
+      })
+      .join("; ");
+  }
+  if (typeof detail === "object" && detail !== null && "msg" in detail) {
+    return String((detail as any).msg);
+  }
+  return JSON.stringify(detail);
+}
+
