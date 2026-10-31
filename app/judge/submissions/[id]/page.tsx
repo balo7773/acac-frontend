@@ -29,6 +29,8 @@ type EvaluationBundle = {
   ai_claims: AiClaim[];
   ai_summary: { summary_text: string; model_name: string; created_at: string } | null;
   summary_pending: boolean;
+  answer_duration_seconds: number | null;
+  answered_under_5min: boolean;
   markers: string[];
   my_essay_scores: EssayScore[];
   my_conclusion_score: ConcScore | null;
@@ -59,12 +61,13 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
 
   useEffect(() => { load(); }, [submissionId]);
 
-  // Poll while summary is being generated so the card appears without manual refresh.
+  // Poll whenever no summary exists yet — covers pending, queued, failed,
+  // and initial-load states. Stops as soon as the summary card renders.
   useEffect(() => {
-    if (!data?.summary_pending) return;
+    if (!data || data.ai_summary) return;
     const id = setInterval(load, 4000);
     return () => clearInterval(id);
-  }, [data?.summary_pending]);
+  }, [data?.ai_summary]);
 
   // Poll while preparing or defense is still open — auto-unlocks the essay.
   useEffect(() => {
@@ -152,6 +155,48 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
         </div>
       )}
 
+      {/* Fast-answer advisory — possible AI-assisted drafting */}
+      {data.answered_under_5min && data.answer_duration_seconds !== null && (
+        <div className="bg-[#FEF3C7] border border-[#F59E0B] rounded-2xl p-5 mb-4">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl shrink-0">⏱</span>
+            <div className="flex-1">
+              <h3 className="text-sm font-bold text-[#92400E] mb-1">
+                Answer submitted in {(() => {
+                  const sec = data.answer_duration_seconds!;
+                  const m = Math.floor(sec / 60);
+                  const s = sec % 60;
+                  return `${m}m ${String(s).padStart(2, '0')}s`;
+                })()} — under 5 minutes
+              </h3>
+              <p className="text-sm text-[#92400E] leading-relaxed">
+                The candidate submitted their defense faster than expected for a genuine
+                150-word answer. This <strong>may indicate AI-assisted drafting or a
+                pre-written response</strong>, which is not permitted in the defense stage.
+                Score with scrutiny — check for robotic phrasing, off-topic content, or
+                lack of engagement with the specific question asked.
+              </p>
+              <p className="text-xs text-[#92400E]/70 mt-2 italic">
+                This is an advisory signal, not proof. A fast typist or sharp thinker can
+                legitimately finish quickly. Use your judgment.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Duration display even when not flagged — useful context */}
+      {!data.answered_under_5min && data.answer_duration_seconds !== null && (
+        <div className="text-xs text-[#6B7280] mb-4">
+          Defense answered in {(() => {
+            const sec = data.answer_duration_seconds!;
+            const m = Math.floor(sec / 60);
+            const s = sec % 60;
+            return `${m}m ${String(s).padStart(2, '0')}s`;
+          })()}
+        </div>
+      )}
+
       {/* AI summary — 3 states: ready / loading / absent */}
       {data.ai_summary ? (
         <div className="bg-[#EFF6FF] rounded-2xl border border-[#7cb4fc] p-6 mb-4">
@@ -170,14 +215,14 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
             Generated automatically from the essay. Not a score or recommendation.
           </p>
         </div>
-      ) : data.summary_pending ? (
+      ) : (
         <div className="bg-[#EFF6FF] rounded-2xl border border-[#7cb4fc] p-6 mb-4">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-sm uppercase tracking-wide text-[#0067f5] font-medium">
               AI Summary
             </h2>
             <span className="text-xs text-[#6B7280] animate-pulse">
-              generating…
+              {data.summary_pending === false ? 'initializing…' : 'generating…'}
             </span>
           </div>
           <div className="space-y-2 animate-pulse">
@@ -186,10 +231,10 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
             <div className="h-3 bg-[#7cb4fc]/30 rounded w-9/12" />
           </div>
           <p className="mt-3 text-xs text-[#6B7280] italic">
-            Generating a 3-sentence overview. Usually takes 20–40 seconds.
+            Generating a 3-sentence overview from the essay. This card will update automatically.
           </p>
         </div>
-      ) : null}
+      )}
 
       {/* Step 1: essay access — preparing / locked-during-defense / unlockable */}
       {!hasEssay && (() => {
