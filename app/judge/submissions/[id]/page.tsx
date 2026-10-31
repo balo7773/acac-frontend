@@ -28,6 +28,7 @@ type EvaluationBundle = {
   bundle: Record<string, unknown>;
   ai_claims: AiClaim[];
   ai_summary: { summary_text: string; model_name: string; created_at: string } | null;
+  summary_pending: boolean;
   markers: string[];
   my_essay_scores: EssayScore[];
   my_conclusion_score: ConcScore | null;
@@ -57,6 +58,13 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
   };
 
   useEffect(() => { load(); }, [submissionId]);
+
+  // Poll while summary is being generated so the card appears without manual refresh.
+  useEffect(() => {
+    if (!data?.summary_pending) return;
+    const id = setInterval(load, 4000);
+    return () => clearInterval(id);
+  }, [data?.summary_pending]);
 
   // Poll while preparing or defense is still open — auto-unlocks the essay.
   useEffect(() => {
@@ -144,8 +152,8 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
         </div>
       )}
 
-      {/* AI summary — quick orientation for the judge */}
-      {data.ai_summary && (
+      {/* AI summary — 3 states: ready / loading / absent */}
+      {data.ai_summary ? (
         <div className="bg-[#EFF6FF] rounded-2xl border border-[#7cb4fc] p-6 mb-4">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-sm uppercase tracking-wide text-[#0067f5] font-medium">
@@ -162,7 +170,26 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
             Generated automatically from the essay. Not a score or recommendation.
           </p>
         </div>
-      )}
+      ) : data.summary_pending ? (
+        <div className="bg-[#EFF6FF] rounded-2xl border border-[#7cb4fc] p-6 mb-4">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-sm uppercase tracking-wide text-[#0067f5] font-medium">
+              AI Summary
+            </h2>
+            <span className="text-xs text-[#6B7280] animate-pulse">
+              generating…
+            </span>
+          </div>
+          <div className="space-y-2 animate-pulse">
+            <div className="h-3 bg-[#7cb4fc]/30 rounded w-full" />
+            <div className="h-3 bg-[#7cb4fc]/30 rounded w-11/12" />
+            <div className="h-3 bg-[#7cb4fc]/30 rounded w-9/12" />
+          </div>
+          <p className="mt-3 text-xs text-[#6B7280] italic">
+            Generating a 3-sentence overview. Usually takes 20–40 seconds.
+          </p>
+        </div>
+      ) : null}
 
       {/* Step 1: essay access — preparing / locked-during-defense / unlockable */}
       {!hasEssay && (() => {
