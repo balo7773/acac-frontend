@@ -27,6 +27,8 @@ type EvaluationBundle = {
   };
   bundle: Record<string, unknown>;
   ai_claims: AiClaim[];
+  ai_summary: { summary_text: string; model_name: string; created_at: string } | null;
+  markers: string[];
   my_essay_scores: EssayScore[];
   my_conclusion_score: ConcScore | null;
   flags: Flag[];
@@ -120,6 +122,47 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
           )}
         </div>
       </div>
+
+      {/* Markers banner — surface single-model or unstable evaluation warnings */}
+      {data.markers.length > 0 && (
+        <div className="mb-4 flex flex-wrap gap-2">
+          {data.markers.includes('single_run') && (
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FEF3C7] text-[#92400E] text-xs font-medium border border-[#F59E0B]">
+              ⚠ Single-model evaluation (one AI provider failed)
+            </span>
+          )}
+          {data.markers.includes('unstable') && (
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FEF3C7] text-[#92400E] text-xs font-medium border border-[#F59E0B]">
+              ⚠ Unstable run (models disagreed)
+            </span>
+          )}
+          {data.markers.includes('unverified_quote') && (
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#FEE2E2] text-[#991B1B] text-xs font-medium border border-[#EF4444]">
+              ⚠ Unverified quote
+            </span>
+          )}
+        </div>
+      )}
+
+      {/* AI summary — quick orientation for the judge */}
+      {data.ai_summary && (
+        <div className="bg-[#EFF6FF] rounded-2xl border border-[#7cb4fc] p-6 mb-4">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-sm uppercase tracking-wide text-[#0067f5] font-medium">
+              AI Summary
+            </h2>
+            <span className="text-xs text-[#6B7280]">
+              via {data.ai_summary.model_name}
+            </span>
+          </div>
+          <p className="text-[#082552] leading-relaxed">
+            {data.ai_summary.summary_text}
+          </p>
+          <p className="mt-3 text-xs text-[#6B7280] italic">
+            Generated automatically from the essay. Not a score or recommendation.
+          </p>
+        </div>
+      )}
 
       {/* Step 1: essay access — preparing / locked-during-defense / unlockable */}
       {!hasEssay && (() => {

@@ -17,11 +17,11 @@ export type Role = "candidate" | "judge" | "admin";
 export type SessionUser = {
   role: Role;
   user_id: number;
-  /**
-   * Present after login/register. NOT returned by GET /api/auth/me (backend only
-   * returns user_id/role/db_role), so it's null after a full page reload.
-   */
   display_name: string | null;
+  /** Present only when role === "judge". Fetched from judges table. */
+  judge_type?: "internal" | "external";
+  /** Present only when role === "judge". e.g. "mask_owl" */
+  mask_avatar?: string;
 };
 
 export type RegisterPayload = {
@@ -45,7 +45,8 @@ export type RegisterResponse = {
  */
 export function portalPathFor(role: Role): string {
   if (role === "admin") return "/admin";
-  return "/";
+  if (role === "judge") return "/judge";
+  return "/portal";
 }
 
 export function roleLabel(role: Role): string {
@@ -74,16 +75,23 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const refresh = useCallback(async () => {
     try {
-      const me = await apiFetch<{ user_id: number; role: Role; display_name?: string }>(
+      const me = await apiFetch<{
+        user_id: number;
+        role: Role;
+        display_name?: string;
+        judge_type?: "internal" | "external";
+        mask_avatar?: string;
+      }>(
         "/api/auth/me"
       );
       setUser((prev) => ({
         role: me.role,
         user_id: me.user_id,
-        // keep a name we already know for this same user (e.g. from login)
         display_name:
           me.display_name ??
           (prev && prev.user_id === me.user_id && prev.role === me.role ? prev.display_name : null),
+        judge_type: me.judge_type,
+        mask_avatar: me.mask_avatar,
       }));
     } catch (e) {
       // 401 = no session; anything else (network) is treated as logged out for now.
