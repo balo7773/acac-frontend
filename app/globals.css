@@ -123,3 +123,31 @@ body {
     animation: none;
   }
 }
+
+
+@keyframes bubble-float {
+  0%   { transform: translate(-50%, -50%) translate(0, 0) scale(1); }
+  33%  { transform: translate(-50%, -50%) translate(18px, -24px) scale(1.04); }
+  66%  { transform: translate(-50%, -50%) translate(-16px, 12px) scale(0.98); }
+  100% { transform: translate(-50%, -50%) translate(8px, -8px) scale(1.02); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(-8px) rotate(-2deg); }
+  50% { transform: translateX(8px) rotate(2deg); }
+  75% { transform: translateX(-4px) rotate(-1deg); }
+}
+
+/* Compact form styling to prevent scrolling */
+
+@keyframes float-smooth {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -30px) scale(1.05); }
+  100% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+@keyframes slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}

@@ -7,19 +7,20 @@ import { ApiError } from "@/lib/api";
 import { portalPathFor, useAuth, type Role } from "@/lib/auth";
 import { AuthCard, FormAlert, PasswordField, SubmitButton, TextField } from "../components/AuthForm";
 
+// Admin is intentionally not on the public login page.
+// Admins sign in at /admin-login (hidden URL).
 const ROLES: { value: Role; label: string }[] = [
   { value: "candidate", label: "Candidate" },
   { value: "judge", label: "Judge" },
-  { value: "admin", label: "Admin" },
 ];
 
 type Alert = { tone: "error" | "warning"; message: string } | null;
 
-export default function LoginForm() {
+export default function LoginForm({ defaultRole = "candidate", hideRoleSelector = false }: { defaultRole?: Role, hideRoleSelector?: boolean } = {}) {
   const router = useRouter();
   const { user, loading: authLoading, login } = useAuth();
 
-  const [role, setRole] = useState<Role>("candidate");
+  const [role, setRole] = useState<Role>(defaultRole);
   const [identifier, setIdentifier] = useState("");
   const [password, setPassword] = useState("");
   const [submitting, setSubmitting] = useState(false);
@@ -72,8 +73,9 @@ export default function LoginForm() {
 
   return (
     <AuthCard title="Welcome back" subtitle="Sign in to continue your competition">
-      {/* Role selector */}
-      <div role="radiogroup" aria-label="Sign in as" className="grid grid-cols-3 gap-2">
+      {/* Role selector — hidden on /admin-login */}
+      {!hideRoleSelector && (
+      <div role="radiogroup" aria-label="Sign in as" className="grid grid-cols-2 gap-2">
         {ROLES.map((r) => {
           const selected = r.value === role;
           return (
@@ -98,6 +100,7 @@ export default function LoginForm() {
           );
         })}
       </div>
+      )}
 
       <form onSubmit={onSubmit} noValidate className="mt-6 space-y-4">
         <TextField

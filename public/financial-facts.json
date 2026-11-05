@@ -1,0 +1,1018 @@
+[
+  {
+    "category": "budgeting",
+    "snippet": "Allocate 50% needs, 30% wants, 20% savings",
+    "explanation": "The 50/30/20 budget splits income into 50% for essential needs, 30% for discretionary wants, and 20% for savings or debt repayment. Because the savings tranche is fixed first, a student’s spending automatically adjusts to whatever remains.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 1
+  },
+  {
+    "category": "investing",
+    "snippet": "FGN savings bonds start at N5,000",
+    "explanation": "The Debt Management Office issues Federal Government of Nigeria savings bonds with a minimum subscription of N5,000 and quarterly interest payments. This low-risk instrument is backed by the government and gives students a regulated entry point into fixed-income investing.",
+    "source_name": "Debt Management Office Nigeria",
+    "source_url": "https://www.dmo.gov.ng/",
+    "id": 2
+  },
+  {
+    "category": "banking",
+    "snippet": "Nigerian student accounts require BVN linkage",
+    "explanation": "The Central Bank of Nigeria requires every individual bank account in the country to be linked to an 11-digit Bank Verification Number generated from biometric data. Linking BVN to a student account helps banks reduce fraud and identity theft while enabling smoother Know Your Customer compliance.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 3
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Build emergency fund of three to six months",
+    "explanation": "An emergency fund should hold three to six months of essential expenses in a liquid savings account to manage unexpected medical or family costs. Automatic monthly transfers of a small allowance into this fund create a buffer before non-essential spending occurs.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 4
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures deposits up to N5 million",
+    "explanation": "The Nigeria Deposit Insurance Corporation covers bank deposits up to ₦5,000,000 per depositor per licensed bank. Students can protect larger savings by splitting funds across different insured banks.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://www.ndic.gov.ng/",
+    "id": 5
+  },
+  {
+    "category": "banking",
+    "snippet": "BVN links accounts to one biometric ID",
+    "explanation": "The Bank Verification Number is a biometric system that ties an individual to all Nigerian bank accounts, reducing identity theft. It captures fingerprints and facial features and is required for opening accounts and receiving payments.",
+    "source_name": "Nigeria Inter-Bank Settlement System",
+    "source_url": "https://nibssplc.com.ng/",
+    "id": 6
+  },
+  {
+    "category": "budgeting",
+    "snippet": "Envelope budgeting assigns cash to spending categories",
+    "explanation": "Envelope budgeting gives each expense category, such as feeding or transport, a fixed amount of cash; once an envelope is empty, spending stops for that period. This mechanism helps students avoid overspending with debit cards.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 7
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Micro pension allows voluntary student retirement savings",
+    "explanation": "The National Pension Commission's Micro Pension Plan permits students and other informal-sector participants aged 18 and above to save small irregular amounts for retirement. Contributions are split into a retirement savings portion and a contingent withdrawal portion, giving partial access before retirement.",
+    "source_name": "National Pension Commission",
+    "source_url": "https://www.pencom.gov.ng/",
+    "id": 8
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures bank deposits up to N5 million",
+    "explanation": "The Nigeria Deposit Insurance Corporation protects depositors by paying insured sums when a licensed deposit-taking bank fails. For deposit money banks, the coverage limit is N5,000,000 per depositor per bank, so students with savings in a licensed bank face lower risk of total loss.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://ndic.gov.ng/",
+    "id": 9
+  },
+  {
+    "category": "investing",
+    "snippet": "FGN savings bond starts at N5,000",
+    "explanation": "The Debt Management Office issues FGN savings bonds with a minimum subscription of N5,000, allowing students to buy government debt with small amounts. Interest is paid quarterly and the bonds mature in two or three years, offering a low-risk return mechanism.",
+    "source_name": "Debt Management Office Nigeria",
+    "source_url": "https://www.dmo.gov.ng/",
+    "id": 10
+  },
+  {
+    "category": "banking",
+    "snippet": "BVN is mandatory for Nigerian bank accounts",
+    "explanation": "The Central Bank of Nigeria requires every bank customer to obtain an 11-digit Bank Verification Number linked to biometric data. This mechanism helps identify account holders and reduces fraud across deposit-taking institutions.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 11
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 budget balances needs wants and savings",
+    "explanation": "The 50/30/20 rule allocates 50% of after-tax income to needs, 30% to wants, and 20% to savings or debt repayment. This mechanism gives Nigerian students a simple monthly spending framework even when income is irregular.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/1/50-30-20-budget-rule.asp",
+    "id": 12
+  },
+  {
+    "category": "behavioral_finance",
+    "snippet": "Present bias makes delayed rewards feel less valuable",
+    "explanation": "Behavioral finance research shows that people with present bias discount future rewards too steeply and may choose smaller immediate payouts over larger delayed ones. Students can reduce this effect by automating savings transfers, a mechanism that removes repeated willpower decisions.",
+    "source_name": "Nairametrics",
+    "source_url": "https://nairametrics.com/",
+    "id": 13
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule splits income into needs, wants, savings",
+    "explanation": "The 50/30/20 budget allocates 50% of after-tax income to needs, 30% to wants, and 20% to savings or debt repayment. This mechanism helps Nigerian students manage irregular monthly allowances without complex tracking.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 14
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures deposits up to N500,000 per bank",
+    "explanation": "The Nigeria Deposit Insurance Corporation guarantees depositors up to N500,000 per person in each licensed deposit money bank if a bank closes. This coverage reduces loss risk for students who keep funds in insured savings accounts.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://ndic.gov.ng/",
+    "id": 15
+  },
+  {
+    "category": "banking",
+    "snippet": "CBN cash reserve ratio affects bank lending capacity",
+    "explanation": "The Central Bank of Nigeria sets a Cash Reserve Requirement that compels banks to hold a specified fraction of deposits with the CBN, limiting loanable funds. This mechanism influences interest rates and credit availability for student borrowers.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 16
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "NELF law sets repayment start two years post-NYSC",
+    "explanation": "The enabling law of the Nigerian Education Loan Fund stipulates that loan repayment begins two years after a beneficiary completes the National Youth Service Corps programme. This two-year grace mechanism allows graduates to seek income before repayment starts.",
+    "source_name": "Nigerian Education Loan Fund",
+    "source_url": "https://nelf.gov.ng/",
+    "id": 17
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule splits monthly allowance",
+    "explanation": "The 50/30/20 budget rule divides take-home income into 50% needs, 30% wants and 20% savings or debt. Students can use this mechanism to save one-fifth of any allowance or side income automatically.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 18
+  },
+  {
+    "category": "banking",
+    "snippet": "NIBSS Instant Payment settles transfers quickly",
+    "explanation": "The Nigeria Inter-Bank Settlement System operates the NIBSS Instant Payment platform, which moves funds between bank accounts in seconds. This real-time settlement mechanism supports cashless payments and reduces cash handling for students.",
+    "source_name": "NIBSS",
+    "source_url": "https://nibssplc.com.ng/",
+    "id": 19
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Micro Pension Plan accepts flexible contributions",
+    "explanation": "PenCom's Micro Pension Plan allows self-employed and informal-sector participants to contribute irregular amounts without a fixed salary. Contributions are managed by pension fund administrators and build retirement savings early.",
+    "source_name": "National Pension Commission (PenCom)",
+    "source_url": "https://www.pencom.gov.ng/",
+    "id": 20
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures deposits up to N500,000",
+    "explanation": "The Nigeria Deposit Insurance Corporation protects each depositor by paying up to N500,000 per person per licensed bank if the institution fails. This deposit insurance covers savings and current account balances, so students should spread large amounts across insured banks once they exceed the limit.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://ndic.gov.ng/",
+    "id": 21
+  },
+  {
+    "category": "investing",
+    "snippet": "SEC-regulated mutual funds pool small contributions",
+    "explanation": "The Securities and Exchange Commission supervises collective investment schemes that combine small sums from many investors into a diversified portfolio. This pooling mechanism lowers the minimum capital needed to access securities markets, making it possible for students to invest with modest amounts.",
+    "source_name": "Securities and Exchange Commission Nigeria",
+    "source_url": "https://sec.gov.ng/",
+    "id": 22
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Pension contribution totals 18 percent of monthly salary",
+    "explanation": "Under the Contributory Pension Scheme, employers contribute 10 percent and employees contribute 8 percent of an employee's monthly salary into a Retirement Savings Account. This mandatory split reduces take-home pay but creates a pooled retirement fund managed by licensed pension fund administrators.",
+    "source_name": "National Pension Commission",
+    "source_url": "https://www.pencom.gov.ng/",
+    "id": 23
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 budget splits income into needs wants savings",
+    "explanation": "The 50/30/20 rule allocates 50 percent of after-tax income to essential needs, 30 percent to wants, and 20 percent to savings or debt repayment. This percentage mechanism gives students a simple structure for managing irregular income without detailed expense tracking.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 24
+  },
+  {
+    "category": "history_of_money",
+    "snippet": "Cowrie shells served as money in pre-colonial Nigeria",
+    "explanation": "Cowries functioned as a medium of exchange because their durability, portability, and limited local supply supported trade across West Africa. Colonial authorities later demonetized cowries as British West African currency systems replaced them.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 25
+  },
+  {
+    "category": "investing",
+    "snippet": "Nigerian stocks require a licensed stockbroker to trade",
+    "explanation": "The Nigerian Exchange operates an electronic order book where only registered stockbrokers can execute buy and sell orders. Some brokers let university students open an account with as little as N5,000 to N10,000.",
+    "source_name": "Nigerian Exchange Group",
+    "source_url": "https://ngxgroup.com/",
+    "id": 26
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule splits income three ways",
+    "explanation": "The rule assigns 50% of income to needs, 30% to wants, and 20% to savings or debt repayment. A student receiving a monthly allowance can use this formula to set spending limits before the month begins.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/ask/answers/022916/what-503020-budget-rule.asp",
+    "id": 27
+  },
+  {
+    "category": "history_of_money",
+    "snippet": "Naira replaced Nigerian pound in 1973",
+    "explanation": "Nigeria introduced the naira on 1 January 1973, replacing the Nigerian pound at a rate of two naira to one pound. The change also created the kobo as a subunit, with 100 kobo to 1 naira.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 28
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Micro Pension Plan covers informal sector workers",
+    "explanation": "The Micro Pension Plan allows self-employed and informal sector workers to open a Retirement Savings Account and contribute flexible amounts. A student with side income can join, and contributions are invested by pension fund administrators for long-term growth.",
+    "source_name": "National Pension Commission",
+    "source_url": "https://www.pencom.gov.ng/",
+    "id": 29
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 budget splits needs wants savings",
+    "explanation": "The 50/30/20 budget allocates 50% of income to needs, 30% to wants, and 20% to savings or debt repayment. A student receiving N50,000 monthly could set aside N25,000 for needs and N10,000 for savings.",
+    "source_name": "Nairametrics",
+    "source_url": "https://nairametrics.com/",
+    "id": 30
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "NELFUND student loans cover tuition and upkeep",
+    "explanation": "The Nigerian Education Loan Fund provides loans to tertiary students for tuition, fees, and upkeep. Repayment begins two years after NYSC completion, with 10% of the beneficiary's monthly salary deducted by employers.",
+    "source_name": "Nigerian Education Loan Fund",
+    "source_url": "https://nelf.gov.ng/",
+    "id": 31
+  },
+  {
+    "category": "behavioral_finance",
+    "snippet": "Loss aversion makes losses feel twice as painful",
+    "explanation": "Loss aversion is a behavioral bias where a loss feels about twice as bad as an equivalent gain. This can lead students to avoid investments and hold cash, reducing their long-term purchasing power.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 32
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule saves 20 percent of income",
+    "explanation": "This budgeting mechanism splits take-home income into 50% needs, 30% wants, and 20% savings or debt repayment. Students with irregular allowances can use the 20% savings target to build small emergency funds gradually.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com",
+    "id": 33
+  },
+  {
+    "category": "budgeting",
+    "snippet": "Apply 50/30/20 rule to monthly allowance",
+    "explanation": "Allocating 50% of income to needs, 30% to wants, and 20% to savings helps students create a simple spending plan from irregular allowances. For a monthly allowance of ₦50,000, the rule sets aside ₦10,000 each month for savings.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/ask/answers/022916/what-502030-budget-rule.asp",
+    "id": 34
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures bank deposits up to ₦5 million",
+    "explanation": "The Nigeria Deposit Insurance Corporation protects depositors by paying up to ₦5,000,000 per depositor per licensed commercial or merchant bank if that bank fails. This coverage applies to balances across savings, current, and fixed deposit accounts.",
+    "source_name": "NDIC",
+    "source_url": "https://www.ndic.gov.ng/",
+    "id": 35
+  },
+  {
+    "category": "investing",
+    "snippet": "FGN Savings Bond minimum is ₦5,000",
+    "explanation": "The Federal Government savings bond is a retail investment that requires a minimum subscription of ₦5,000 per investor in monthly DMO auctions. It pays interest quarterly into a bank account, making it an accessible debt instrument for students.",
+    "source_name": "Debt Management Office Nigeria",
+    "source_url": "https://www.dmo.gov.ng/",
+    "id": 36
+  },
+  {
+    "category": "banking",
+    "snippet": "NIBSS instant transfers carry daily bank limits",
+    "explanation": "Banks set daily NIP transfer limits that can range from ₦100,000 to over ₦5,000,000 depending on the customer's account tier and transaction channel. The Nigeria Inter-Bank Settlement System operates the NIP platform and settles these transfers instantly between banks.",
+    "source_name": "Nigeria Inter-Bank Settlement System",
+    "source_url": "https://nibssplc.com.ng/",
+    "id": 37
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Emergency fund should cover 3 to 6 months",
+    "explanation": "An emergency fund covering three to six months of essential expenses helps students manage income disruptions without using high-interest debt. For a student with monthly essential spending of ₦30,000, a six-month target is ₦180,000.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/e/emergency_fund.asp",
+    "id": 38
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures N500,000 per bank depositor",
+    "explanation": "The Nigeria Deposit Insurance Corporation pays depositors up to N500,000 if a licensed bank fails. This protects a student’s savings in one bank, but amounts above the insured limit are exposed.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://ndic.gov.ng/",
+    "id": 39
+  },
+  {
+    "category": "investing",
+    "snippet": "CSCS holds Nigerian shares electronically",
+    "explanation": "The Central Securities Clearing System is Nigeria’s central depository that settles and holds equities traded on NGX. This electronic mechanism means student investors can own shares without paper certificates once their broker opens a CSCS account.",
+    "source_name": "Central Securities Clearing System",
+    "source_url": "https://cscs.ng/",
+    "id": 40
+  },
+  {
+    "category": "banking",
+    "snippet": "NIBSS Instant Payment settles Nigerian electronic transfers",
+    "explanation": "The Nigeria Inter-Bank Settlement System runs NIP, which settles interbank electronic transfers in real time. Students sending or receiving money through Nigerian banks use this settlement mechanism, and bank fees vary around NIP transaction thresholds.",
+    "source_name": "Nigeria Inter-Bank Settlement System",
+    "source_url": "https://nibssplc.com.ng/",
+    "id": 41
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "NELFUND loans cover tuition and upkeep",
+    "explanation": "The Nigerian Education Loan Fund offers interest-free loans to eligible students in public tertiary institutions for tuition, fees, and upkeep. Repayment starts two years after National Youth Service Corps completion, making the facility a structured funding mechanism for university students.",
+    "source_name": "Nigerian Education Loan Fund",
+    "source_url": "https://nelf.gov.ng/",
+    "id": 42
+  },
+  {
+    "category": "investing",
+    "snippet": "FGN Savings Bond minimum is N5,000",
+    "explanation": "The Debt Management Office’s FGN Savings Bond has a minimum subscription of N5,000, making it accessible to students. Interest is paid quarterly, giving young investors a recurring income stream.",
+    "source_name": "Debt Management Office",
+    "source_url": "https://www.dmo.gov.ng/",
+    "id": 43
+  },
+  {
+    "category": "banking",
+    "snippet": "CBN caps transfer fees at N50",
+    "explanation": "The Central Bank of Nigeria’s Guide to Bank Charges sets a maximum electronic transfer fee of N50 for transactions above N50,000. This cap reduces mobile and online transfer costs for students receiving allowances.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 44
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule allocates 50% to needs",
+    "explanation": "The 50/30/20 budgeting rule directs 50% of income to essential needs, 30% to wants, and 20% to savings or debt repayment. This ratio gives students a simple plan for managing limited monthly allowances.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 45
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "NELFUND gives interest-free loans to students",
+    "explanation": "The Nigerian Education Loan Fund provides interest-free loans to qualified students for tuition, fees, and upkeep. This mechanism helps university students fund their education without immediate financial pressure.",
+    "source_name": "Nigerian Education Loan Fund",
+    "source_url": "https://nelf.gov.ng/",
+    "id": 46
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures deposits up to N5,000,000",
+    "explanation": "The Nigeria Deposit Insurance Corporation protects depositors if a licensed bank fails. It covers up to N5,000,000 per depositor per bank, reducing risk for student savings.",
+    "source_name": "Nigeria Deposit Insurance Corporation (NDIC)",
+    "source_url": "https://ndic.gov.ng/",
+    "id": 47
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule splits income into needs wants savings",
+    "explanation": "The 50/30/20 budget divides after-tax income into 50% needs, 30% wants, and 20% savings or debt repayment. This mechanism helps students manage irregular allowances without tracking every naira.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/5/50-30-20-budget-rule.asp",
+    "id": 48
+  },
+  {
+    "category": "banking",
+    "snippet": "BVN uniquely identifies bank customers across Nigeria",
+    "explanation": "The Central Bank of Nigeria introduced the Bank Verification Number to link all bank accounts owned by one person across Nigerian banks. The biometric-based identifier helps reduce fraud and is required for opening accounts.",
+    "source_name": "Central Bank of Nigeria (CBN)",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 49
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "NELF offers interest-free loans to Nigerian students",
+    "explanation": "The Nigerian Education Loan Fund provides eligible tertiary students with loans for tuition, fees, and upkeep. Repayment begins two years after completing the National Youth Service, easing immediate repayment pressure.",
+    "source_name": "Nigerian Education Loan Fund (NELF)",
+    "source_url": "https://nelf.gov.ng/",
+    "id": 50
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures N5 million per depositor",
+    "explanation": "NDIC deposit insurance protects a depositor's funds up to N5 million per licensed bank in the event of bank failure. This means a student with ordinary savings below this threshold can recover the full covered balance.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://www.ndic.gov.ng/",
+    "id": 51
+  },
+  {
+    "category": "banking",
+    "snippet": "BVN uses 11-digit biometric identity",
+    "explanation": "The Bank Verification Number is an 11-digit biometric identifier issued by NIBSS and linked to all accounts a person holds across Nigerian banks. It helps banks verify identity and reduces fraud in electronic transfers and account opening.",
+    "source_name": "NIBSS Plc",
+    "source_url": "https://nibssplc.com.ng/",
+    "id": 52
+  },
+  {
+    "category": "budgeting",
+    "snippet": "Use 50/30/20 to split student income",
+    "explanation": "The 50/30/20 budget assigns 50 percent of income to needs, 30 percent to wants, and 20 percent to savings or debt repayment. For example, a student receiving N40,000 monthly would allocate N20,000 to needs, N12,000 to wants, and N8,000 to savings.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 53
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Keep three to six months expenses liquid",
+    "explanation": "Financial planners recommend holding 3-6 months of essential expenses in a liquid account, such as a savings account, to buffer job loss or unexpected bills. This mechanism reduces the need to sell investments at a loss or take high-interest loans during a cash emergency.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 54
+  },
+  {
+    "category": "investing",
+    "snippet": "FGN savings bond minimum subscription is N5,000",
+    "explanation": "The Debt Management Office issues Federal Government of Nigeria savings bonds with a minimum subscription of N5,000, making them accessible to students. The bonds pay interest quarterly and mature in two or three years.",
+    "source_name": "DMO",
+    "source_url": "https://www.dmo.gov.ng/",
+    "id": 55
+  },
+  {
+    "category": "banking",
+    "snippet": "BVN uses biometrics to secure bank accounts",
+    "explanation": "The Bank Verification Number links a student’s biometric identity to all accounts held in Nigerian banks through a central database. This biometric mechanism helps reduce fraud and simplifies opening additional bank accounts.",
+    "source_name": "NIBSS",
+    "source_url": "https://nibssplc.com.ng/",
+    "id": 56
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule allocates 20 percent to savings",
+    "explanation": "The 50/30/20 budgeting mechanism divides after-tax income into 50 percent needs, 30 percent wants, and 20 percent savings or debt repayment. A student with irregular allowances can use this percentage-based rule to set aside income consistently.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 57
+  },
+  {
+    "category": "nigerian_finance",
+    "snippet": "Inflation above 30 percent erodes student cash",
+    "explanation": "Nigeria’s annual inflation rate rose above 30 percent in 2024, meaning cash held outside interest-bearing accounts loses real purchasing power. Students can reduce the erosion by placing funds in high-yield savings or investment instruments.",
+    "source_name": "Nairametrics",
+    "source_url": "https://nairametrics.com/",
+    "id": 58
+  },
+  {
+    "category": "budgeting",
+    "snippet": "Zero-based budgeting gives every naira a specific job",
+    "explanation": "Zero-based budgeting requires income minus planned expenses and savings to equal zero at the start of each month. A student receiving ₦30,000 monthly can assign all of it to food, transport, data, savings, and personal needs.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/z/zbb.asp",
+    "id": 59
+  },
+  {
+    "category": "investing",
+    "snippet": "Mutual funds allow subscriptions from five thousand naira",
+    "explanation": "Many Nigerian money market mutual funds set minimum initial subscriptions around ₦5,000, making them accessible to students. The SEC regulates these collective investment schemes to protect small investors.",
+    "source_name": "Securities and Exchange Commission Nigeria",
+    "source_url": "https://sec.gov.ng/",
+    "id": 60
+  },
+  {
+    "category": "banking",
+    "snippet": "NDIC insures deposits up to five million naira",
+    "explanation": "The Nigeria Deposit Insurance Corporation pays depositors up to ₦5,000,000 per depositor per licensed bank if a bank fails. This insurance reduces the risk of keeping student savings in a regulated bank.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://ndic.gov.ng/",
+    "id": 61
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "PenCom micro pension plan accepts student contributors",
+    "explanation": "The Micro Pension Plan lets self-employed and informal sector workers, including students with irregular income, save flexibly for retirement. Participants can withdraw up to 40% of their balance for contingency before retirement.",
+    "source_name": "National Pension Commission",
+    "source_url": "https://www.pencom.gov.ng/",
+    "id": 62
+  },
+  {
+    "category": "nigerian_finance",
+    "snippet": "eNaira is Nigeria's digital legal tender currency",
+    "explanation": "The Central Bank of Nigeria launched the eNaira in October 2021 as a central bank digital currency. It is legal tender, exchanges at parity with the naira, and is designed to improve payment efficiency.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 63
+  },
+  {
+    "category": "banking",
+    "snippet": "CBN mandates BVN and NIN for accounts",
+    "explanation": "The Central Bank of Nigeria requires a Bank Verification Number and National Identification Number to open or operate bank accounts. This identity mechanism helps reduce fraud and improves access to formal banking for students.",
+    "source_name": "CBN",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 64
+  },
+  {
+    "category": "budgeting",
+    "snippet": "Allocate allowance with 50/30/20 rule",
+    "explanation": "This budgeting framework splits income into 50 percent for needs, 30 percent for wants, and 20 percent for savings or debt repayment. Students can use this mechanism to divide monthly allowances and build savings while covering essentials.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 65
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Micro Pension Plan allows flexible contributions",
+    "explanation": "PenCom's Micro Pension Plan lets students and informal-sector workers save for retirement through flexible contributions. The plan channels small deposits into pension funds, creating a low-pressure start for long-term financial planning.",
+    "source_name": "PenCom",
+    "source_url": "https://www.pencom.gov.ng/",
+    "id": 66
+  },
+  {
+    "category": "nigerian_finance",
+    "snippet": "eNaira is Nigeria's central bank digital currency",
+    "explanation": "The Central Bank of Nigeria issued the eNaira in October 2021 as a digital form of the naira. It uses a tiered wallet system with daily transaction limits for individuals.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 67
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Micro pension plan allows Nigerians from age 18",
+    "explanation": "The National Pension Commission's micro pension plan allows Nigerians in the informal sector and students aged 18 and above to save flexibly for retirement. Contributions are linked to a Personal Identification Number and can be made at any time through a Pension Fund Administrator.",
+    "source_name": "National Pension Commission",
+    "source_url": "https://www.pencom.gov.ng/",
+    "id": 68
+  },
+  {
+    "category": "investing",
+    "snippet": "NGX lets students buy listed shares",
+    "explanation": "The Nigerian Exchange Group provides the electronic platform for trading equities and bonds. Students can invest through registered stockbrokers with small amounts.",
+    "source_name": "Nigerian Exchange Group",
+    "source_url": "https://ngxgroup.com/",
+    "id": 69
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule splits needs wants savings",
+    "explanation": "The 50/30/20 rule allocates 50% to needs, 30% to wants, and 20% to savings or debt. This mechanism helps students balance allowances and build savings.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/5/50-30-20.asp",
+    "id": 70
+  },
+  {
+    "category": "nigerian_finance",
+    "snippet": "CBN monetary policy rate guides lending",
+    "explanation": "The Central Bank of Nigeria’s Monetary Policy Committee adjusts the monetary policy rate to influence inflation and credit conditions. A higher MPR typically makes bank loans more expensive.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 71
+  },
+  {
+    "category": "behavioral_finance",
+    "snippet": "Mental accounting shapes how students spend",
+    "explanation": "People assign different values to money based on its source or labelled purpose, such as stipends versus gifts. This mental separation can cause irrational spending even though money is fungible.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/m/mentalaccounting.asp",
+    "id": 72
+  },
+  {
+    "category": "banking",
+    "snippet": "NDIC insures N5 million per bank depositor",
+    "explanation": "The Nigeria Deposit Insurance Corporation protects depositors by paying insured sums if a licensed bank fails. For deposit money banks, the coverage limit is N5,000,000 per depositor per bank.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://www.ndic.gov.ng/",
+    "id": 73
+  },
+  {
+    "category": "savings",
+    "snippet": "CBN standing deposit facility anchors short-term naira rates",
+    "explanation": "The Central Bank of Nigeria uses the Standing Deposit Facility rate as a lower bound for short-term naira interest rates. Banks often set savings deposit rates in relation to this SDF rate.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 74
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 budget splits income into needs, wants, saving",
+    "explanation": "A 50/30/20 budget allocates 50% of after-tax income to needs, 30% to wants, and 20% to savings or debt repayment. This mechanism helps students balance fixed costs like food and transport with long-term saving.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 75
+  },
+  {
+    "category": "investing",
+    "snippet": "FGN Savings Bond entry starts at N5,000",
+    "explanation": "The Debt Management Office offers FGN Savings Bonds to retail investors with a minimum subscription of N5,000. The bond pays interest quarterly and matures in 2 or 3 years, making it accessible for students.",
+    "source_name": "Debt Management Office",
+    "source_url": "https://www.dmo.gov.ng/",
+    "id": 76
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Compound interest grows savings faster than simple interest",
+    "explanation": "Compound interest pays interest on both the original principal and accumulated interest, causing exponential growth over time. For example, N100,000 invested at 10% annual compound interest grows to N110,000 after one year if compounded annually.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 77
+  },
+  {
+    "category": "investing",
+    "snippet": "Nigerian mutual funds can accept N5,000",
+    "explanation": "Mutual funds pool money from many investors to buy a diversified portfolio of securities. Some Nigerian mutual funds set minimum initial subscriptions as low as N5,000, which lowers entry barriers for students.",
+    "source_name": "Securities and Exchange Commission Nigeria",
+    "source_url": "https://sec.gov.ng/",
+    "id": 78
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule divides after-tax income",
+    "explanation": "The 50/30/20 budget allocates 50% of after-tax income to needs, 30% to wants, and 20% to savings or debt repayment. Students can use this mechanism to cap discretionary spending and build savings automatically.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 79
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Start emergency fund with three months expenses",
+    "explanation": "An emergency fund covering three to six months of essential expenses protects against unexpected costs like medical bills or loss of income. Even small monthly contributions from student stipends can build this buffer through compound interest or high-yield savings.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 80
+  },
+  {
+    "category": "behavioral_finance",
+    "snippet": "Mental accounting treats money differently by source",
+    "explanation": "Mental accounting causes people to assign different spending rules to money depending on where it came from, such as gifts versus wages. This bias can make students spend windfalls faster than regular stipends even when the amounts are identical.",
+    "source_name": "Nairametrics",
+    "source_url": "https://nairametrics.com/",
+    "id": 81
+  },
+  {
+    "category": "investing",
+    "snippet": "NGX equities trade in 100-unit board lots",
+    "explanation": "The Nigerian Exchange uses a standard board lot of 100 units for equities, so buy and sell orders must typically be in multiples of 100 shares. This rule affects how students and other small investors plan their entry into the stock market.",
+    "source_name": "Nigerian Exchange Group",
+    "source_url": "https://ngxgroup.com",
+    "id": 82
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "NELFUND provides interest-free student loans",
+    "explanation": "The Nigerian Education Loan Fund (NELFUND) processes loan applications from students and disburses approved fees directly to tertiary institutions. It was established by the 2023 Access to Higher Education Act to reduce financial barriers to higher education.",
+    "source_name": "Nigerian Education Loan Fund",
+    "source_url": "https://nelf.gov.ng",
+    "id": 83
+  },
+  {
+    "category": "savings",
+    "snippet": "Inflation can outpace naira savings interest rates",
+    "explanation": "Inflation raises the price of goods and services, so each naira saved buys fewer goods over time. A 20% annual inflation rate reduces the real value of N100 to about N83 in one year.",
+    "source_name": "International Monetary Fund",
+    "source_url": "https://www.imf.org/en/Countries/NGA",
+    "id": 84
+  },
+  {
+    "category": "banking",
+    "snippet": "NDIC insures deposits up to N5m",
+    "explanation": "The Nigeria Deposit Insurance Corporation protects depositors by paying up to N5 million per depositor per bank if a licensed bank fails. This coverage applies separately to each deposit money bank and includes student savings accounts.",
+    "source_name": "NDIC",
+    "source_url": "https://www.ndic.gov.ng/",
+    "id": 85
+  },
+  {
+    "category": "investing",
+    "snippet": "Students can buy stocks via NGX licensed brokers",
+    "explanation": "Nigerian students can buy shares through licensed stockbrokers on the Nigerian Exchange Group, with no fixed minimum beyond one share unit. The Central Securities Clearing System settles these trades electronically and charges fees that are typically a small percentage of trade value.",
+    "source_name": "NGX Group",
+    "source_url": "https://ngxgroup.com/",
+    "id": 86
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 budget splits income needs wants savings",
+    "explanation": "The 50/30/20 rule allocates 50% of income to needs, 30% to wants, and 20% to savings or debt repayment. For a student receiving N30,000 monthly allowance, this means N15,000 for essentials, N9,000 for discretionary spending, and N6,000 for savings.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 87
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Emergency fund should cover three to six months",
+    "explanation": "Building an emergency fund equal to three to six months of essential expenses reduces reliance on high-interest borrowing during unexpected events. A student with monthly essential expenses of N40,000 should target N120,000 to N240,000 in a separate savings account.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 88
+  },
+  {
+    "category": "behavioral_finance",
+    "snippet": "Present bias makes students undersave for future goals",
+    "explanation": "Present bias is the tendency to choose smaller immediate rewards over larger future rewards, even when waiting yields better outcomes. This mechanism can cause students to spend stipends on entertainment today and postpone saving for tuition or projects until later.",
+    "source_name": "Nairametrics",
+    "source_url": "https://nairametrics.com/",
+    "id": 89
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures up to N5 million per depositor",
+    "explanation": "The Nigeria Deposit Insurance Corporation protects depositors by insuring up to N5,000,000 per person per licensed bank. If a bank fails, a student's savings in that bank are covered up to that limit.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://www.ndic.gov.ng/",
+    "id": 90
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule allocates 50 percent to needs",
+    "explanation": "The 50/30/20 budget divides after-tax income into 50% for needs, 30% for wants, and 20% for savings or debt repayment. For a student receiving N50,000 monthly, that means N25,000 for needs and N10,000 for savings.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 91
+  },
+  {
+    "category": "banking",
+    "snippet": "CBN Tier 1 account has no minimum balance",
+    "explanation": "The Central Bank of Nigeria's tiered know-your-customer framework allows a Tier 1 account with no minimum opening balance and limited transactions. The cumulative balance is capped at N300,000, which suits students who need basic banking.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 92
+  },
+  {
+    "category": "investing",
+    "snippet": "Many Nigerian mutual funds accept N5,000 monthly",
+    "explanation": "Many Nigerian mutual funds allow monthly contributions from as low as N5,000, letting students gain diversified market exposure. The fund manager pools these contributions and invests in money market, bond, or equity instruments.",
+    "source_name": "Securities and Exchange Commission Nigeria",
+    "source_url": "https://sec.gov.ng/",
+    "id": 93
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Saving N1,000 weekly builds N52,000 yearly",
+    "explanation": "Consistent weekly savings of N1,000 create a base of N52,000 per year before interest. With compound interest, even modest student savings can grow because interest is earned on both principal and past interest.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 94
+  },
+  {
+    "category": "banking",
+    "snippet": "BVN gives one identity across Nigerian banks",
+    "explanation": "The Bank Verification Number uses biometric data to link all bank accounts belonging to one individual in Nigeria. This mechanism reduces identity fraud and simplifies account management for students opening multiple accounts.",
+    "source_name": "NIBSS",
+    "source_url": "https://nibssplc.com.ng/",
+    "id": 95
+  },
+  {
+    "category": "investing",
+    "snippet": "SEC regulates Nigerian collective investment schemes",
+    "explanation": "The Securities and Exchange Commission Nigeria registers and supervises collective investment schemes, including mutual funds. This regulatory vetting helps protect students who invest through approved fund managers rather than unregistered schemes.",
+    "source_name": "SEC Nigeria",
+    "source_url": "https://sec.gov.ng/",
+    "id": 96
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "NELFUND repayment starts two years after NYSC",
+    "explanation": "The Nigerian Education Loan Fund gives student loan beneficiaries a two-year repayment moratorium after the National Youth Service Corps programme. Repayment is then deducted at 10 percent of the borrower's monthly income until the obligation is cleared.",
+    "source_name": "NELFUND",
+    "source_url": "https://nelf.gov.ng/",
+    "id": 97
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule splits income for students",
+    "explanation": "The 50/30/20 framework allocates 50 percent of income to needs, 30 percent to wants, and 20 percent to savings or debt repayment. A student receiving monthly pocket money can use this mechanism to build a savings habit without complicated spreadsheets.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 98
+  },
+  {
+    "category": "savings",
+    "snippet": "Tier 1 bank accounts require only BVN",
+    "explanation": "The Central Bank of Nigeria’s tiered Know Your Customer framework allows students to open a Tier 1 account with only a Bank Verification Number and no minimum deposit, but the balance cannot exceed N300,000. This lowers entry barriers for undergraduates without formal income documents.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/Out/2020/CCD/Tiered%20KYC%20Requirements.pdf",
+    "id": 99
+  },
+  {
+    "category": "banking",
+    "snippet": "NDIC insures N5m per depositor per bank",
+    "explanation": "The Nigeria Deposit Insurance Corporation protects bank depositors by paying up to N5,000,000 per depositor per insured bank if a bank fails. Students saving below this limit in licensed banks are fully covered by the deposit insurance mechanism.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://www.ndic.gov.ng/",
+    "id": 100
+  },
+  {
+    "category": "behavioral_finance",
+    "snippet": "Present bias favors immediate rewards over future",
+    "explanation": "In behavioral finance, present bias causes people to overvalue immediate rewards and postpone savings, a mechanism that can leave students with little long-term buffer. Automatic transfers into a separate savings account help counter this by defaulting into saving behavior.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/b/behavioralfinance.asp",
+    "id": 101
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC covers N5 million per DMB depositor",
+    "explanation": "The Nigeria Deposit Insurance Corporation raised maximum deposit insurance coverage to N5,000,000 per depositor per deposit money bank in 2024. The insurer funds payouts through premiums collected from covered financial institutions.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://www.ndic.gov.ng/",
+    "id": 102
+  },
+  {
+    "category": "investing",
+    "snippet": "FGN savings bonds start from N5,000",
+    "explanation": "The Federal Government sells these retail bonds through accredited stockbrokers, with a minimum subscription of N5,000 and interest paid every quarter. The Debt Management Office uses the funds for government projects.",
+    "source_name": "Debt Management Office Nigeria",
+    "source_url": "https://www.dmo.gov.ng/",
+    "id": 103
+  },
+  {
+    "category": "banking",
+    "snippet": "BVN links all your bank accounts biometrically",
+    "explanation": "The Bank Verification Number is an 11-digit code generated after capturing fingerprints and facial images, giving a student one identity across Nigerian banks. It helps detect fraud and prevents duplicate account identities in the banking system.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 104
+  },
+  {
+    "category": "budgeting",
+    "snippet": "Use 50/30/20 rule for monthly allowance",
+    "explanation": "This rule divides take-home income into 50 percent for needs, 30 percent for wants, and 20 percent for savings or debt repayment. Students can use it to manage monthly allowances and build an emergency fund.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/",
+    "id": 105
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Compound interest rewards early small savings",
+    "explanation": "For example, investing N5,000 monthly at a 10 percent annual return for 10 years grows to about N1,024,000 because of reinvested interest. Compound interest pays returns on both the original amount and accumulated interest, so starting earlier amplifies growth.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 106
+  },
+  {
+    "category": "savings",
+    "snippet": "Automate savings with Cowrywise recurring plans",
+    "explanation": "Cowrywise offers automated savings plans that move money from a linked bank account on a schedule or via card. Students can start with as little as ₦100, making it accessible.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 107
+  },
+  {
+    "category": "investing",
+    "snippet": "Buy Nigerian equities through SEC-registered stockbrokers",
+    "explanation": "The Nigerian Exchange Group operates an electronic trading platform that matches buy and sell orders for listed equities. Investors must use a Central Securities Clearing System account and a registered stockbroker to settle trades.",
+    "source_name": "Nigerian Exchange Group",
+    "source_url": "https://ngxgroup.com/",
+    "id": 108
+  },
+  {
+    "category": "banking",
+    "snippet": "NDIC insures bank deposits up to ₦500,000",
+    "explanation": "The Nigeria Deposit Insurance Corporation pays insured amounts to depositors if a licensed bank fails. The coverage limit is ₦500,000 per depositor per deposit money bank.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://ndic.gov.ng/",
+    "id": 109
+  },
+  {
+    "category": "budgeting",
+    "snippet": "Use 50/30/20 rule for monthly income",
+    "explanation": "The 50/30/20 budget splits after-tax income into three parts: needs, wants, and savings or debt repayment. A student receiving ₦50,000 monthly would allocate ₦25,000 to needs and ₦10,000 to savings.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/5/50-30-20.asp",
+    "id": 110
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Open voluntary pension account early for compound growth",
+    "explanation": "The National Pension Commission allows voluntary contributions that are invested in bonds, equities, and other permitted instruments. Starting early lets small student contributions benefit from decades of compound interest.",
+    "source_name": "National Pension Commission",
+    "source_url": "https://pencom.gov.ng/",
+    "id": 111
+  },
+  {
+    "category": "banking",
+    "snippet": "CBN limits individual cash withdrawals to N500,000 weekly",
+    "explanation": "The Central Bank of Nigeria’s cashless policy sets a maximum over-the-counter cash withdrawal of N500,000 per week for individuals. This mechanism pushes students toward electronic transfers, cards, and mobile banking for daily payments.",
+    "source_name": "CBN",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 112
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "Save three to six months of expenses",
+    "explanation": "An emergency fund covering three to six months of essential expenses creates a cash buffer before taking investment risk. This mechanism helps Nigerian students handle unexpected costs without high-interest borrowing.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 113
+  },
+  {
+    "category": "banking",
+    "snippet": "CBN Tier-1 account caps balance at N300,000",
+    "explanation": "The CBN tiered KYC framework allows a Tier-1 account with a passport photo and Bank Verification Number. Its maximum balance is capped at N300,000.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 114
+  },
+  {
+    "category": "financial_planning",
+    "snippet": "NELFUND loan repayment starts after NYSC",
+    "explanation": "NELFUND student loans are interest-free and repayment begins two years after a beneficiary completes NYSC. This mechanism gives graduates time to secure income before loan recovery starts.",
+    "source_name": "Nigerian Education Loan Fund",
+    "source_url": "https://nelf.gov.ng/",
+    "id": 115
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insures deposits up to N500,000 per depositor",
+    "explanation": "The Nigeria Deposit Insurance Corporation covers up to N500,000 per depositor for each licensed bank if that bank fails. Students holding more than that in a single bank can spread funds across insured institutions to remain fully protected.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://ndic.gov.ng/",
+    "id": 116
+  },
+  {
+    "category": "banking",
+    "snippet": "CBN Guide limits maintenance fees to current accounts",
+    "explanation": "The Central Bank of Nigeria's 2020 Guide to Bank Charges permits maintenance fees on current accounts and caps them at N5,000 per month. Savings account holders, including many students, are not subject to recurring monthly maintenance charges.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 117
+  },
+  {
+    "category": "behavioral_finance",
+    "snippet": "Present bias leads students to undersave",
+    "explanation": "Present bias is a mental shortcut where immediate rewards are overvalued relative to future benefits, reducing saving contributions. A student may repeatedly postpone N1,000 monthly savings even when it compounds into a larger future sum.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 118
+  },
+  {
+    "category": "savings",
+    "snippet": "NDIC insurance covers deposits in licensed banks",
+    "explanation": "The Nigeria Deposit Insurance Corporation protects depositors by reimbursing insured deposits up to a statutory coverage limit per depositor per licensed bank if a bank fails. Premiums from deposit-taking institutions fund the deposit insurance scheme.",
+    "source_name": "Nigeria Deposit Insurance Corporation",
+    "source_url": "https://ndic.gov.ng/",
+    "id": 119
+  },
+  {
+    "category": "investing",
+    "snippet": "NGX lists exchange-traded funds for diversified investing",
+    "explanation": "Exchange-traded funds on the Nigerian Exchange hold a basket of securities, allowing investors to gain diversified exposure through a single instrument. Investors buy and sell ETF units through registered stockbrokers on the NGX trading platform.",
+    "source_name": "Nigerian Exchange Group",
+    "source_url": "https://ngxgroup.com/",
+    "id": 120
+  },
+  {
+    "category": "banking",
+    "snippet": "BVN gives enrolled bank customers unique 11-digit identity",
+    "explanation": "The Central Bank of Nigeria's Bank Verification Number assigns a unique 11-digit identifier linked to an individual's biometric data across all Nigerian banks. This mechanism helps reduce identity fraud and eases account linking.",
+    "source_name": "Central Bank of Nigeria",
+    "source_url": "https://www.cbn.gov.ng/",
+    "id": 121
+  },
+  {
+    "category": "budgeting",
+    "snippet": "50/30/20 rule divides income into needs wants savings",
+    "explanation": "The 50/30/20 budget allocates 50 percent of income to needs, 30 percent to wants, and 20 percent to savings or debt repayment. This mechanism helps students set spending limits without needing detailed line items.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/1/50-30-20-budget-rule.asp",
+    "id": 122
+  },
+  {
+    "category": "nigerian_finance",
+    "snippet": "NELFUND gives interest-free loans to Nigerian students",
+    "explanation": "The Nigerian Education Loan Fund provides interest-free loans for tertiary institution fees and upkeep under the Student Loan Act of 2024. Funds are disbursed after students apply online and their institutions verify admission and fees.",
+    "source_name": "Nigerian Education Loan Fund",
+    "source_url": "https://nelf.gov.ng/",
+    "id": 123
+  },
+  {
+    "category": "savings",
+    "snippet": "Compound interest grows savings faster with time",
+    "explanation": "Compound interest adds accumulated interest to principal, so the account earns interest on both the original deposit and past interest. A student saving ₦10,000 monthly at 10% annual compounded monthly can build over ₦2 million in 10 years.",
+    "source_name": "Investopedia",
+    "source_url": "https://www.investopedia.com/terms/c/compoundinterest.asp",
+    "id": 124
+  },
+  {
+    "category": "investing",
+    "snippet": "Some Nigerian mutual fund apps start at ₦1,000",
+    "explanation": "Cowrywise sets its minimum initial investment for mutual funds at ₦1,000, allowing students to begin with small amounts. The platform routes pooled client funds into SEC-regulated mutual funds managed by partner asset managers, giving small savers diversified money market, bond, or equity exposure.",
+    "source_name": "Cowrywise",
+    "source_url": "https://cowrywise.com/",
+    "id": 125
+  },
+  {
+    "category": "budgeting",
+    "snippet": "Envelope budgeting gives every naira a category",
+    "explanation": "Envelope budgeting assigns cash or digital sub-accounts to specific expense categories such as food, transport, and data, preventing overspending in any one area. Once a category envelope is exhausted, spending stops unless funds are moved from another envelope.",
+    "source_name": "BusinessDay",
+    "source_url": "https://businessday.ng/",
+    "id": 126
+  },
+  {
+    "category": "nigerian_finance",
+    "snippet": "NELFUND gives interest-free tuition loans to students",
+    "explanation": "The Nigerian Education Loan Fund provides interest-free loans for tuition, fees, and upkeep under the Student Loan Act. Repayment starts two years after the beneficiary completes National Youth Service Corps, with a 10% monthly deduction from salary for formal workers.",
+    "source_name": "NELFUND",
+    "source_url": "https://nelf.gov.ng/",
+    "id": 127
+  }
+]

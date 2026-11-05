@@ -52,6 +52,8 @@ export default function RegisterForm() {
   const [errors, setErrors] = useState<FieldErrors>({});
   const [alert, setAlert] = useState<Alert>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const [termsError, setTermsError] = useState<string | null>(null);
 
   const set = (k: keyof FormState) => (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm((f) => ({ ...f, [k]: e.target.value }));
@@ -70,6 +72,12 @@ export default function RegisterForm() {
     const v = validate(form);
     setErrors(v);
     if (Object.keys(v).length) return;
+
+    if (!acceptedTerms) {
+      setTermsError("You must accept the consent terms to register.");
+      return;
+    }
+    setTermsError(null);
 
     setSubmitting(true);
     try {
@@ -111,7 +119,7 @@ export default function RegisterForm() {
       title="Enter the competition"
       subtitle="Register to compete for the AFIT × Cowrywise Ambassador title"
     >
-      <form onSubmit={onSubmit} noValidate className="space-y-4">
+      <form onSubmit={onSubmit} noValidate className="space-y-3">
         <TextField
           id="register-full-name"
           label="Full name"
@@ -177,7 +185,36 @@ export default function RegisterForm() {
 
         {alert && <FormAlert tone={alert.tone}>{alert.message}</FormAlert>}
 
-        <div className="pt-2">
+        <div className="pt-1 md:col-span-2">
+          <div className="flex justify-center">
+            <label className="flex items-start gap-2 text-sm text-[#082552] cursor-pointer max-w-md">
+              <input
+                type="checkbox"
+                checked={acceptedTerms}
+                onChange={(e) => {
+                  setAcceptedTerms(e.target.checked);
+                  if (e.target.checked) setTermsError(null);
+                }}
+                className="mt-0.5 h-4 w-4 accent-[#0067f5] shrink-0"
+              />
+              <span>
+                I have read and agree to the{" "}
+                <a
+                  href="/consent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#0067f5] underline hover:text-[#0055cc]"
+                >
+                  AI-marking and public-disclosure terms
+                </a>
+                .
+              </span>
+            </label>
+          </div>
+          {termsError && (
+            <p className="mt-1 text-center text-xs text-[#FF0059]">{termsError}</p>
+          )}
+
           <SubmitButton id="register-submit" loading={submitting} loadingText="Creating account...">
             Create account →
           </SubmitButton>

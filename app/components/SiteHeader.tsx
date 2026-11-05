@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { portalPathFor, roleLabel, useAuth } from "@/lib/auth";
 
@@ -14,7 +15,17 @@ const NAV_ITEMS = [
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
   const { user, loading, logout } = useAuth();
+
+  // Hide nav on auth pages
+  if (
+    pathname === "/login" ||
+    pathname === "/register" ||
+    pathname?.startsWith("/admin-login")
+  ) {
+    return null;
+  }
 
   // /api/auth/me doesn't return display_name, so fall back to the role after a reload.
   const greeting = user ? user.display_name ?? roleLabel(user.role) : "";
@@ -29,7 +40,15 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-acac-border bg-white">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
         {/* Wordmark lockup */}
-        <Link href="/" className="flex items-baseline gap-2" aria-label="ACAC Arena home">
+        <Link href="/" className="flex items-center gap-2.5" aria-label="ACAC Arena home">
+          <Image
+            src="/logos/venn.png"
+            alt="AFIT × Cowrywise"
+            width={240}
+            height={56}
+            className="h-14 w-auto object-contain"
+            priority
+          />
           <span className="text-[20px] font-bold tracking-tight text-acac-navy">ACAC</span>
           <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-acac-muted">
             Arena
