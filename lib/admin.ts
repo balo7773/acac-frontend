@@ -93,19 +93,17 @@ export type SelectFinalistsResponse = {
 
 export const MASKS: { value: string; label: string; emoji: string }[] = [
   { value: "mask_owl", label: "Judge 1", emoji: "🦉" },
-  { value: "mask_falcon", label: "Falcon", emoji: "🦅" },
-  { value: "mask_lion", label: "Judge 2", emoji: "🦁" },
-  { value: "mask_panther", label: "Panther", emoji: "🐆" },
-  { value: "mask_wolf", label: "Wolf", emoji: "🐺" },
+  { value: "mask_falcon", label: "Judge 2", emoji: "🦅" },
+  { value: "mask_lion", label: "Judge 3", emoji: "🦁" },
+  { value: "mask_panther", label: "Judge 4", emoji: "🐆" },
 ];
 
 export const maskLabel = (mask: string) =>
   ({
     mask_owl: "Judge 1",
-    mask_falcon: "Falcon",
-    mask_lion: "Judge 2",
-    mask_panther: "Panther",
-    mask_wolf: "Wolf",
+    mask_falcon: "Judge 2",
+    mask_lion: "Judge 3",
+    mask_panther: "Judge 4",
   })[mask] || mask.replace("mask_", "");
 
 export const maskEmoji = (mask: string): string | null =>
