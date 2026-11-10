@@ -78,15 +78,7 @@ export default function HeroSection() {
 
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <HeroCta phase={status?.current_phase ?? null} />
-          <a
-            id="hero-download-brief"
-            href="/acac-brief.pdf"
-            download
-            className="inline-flex items-center gap-2 text-sm font-medium text-acac-navy underline-offset-4 hover:underline"
-          >
-            <DownloadIcon />
-            Download Brief (PDF)
-          </a>
+          
         </div>
 
         {/* Live status badge — only rendered once the fetch resolves, so there's no flash of stale/wrong text */}

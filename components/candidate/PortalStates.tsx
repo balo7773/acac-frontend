@@ -9,7 +9,7 @@ export function PreLaunchCard({ pno }: { pno: number }) {
         </div>
         <h1 className="text-2xl font-bold text-[#082552] mb-2">The competition hasn&apos;t started yet</h1>
         <p className="text-[#6B7280] mb-6">
-          You&apos;re registered as Candidate #{pno}. We&apos;ll send you an update when Stage 1 opens.
+          You&apos;re registered as Candidate #{String(pno).padStart(3, '0')}. We&apos;ll send you an update when Stage 1 opens.
         </p>
       </div>
     </div>
@@ -25,7 +25,7 @@ export function WaitingCard({ pno, onRefresh }: { pno: number; onRefresh: () => 
         </div>
         <h1 className="text-2xl font-bold text-[#082552] mb-2">Please wait…</h1>
         <p className="text-[#6B7280] mb-6">
-          Question loading. Candidate #{pno}.
+          Question loading. Candidate #{String(pno).padStart(3, '0')}.
         </p>
         <button onClick={onRefresh} className="text-sm text-[#0067f5] hover:underline">
           Refresh now
@@ -45,7 +45,7 @@ export function SubmittedCard({ pno, answer, submittedAt }: { pno: number; answe
           </div>
           <h1 className="text-2xl font-bold text-[#082552] mb-1">Defense submitted</h1>
           <p className="text-[#6B7280] text-sm">
-            Candidate #{pno}{submittedAt ? ` · ${new Date(submittedAt).toLocaleString()}` : ''}
+            Candidate #{String(pno).padStart(3, '0')}{submittedAt ? ` · ${new Date(submittedAt).toLocaleString()}` : ''}
           </p>
         </div>
         {answer && (
@@ -69,7 +69,7 @@ export function AutoZeroCard({ pno }: { pno: number }) {
         </div>
         <h1 className="text-2xl font-bold text-[#082552] mb-2">Defense window expired</h1>
         <p className="text-[#6B7280] mb-4">
-          Candidate #{pno}. You did not submit a defense answer within the window. This component of your score has been recorded as zero.
+          Candidate #{String(pno).padStart(3, '0')}. You did not submit a defense answer within the window. This component of your score has been recorded as zero.
         </p>
         <p className="text-sm text-[#6B7280]">You will still see your final verdict once results are published.</p>
       </div>
@@ -96,7 +96,7 @@ export function VerdictCard({ verdict, pno }: { verdict: { status: string; reaso
           <span className="text-4xl">{config.emoji}</span>
         </div>
         <h1 className="text-3xl font-bold text-[#082552] mb-2">{config.title}</h1>
-        <p className="text-sm text-[#6B7280] mb-4">Candidate #{pno}</p>
+        <p className="text-sm text-[#6B7280] mb-4">Candidate #{String(pno).padStart(3, '0')}</p>
         <p className="text-[#082552]">{config.msg}</p>
         {verdict.reason && (
           <p className="mt-4 text-sm text-[#6B7280] bg-[#F7F9FC] rounded-lg p-3">

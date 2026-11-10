@@ -132,7 +132,7 @@ export default function RegisterForm() {
         <TextField
           id="register-matric"
           label="Matric number"
-          placeholder="AFIT/2026/XXX"
+          placeholder="U26XXX****"
           autoCapitalize="characters"
           spellCheck={false}
           value={form.matric_number}
