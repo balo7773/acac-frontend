@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RegisterPage() {
   return (
     <main className="min-h-screen bg-[#F7F9FC] flex items-center justify-center px-4 py-4">
-      <div className="w-full max-w-[700px] bg-[#F7F9FC] rounded-2xl p-6 shadow-xl border border-gray-100 flex flex-col">
+      <div className="w-full max-w-[700px] bg-white rounded-2xl p-6 shadow-xl border border-gray-200 flex flex-col">
 
         <div className="flex flex-col items-center mb-3 shrink-0">
           <Image

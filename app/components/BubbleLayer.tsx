@@ -54,7 +54,7 @@ export default function BubbleLayer() {
   };
 
   return (
-    <section aria-label="Currencies" className="border-t border-acac-border bg-acac-surface py-16">
+    <section aria-label="Currencies" className="pb-16 pt-4 md:pt-6">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="relative h-[280px] overflow-hidden rounded-2xl md:h-[340px]">
           {BUBBLES.map((b) => (

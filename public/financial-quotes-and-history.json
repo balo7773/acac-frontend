@@ -1,0 +1,1127 @@
+[
+  {
+    "id": 1,
+    "type": "quote",
+    "snippet": "He who lives by the crystal ball will eat shattered glass.",
+    "explanation": "Relying on point forecasts rather than preparing for a range of probabilistic scenarios exposes investors to catastrophic ruin when unexpected tail events occur.",
+    "author": "Ray Dalio",
+    "source": "Principles: Life and Work (2017)"
+  },
+  {
+    "id": 2,
+    "type": "quote",
+    "snippet": "Price is what you pay. Value is what you get.",
+    "explanation": "Market prices fluctuate daily based on sentiment and liquidity, whereas intrinsic value is determined by the discounted cash flows an asset generates over its lifetime.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Chairman's Letter (2008)"
+  },
+  {
+    "id": 3,
+    "type": "quote",
+    "snippet": "In the short run, the market is a voting machine but in the long run, it is a weighing machine.",
+    "explanation": "Short-term asset prices reflect popularity contests and emotional crowd psychology, but over multi-year horizons they converge toward fundamental economic earnings.",
+    "author": "Benjamin Graham",
+    "source": "Security Analysis (1934), as recounted by Warren Buffett"
+  },
+  {
+    "id": 4,
+    "type": "quote",
+    "snippet": "The market can remain irrational longer than you can remain solvent.",
+    "explanation": "Even if an asset is demonstrably mispriced, betting against a mania using leverage or short-dated derivatives can bankrupt an investor before fundamentals reassert themselves.",
+    "author": "John Maynard Keynes",
+    "source": "Attributed commentary on 1930s currency and equity speculation"
+  },
+  {
+    "id": 5,
+    "type": "quote",
+    "snippet": "Show me the incentive and I will show you the outcome.",
+    "explanation": "Financial institutions and corporate executives systematically optimize for whatever compensation structure they are given, often explaining agency failures and market bubbles.",
+    "author": "Charlie Munger",
+    "source": "Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger (2005)"
+  },
+  {
+    "id": 6,
+    "type": "quote",
+    "snippet": "The four most dangerous words in investing are: 'this time it's different.'",
+    "explanation": "Every major financial bubble is rationalized by claims that new technology or policy has permanently abolished traditional valuation constraints and credit cycles.",
+    "author": "Sir John Templeton",
+    "source": "16 Rules for Investment Success (1993)"
+  },
+  {
+    "id": 7,
+    "type": "quote",
+    "snippet": "Know what you own, and know why you own it.",
+    "explanation": "Without a clear thesis anchored in a company's balance sheet and competitive moat, investors inevitably panic-sell during routine market drawdowns.",
+    "author": "Peter Lynch",
+    "source": "One Up On Wall Street (1989)"
+  },
+  {
+    "id": 8,
+    "type": "quote",
+    "snippet": "Don't look for the needle in the haystack. Just buy the haystack!",
+    "explanation": "Because active stock pickers collectively underperform after fees and taxes, owning a low-cost, broad-market index fund captures the full compounding of capitalism.",
+    "author": "John C. Bogle",
+    "source": "The Little Book of Common Sense Investing (2007)"
+  },
+  {
+    "id": 9,
+    "type": "quote",
+    "snippet": "It's not whether you're right or wrong that's important, but how much money you make when you're right and how much you lose when you're wrong.",
+    "explanation": "Asymmetric risk-reward payoff profiles matter far more to long-term portfolio survival than a high win rate on individual trades.",
+    "author": "George Soros",
+    "source": "Quoted in The New Market Wizards by Jack D. Schwager (1992)"
+  },
+  {
+    "id": 10,
+    "type": "quote",
+    "snippet": "Pain + Reflection = Progress.",
+    "explanation": "Financial losses and operational mistakes serve as high-signal feedback mechanisms if systematically analyzed to build stronger decision-making principles.",
+    "author": "Ray Dalio",
+    "source": "Principles: Life and Work (2017)"
+  },
+  {
+    "id": 11,
+    "type": "quote",
+    "snippet": "Only when the tide goes out do you discover who's been swimming naked.",
+    "explanation": "Loose credit conditions mask fragile balance sheets and fraudulent accounting, which are immediately exposed when liquidity tightens.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Chairman's Letter (2001)"
+  },
+  {
+    "id": 12,
+    "type": "quote",
+    "snippet": "Inflation is always and everywhere a monetary phenomenon.",
+    "explanation": "Sustained increases in the general price level cannot occur without a rapid expansion of the money supply relative to real economic output.",
+    "author": "Milton Friedman",
+    "source": "Inflation: Causes and Consequences (1963)"
+  },
+  {
+    "id": 13,
+    "type": "quote",
+    "snippet": "There is no subtler, no surer means of overturning the existing basis of society than to debauch the currency.",
+    "explanation": "Currency debasement acts as a hidden tax that redistributes wealth arbitrarily, erodes middle-class savings, and destabilizes social contracts.",
+    "author": "John Maynard Keynes",
+    "source": "The Economic Consequences of the Peace (1919)"
+  },
+  {
+    "id": 14,
+    "type": "quote",
+    "snippet": "The investor's chief problem—and even his worst enemy—is likely to be himself.",
+    "explanation": "Cognitive biases such as fear, greed, and recency bias destroy more portfolio value than macroeconomic shocks or corporate failures.",
+    "author": "Benjamin Graham",
+    "source": "The Intelligent Investor (1949)"
+  },
+  {
+    "id": 15,
+    "type": "quote",
+    "snippet": "You can't predict, you can prepare.",
+    "explanation": "While macroeconomic turning points defy precise timing, understanding where we stand in the market cycle allows investors to calibrate risk posture.",
+    "author": "Howard Marks",
+    "source": "The Most Important Thing (2011)"
+  },
+  {
+    "id": 16,
+    "type": "quote",
+    "snippet": "Invert, always invert: Turn a situation or problem upside down.",
+    "explanation": "Instead of asking how to achieve extraordinary returns, successful investors first ask what actions guarantee permanent capital impairment and systematically avoid them.",
+    "author": "Charlie Munger",
+    "source": "Poor Charlie's Almanack (2005)"
+  },
+  {
+    "id": 17,
+    "type": "quote",
+    "snippet": "Far more money has been lost by investors preparing for corrections, or trying to anticipate corrections, than has been lost in corrections themselves.",
+    "explanation": "Sitting in cash to avoid periodic drawdowns forfeits the multi-decade compounding generated during unexpected equity rallies.",
+    "author": "Peter Lynch",
+    "source": "Worth Magazine interview (1995)"
+  },
+  {
+    "id": 18,
+    "type": "quote",
+    "snippet": "Stability leads to instability. The more stable things become and the longer things are stable, the more unstable they will be when they crisis hits.",
+    "explanation": "Prolonged periods of low macroeconomic volatility encourage borrowers and lenders to take on ever-greater leverage until the system becomes fragile to minor shocks.",
+    "author": "Hyman Minsky",
+    "source": "Stabilizing an Unstable Economy (1986)"
+  },
+  {
+    "id": 19,
+    "type": "quote",
+    "snippet": "Gold is money. Everything else is credit.",
+    "explanation": "Testifying before Congress after the Panic of 1907, Morgan distinguished between physical settlement assets with no counterparty risk and financial claims dependent on trust.",
+    "author": "J.P. Morgan",
+    "source": "Testimony before the Pujo Committee, U.S. Congress (1912)"
+  },
+  {
+    "id": 20,
+    "type": "quote",
+    "snippet": "A man always has two reasons for doing anything: a good reason and the real reason.",
+    "explanation": "In corporate governance and financial negotiations, stated rationales often mask underlying economic self-interest and control motives.",
+    "author": "J.P. Morgan",
+    "source": "Attributed in J. Pierpont Morgan: An Intimate Portrait (1939)"
+  },
+  {
+    "id": 21,
+    "type": "quote",
+    "snippet": "If you have trouble imagining a 20% loss in the stock market, you shouldn't be in stocks.",
+    "explanation": "Equity risk premiums are earned specifically because investors must endure periodic, gut-wrenching mark-to-market volatility without liquidating at the bottom.",
+    "author": "John C. Bogle",
+    "source": "Common Sense on Mutual Funds (1999)"
+  },
+  {
+    "id": 22,
+    "type": "quote",
+    "snippet": "Bull markets are born on pessimism, grow on skepticism, mature on optimism, and die on euphoria.",
+    "explanation": "Asset prices bottom when maximum capitulation is priced in and peak when every marginal buyer has already committed capital.",
+    "author": "Sir John Templeton",
+    "source": " Templeton Growth Fund Annual Meeting remarks (1994)"
+  },
+  {
+    "id": 23,
+    "type": "quote",
+    "snippet": "There are old traders and there are bold traders, but there are very few old, bold traders.",
+    "explanation": "Excessive position sizing inevitably encounters a statistical tail event that wipes out accumulated gains regardless of prior skill.",
+    "author": "Ed Seykota",
+    "source": "Market Wizards by Jack D. Schwager (1989)"
+  },
+  {
+    "id": 24,
+    "type": "quote",
+    "snippet": "Never confuse brains with a bull market.",
+    "explanation": "Rising liquidity and expanding valuation multiples reward reckless risk-taking, leading speculators to mistake cyclical tailwinds for personal investment genius.",
+    "author": "Humphrey B. Neill",
+    "source": "The Art of Contrary Thinking (1954)"
+  },
+  {
+    "id": 25,
+    "type": "quote",
+    "snippet": "Risk comes from not knowing what you're doing.",
+    "explanation": "True investment risk is not beta or price volatility, but rather deploying capital into business models or capital structures one does not thoroughly understand.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Annual Meeting (1994)"
+  },
+  {
+    "id": 26,
+    "type": "quote",
+    "snippet": "It is not from the benevolence of the butcher, the brewer, or the baker, that we expect our dinner, but from their regard to their own interest.",
+    "explanation": "Decentralized market exchange coordinates complex supply chains by aligning individual profit motives with the provision of goods others value.",
+    "author": "Adam Smith",
+    "source": "The Wealth of Nations (1776)"
+  },
+  {
+    "id": 27,
+    "type": "quote",
+    "snippet": "Creative destruction is the essential fact about capitalism.",
+    "explanation": "Economic progress operates through an evolutionary process where entrepreneurial innovation continuously renders incumbent monopolies and outdated industries obsolete.",
+    "author": "Joseph Schumpeter",
+    "source": "Capitalism, Socialism and Democracy (1942)"
+  },
+  {
+    "id": 28,
+    "type": "quote",
+    "snippet": "History doesn't repeat itself, but it often rhymes.",
+    "explanation": "While technological tools and regulatory frameworks evolve across centuries, human nature and credit cycles produce recurring patterns of boom and bust.",
+    "author": "Mark Twain",
+    "source": "Attributed aphorism frequently cited in financial cycle analysis"
+  },
+  {
+    "id": 29,
+    "type": "quote",
+    "snippet": "One person's spending is another person's income.",
+    "explanation": "Because credit creates purchasing power in a circular flow, a sudden deleveraging where everyone cuts spending simultaneously triggers a self-reinforcing deflationary spiral.",
+    "author": "Ray Dalio",
+    "source": "Principles for Navigating Big Debt Crises (2018)"
+  },
+  {
+    "id": 30,
+    "type": "quote",
+    "snippet": "Making money is a hobby that will complement any other hobbies you have, beautifully.",
+    "explanation": "Financial independence provides the optionality and resource base required to pursue philanthropic, intellectual, or personal passions without constraint.",
+    "author": "Scott Alexander",
+    "source": "Rhinoceros Success (1980)"
+  },
+  {
+    "id": 31,
+    "type": "quote",
+    "snippet": "In investing, what is comfortable is rarely profitable.",
+    "explanation": "Purchasing assets when consensus sentiment is bleak feels psychologically painful, yet that discomfort is precisely why those assets trade at discounted valuations.",
+    "author": "Robert Arnott",
+    "source": "Research Affiliates Investment Commentary (2008)"
+  },
+  {
+    "id": 32,
+    "type": "quote",
+    "snippet": "The stock market is filled with individuals who know the price of everything, but the value of nothing.",
+    "explanation": "Obsessing over real-time ticker quotes and technical charts distracts investors from evaluating long-term cash-flow durability and management quality.",
+    "author": "Philip Fisher",
+    "source": "Common Stocks and Uncommon Profits (1958)"
+  },
+  {
+    "id": 33,
+    "type": "quote",
+    "snippet": "Wait for the fat pitch.",
+    "explanation": "Unlike baseball, financial markets never call strikes for looking; investors can let hundreds of mediocre opportunities pass until a mispriced certainty appears.",
+    "author": "Warren Buffett",
+    "source": "The Tao of Warren Buffett (2006)"
+  },
+  {
+    "id": 34,
+    "type": "quote",
+    "snippet": "The curious task of economics is to demonstrate to men how little they really know about what they imagine they can design.",
+    "explanation": "Central planners cannot aggregate the dispersed, tacit knowledge embedded in millions of local price signals across a complex economy.",
+    "author": "Friedrich Hayek",
+    "source": "The Fatal Conceit (1988)"
+  },
+  {
+    "id": 35,
+    "type": "quote",
+    "snippet": "Whenever you find yourself on the side of the majority, it is time to pause and reflect.",
+    "explanation": "In capital markets, consensus views are already fully reflected in current asset prices, leaving asymmetric upside to contrarian insights backed by data.",
+    "author": "Mark Twain",
+    "source": "Mark Twain's Notebook (1904)"
+  },
+  {
+    "id": 36,
+    "type": "quote",
+    "snippet": "It takes 20 years to build a reputation and five minutes to ruin it. If you think about that, you'll do things differently.",
+    "explanation": "Trust is the foundational currency of financial markets; a single ethical breach permanently destroys franchise value and counterparty confidence.",
+    "author": "Warren Buffett",
+    "source": "Testimony to U.S. House Subcommittee on Salomon Brothers (1991)"
+  },
+  {
+    "id": 37,
+    "type": "quote",
+    "snippet": "Nothing is more suicidal than a rational investment policy in an irrational world.",
+    "explanation": "Ignoring crowd psychology and liquidity dynamics in favor of rigid theoretical models can wipe out a portfolio before equilibrium is restored.",
+    "author": "John Maynard Keynes",
+    "source": "Attributed remark on interwar financial speculation"
+  },
+  {
+    "id": 38,
+    "type": "quote",
+    "snippet": "Compound interest is the eighth wonder of the world. He who understands it, earns it; he who doesn't, pays it.",
+    "explanation": "Exponential growth rewards patient capital owners over long horizons while relentlessly penalizing borrowers carrying high-interest revolving debt.",
+    "author": "Albert Einstein",
+    "source": "Attributed aphorism in financial literature"
+  },
+  {
+    "id": 39,
+    "type": "quote",
+    "snippet": "The big money is not in the buying and selling, but in the waiting.",
+    "explanation": "Hyperactive trading generates friction costs and tax drag, whereas holding high-return-on-capital businesses allows compounding to do the heavy lifting.",
+    "author": "Charlie Munger",
+    "source": "Berkshire Hathaway Annual Meeting (1998)"
+  },
+  {
+    "id": 40,
+    "type": "quote",
+    "snippet": "How do you know when 'irrational exuberance' has unduly escalated asset values?",
+    "explanation": "Spoken during the early stages of the dot-com boom, Greenspan's question became the defining phrase for speculative bubbles detached from earnings.",
+    "author": "Alan Greenspan",
+    "source": "Speech at the American Enterprise Institute (December 5, 1996)"
+  },
+  {
+    "id": 41,
+    "type": "quote",
+    "snippet": "Within our mandate, the ECB is ready to do whatever it takes to preserve the euro. And believe me, it will be enough.",
+    "explanation": "This single commitment during the 2012 European sovereign debt crisis credible backstopped bond markets and halted speculative attacks on peripheral eurozone yields.",
+    "author": "Mario Draghi",
+    "source": "Global Investment Conference Speech in London (July 26, 2012)"
+  },
+  {
+    "id": 42,
+    "type": "quote",
+    "snippet": "As long as the music is playing, you've got to get up and dance.",
+    "explanation": "Spoken weeks before the 2007 subprime mortgage crisis erupted, this remark epitomized how competitive pressures force banks to participate in late-cycle credit bubbles.",
+    "author": "Chuck Prince",
+    "source": "Financial Times interview (July 2007)"
+  },
+  {
+    "id": 43,
+    "type": "quote",
+    "snippet": "The job of the Federal Reserve is to take away the punch bowl just as the party gets going.",
+    "explanation": "Countercyclical monetary policy requires raising interest rates during economic expansions before credit growth overheats into runaway inflation.",
+    "author": "William McChesney Martin",
+    "source": "Address to the New York Group of the Investment Bankers Association (1955)"
+  },
+  {
+    "id": 44,
+    "type": "quote",
+    "snippet": "Diversification is the only free lunch in finance.",
+    "explanation": "Combining uncorrelated return streams mathematically reduces portfolio variance without sacrificing expected return.",
+    "author": "Harry Markowitz",
+    "source": "Portfolio Selection theory (1952)"
+  },
+  {
+    "id": 45,
+    "type": "quote",
+    "snippet": "Making 10 to 15 uncorrelated good bets is the Holy Grail of investing.",
+    "explanation": "True risk reduction comes not from owning dozens of correlated equities, but from balancing genuinely independent return drivers that cut drawdown risk by up to 80%.",
+    "author": "Ray Dalio",
+    "source": "Principles: Life and Work (2017)"
+  },
+  {
+    "id": 46,
+    "type": "quote",
+    "snippet": "Losers average losers.",
+    "explanation": "Pinned above Tudor Jones's desk, this rule warns traders against adding capital to deteriorating positions that are moving against their thesis.",
+    "author": "Paul Tudor Jones",
+    "source": "Market Wizards by Jack D. Schwager (1989)"
+  },
+  {
+    "id": 47,
+    "type": "quote",
+    "snippet": "I made my fortune by selling too soon.",
+    "explanation": "Attempting to capture the very top tick of a speculative rally exposes investors to sudden liquidity air pockets when the trend reverses.",
+    "author": "Bernard Baruch",
+    "source": "My Own Story (1957)"
+  },
+  {
+    "id": 48,
+    "type": "quote",
+    "snippet": "Buy when there's blood in the streets, even if the blood is your own.",
+    "explanation": "Geopolitical panics and systemic liquidations force indiscriminate selling, creating generational entry points for investors with dry powder and emotional fortitude.",
+    "author": "Nathan Mayer Rothschild",
+    "source": "Attributed maxim from the Napoleonic Wars era (1815)"
+  },
+  {
+    "id": 49,
+    "type": "quote",
+    "snippet": "Being too far ahead of your time is indistinguishable from being wrong.",
+    "explanation": "In capital markets, an accurate long-term thesis entered years too early suffers opportunity cost, investor redemptions, and carrying costs.",
+    "author": "Howard Marks",
+    "source": "Oaktree Capital Memo: 'It's All a Big Mistake' (2012)"
+  },
+  {
+    "id": 50,
+    "type": "quote",
+    "snippet": "A great business at a fair price is superior to a fair business at a great price.",
+    "explanation": "Munger persuaded Buffett to pivot away from buying statistically cheap 'cigar-butt' companies toward durable franchises capable of compounding capital internally.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Chairman's Letter (1989)"
+  },
+  {
+    "id": 51,
+    "type": "quote",
+    "snippet": "In the long run we are all dead.",
+    "explanation": "Keynes argued against passive classical economists who claimed markets always self-correct eventually, noting that prolonged depressions cause severe human and social damage in the interim.",
+    "author": "John Maynard Keynes",
+    "source": "A Tract on Monetary Reform (1923)"
+  },
+  {
+    "id": 52,
+    "type": "quote",
+    "snippet": "Nothing so undermines your financial judgement as the sight of your neighbor getting rich.",
+    "explanation": "Fear of missing out (FOMO) overrides analytical discipline during manias, pulling conservative savers into speculative assets at peak valuations.",
+    "author": "J.P. Morgan",
+    "source": "Cited in Kindelberger's Manias, Panics, and Crashes (1978)"
+  },
+  {
+    "id": 53,
+    "type": "quote",
+    "snippet": "It never was my thinking that made the big money for me. It always was my sitting.",
+    "explanation": "Correctly identifying a secular macro trend yields little profit unless a trader possesses the patience to ride the position without premature profit-taking.",
+    "author": "Jesse Livermore",
+    "source": "Reminiscences of a Stock Operator by Edwin Lefèvre (1923)"
+  },
+  {
+    "id": 54,
+    "type": "quote",
+    "snippet": "Bad money drives out good.",
+    "explanation": "Known as Gresham's Law, when two forms of currency have the same legal-tender face value, people hoard the commodity-backed coin and spend the debased one.",
+    "author": "Sir Thomas Gresham",
+    "source": "Letter to Queen Elizabeth I on currency debasement (1558)"
+  },
+  {
+    "id": 55,
+    "type": "quote",
+    "snippet": "A public debt is a public blessing, if it is not excessive.",
+    "explanation": "Hamilton recognized that a liquid, well-serviced sovereign bond market creates safe collateral, lowers interest rates, and binds citizens to the stability of the state.",
+    "author": "Alexander Hamilton",
+    "source": "Letter to Robert Morris (1781)"
+  },
+  {
+    "id": 56,
+    "type": "quote",
+    "snippet": "Beware of geeks bearing formulas.",
+    "explanation": "Complex quantitative models often create an illusion of precision based on short historical lookback periods that fail completely during regime shifts.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Chairman's Letter (2008)"
+  },
+  {
+    "id": 57,
+    "type": "quote",
+    "snippet": "Time is the friend of the wonderful company, the enemy of the mediocre.",
+    "explanation": "High-return businesses widen their competitive advantage each year, whereas low-return businesses require constant capital reinvestment just to survive.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Chairman's Letter (1989)"
+  },
+  {
+    "id": 58,
+    "type": "quote",
+    "snippet": "I can calculate the motion of heavenly bodies, but not the madness of people.",
+    "explanation": "Spoken after losing £20,000 (millions in modern purchasing power) re-entering the South Sea Bubble at its peak, illustrating that raw intellect does not immunize against crowd mania.",
+    "author": "Sir Isaac Newton",
+    "source": "Recorded by Joseph Spence in Anecdotes, Observations, and Characters (1720)"
+  },
+  {
+    "id": 59,
+    "type": "quote",
+    "snippet": "Annual income twenty pounds, annual expenditure nineteen nineteen and six, result happiness. Annual income twenty pounds, annual expenditure twenty pounds ought and six, result misery.",
+    "explanation": "Mr. Micawber's famous maxim captures the timeless microeconomic boundary between living within a positive cash-flow margin and falling into debt bondage.",
+    "author": "Charles Dickens",
+    "source": "David Copperfield (1850)"
+  },
+  {
+    "id": 60,
+    "type": "quote",
+    "snippet": "There is no such thing as a free lunch.",
+    "explanation": "Every government subsidy, financial bailout, or promised investment return carries an explicit or hidden opportunity cost borne somewhere in the economic system.",
+    "author": "Milton Friedman",
+    "source": "There's No Such Thing as a Free Lunch (1975)"
+  },
+  {
+    "id": 61,
+    "type": "quote",
+    "snippet": "Cash combined with courage in a time of crisis is priceless.",
+    "explanation": "Holding liquid reserves seems suboptimal during bull markets, but it grants distressed-asset pricing power when forced sellers must liquidate at any price.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Chairman's Letter (2009)"
+  },
+  {
+    "id": 62,
+    "type": "quote",
+    "snippet": "What the wise do in the beginning, fools do in the end.",
+    "explanation": "Smart capital accumulates neglected assets at the start of a cycle and distributes them to retail speculators chasing momentum at the climax.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Annual Meeting (2006)"
+  },
+  {
+    "id": 63,
+    "type": "quote",
+    "snippet": "If you don't own gold, you know neither history nor economics.",
+    "explanation": "Across centuries of empires and reserve currencies, fiat debt obligations have repeatedly been devalued during debt crises, leaving hard assets as a hedge against monetary reset.",
+    "author": "Ray Dalio",
+    "source": "Council on Foreign Relations Interview (2012)"
+  },
+  {
+    "id": 64,
+    "type": "quote",
+    "snippet": "Wide diversification is only required when investors do not understand what they are doing.",
+    "explanation": "For investors capable of deep fundamental analysis, concentrating capital in their highest-conviction ideas outperforms index-like dilution.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Chairman's Letter (1993)"
+  },
+  {
+    "id": 65,
+    "type": "quote",
+    "snippet": "Rule No. 1: Never lose money. Rule No. 2: Never forget Rule No. 1.",
+    "explanation": "Because a 50% drawdown requires a 100% gain just to break even, avoiding permanent capital loss is the mathematical prerequisite for compounding.",
+    "author": "Warren Buffett",
+    "source": "Attributed investment maxim, The Superinvestors of Graham-and-Doddsville (1984)"
+  },
+  {
+    "id": 66,
+    "type": "quote",
+    "snippet": "Worldly wisdom teaches that it is better for reputation to fail conventionally than to succeed unconventionally.",
+    "explanation": "Institutional fund managers herd into consensus benchmarks because underperforming alongside peers rarely triggers firing, whereas contrarian underperformance does.",
+    "author": "John Maynard Keynes",
+    "source": "The General Theory of Employment, Interest and Money (1936)"
+  },
+  {
+    "id": 67,
+    "type": "quote",
+    "snippet": "Speculation is an effort, probably unsuccessful, to turn a little money into a lot. Investment is an effort, which should be successful, to prevent a lot of money from becoming a little.",
+    "explanation": "Distinguishing between wealth preservation and lottery-like risk-taking prevents investors from jeopardizing irreplaceable capital.",
+    "author": "Fred Schwed Jr.",
+    "source": "Where Are the Customers' Yachts? (1940)"
+  },
+  {
+    "id": 68,
+    "type": "quote",
+    "snippet": "Take a simple idea and take it seriously.",
+    "explanation": "Financial success rarely requires esoteric mathematics; instead, it demands ruthless consistency in applying foundational concepts like margin of safety and opportunity cost.",
+    "author": "Charlie Munger",
+    "source": "Poor Charlie's Almanack (2005)"
+  },
+  {
+    "id": 69,
+    "type": "quote",
+    "snippet": "All the math you need in the stock market you get in the fourth grade.",
+    "explanation": "Evaluating balance-sheet solvency, free cash flow yields, and earnings growth requires basic arithmetic and common sense rather than stochastic calculus.",
+    "author": "Peter Lynch",
+    "source": "One Up On Wall Street (1989)"
+  },
+  {
+    "id": 70,
+    "type": "quote",
+    "snippet": "Liquidity is a coward; it disappears at the first sign of trouble.",
+    "explanation": "Assets that appear effortlessly tradable in calm markets can gap down with zero bids the moment systemic leverage unwinds.",
+    "author": "Nassim Nicholas Taleb",
+    "source": "Fooled by Randomness (2001) / The Black Swan (2007)"
+  },
+  {
+    "id": 71,
+    "type": "quote",
+    "snippet": "Never test the depth of the river with both feet.",
+    "explanation": "Scaling into positions incrementally and maintaining risk limits ensures that an unexpected market shock never results in total insolvency.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Annual Meeting remarks"
+  },
+  {
+    "id": 72,
+    "type": "quote",
+    "snippet": "If you aren't willing to own a stock for ten years, don't even think about owning it for ten minutes.",
+    "explanation": "Buying shares purely on the hope of flipping them to a higher bidder treats equities as gambling chips rather than fractional ownership of a business.",
+    "author": "Warren Buffett",
+    "source": "Berkshire Hathaway Chairman's Letter (1996)"
+  },
+  {
+    "id": 73,
+    "type": "quote",
+    "snippet": "Behind every major historical movement, there are cycle forces that have played out many times before.",
+    "explanation": "Studying debt cycles, internal political order, and geopolitical power transitions across centuries reveals the cause-and-effect mechanics driving modern markets.",
+    "author": "Ray Dalio",
+    "source": "Principles for Dealing with the Changing World Order (2021)"
+  },
+  {
+    "id": 74,
+    "type": "quote",
+    "snippet": "The first rule of compounding: Never interrupt it unnecessarily.",
+    "explanation": "Realizing capital gains prematurely triggers taxes and reinvestment risk, breaking the exponential curve that generates the vast majority of wealth in later years.",
+    "author": "Charlie Munger",
+    "source": "Poor Charlie's Almanack (2005)"
+  },
+  {
+    "id": 75,
+    "type": "quote",
+    "snippet": "Go for a business that any idiot can run—because sooner or later, any idiot probably is going to run it.",
+    "explanation": "Structural industry economics and pricing power protect shareholders far more reliably than depending on the perpetual brilliance of a single CEO.",
+    "author": "Peter Lynch",
+    "source": "One Up On Wall Street (1989)"
+  },
+  {
+    "id": 76,
+    "type": "history",
+    "snippet": "Code of Hammurabi Capped Grain Loan Interest at 33.3% (c. 1750 BCE)",
+    "explanation": "One of the earliest recorded financial regulations in ancient Babylon legally capped interest rates at 33.3% per annum on grain loans and 20% on silver loans, while mandating debt relief if crops failed due to floods or drought.",
+    "source": "Code of Hammurabi, Laws 48–51 (Louvre Museum Stele)"
+  },
+  {
+    "id": 77,
+    "type": "history",
+    "snippet": "Lydia Minting of the First Standardized Electrum Coins (c. 600 BCE)",
+    "explanation": "King Alyattes of Lydia (modern-day Turkey) minted stamped coins of precise weight from electrum—a naturally occurring alloy of gold and silver—dramatically lowering transaction verification costs in Mediterranean trade.",
+    "source": "Herodotus, Histories Book I; British Museum Numismatic Archive"
+  },
+  {
+    "id": 78,
+    "type": "history",
+    "snippet": "Thales of Miletus Executes the First Recorded Options Trade (c. 580 BCE)",
+    "explanation": "Anticipating a bumper olive harvest through astronomical weather observation, the philosopher Thales paid small winter deposits to secure exclusive rights to rent all local olive presses in Miletus, subletting them at a massive profit during harvest.",
+    "source": "Aristotle, Politics Book I, Chapter 11"
+  },
+  {
+    "id": 79,
+    "type": "history",
+    "snippet": "The Roman Credit Crisis of 33 CE and Emperor Tiberius's QE",
+    "explanation": "When enforcement of Julius Caesar's old usury and land-holding laws triggered a sudden credit freeze and real estate collapse in Rome, Emperor Tiberius injected 100 million sesterces of interest-free three-year state loans into the banking system.",
+    "source": "Tacitus, Annals Book VI, Chapters 16–17"
+  },
+  {
+    "id": 80,
+    "type": "history",
+    "snippet": "Debasement of the Roman Denarius (64 CE–274 CE)",
+    "explanation": "To fund military campaigns and public spending without raising taxes, Roman emperors progressively reduced the silver content of the denarius from roughly 95% under Nero to less than 2% by the late third century, sparking severe empire-wide inflation.",
+    "source": "Kevin Butcher & Matthew Ponting, The Metallurgy of Roman Silver Coinage (2014)"
+  },
+  {
+    "id": 81,
+    "type": "history",
+    "snippet": "Song Dynasty Issues 'Jiaozi', the World's First State Paper Money (1024 CE)",
+    "explanation": "Originating as private merchant deposit receipts in Sichuan to replace heavy iron coins, Jiaozi notes were nationalized by the Song government in 1024 CE, though excessive printing to fund wars eventually caused hyperinflation.",
+    "source": "Richard von Glahn, Fountain of Fortune: Money and Monetary Policy in China (1996)"
+  },
+  {
+    "id": 82,
+    "type": "history",
+    "snippet": "Knights Templar Pioneer International Letters of Credit (12th Century)",
+    "explanation": "European pilgrims traveling to Jerusalem deposited gold at local Templar preceptories in London or Paris and received encrypted letters of credit redeemable for coin along the route, laying the foundation for modern cross-border banking.",
+    "source": "Ignacio de la Torre, The Londonien Temple and the Birth of Banking (2004)"
+  },
+  {
+    "id": 83,
+    "type": "history",
+    "snippet": "Venice Consolidates War Debt into Tradeable 'Prestiti' Bonds (1262)",
+    "explanation": "The Republic of Venice consolidated forced municipal loans into perpetual bonds paying 5% annual interest that citizens could freely buy and sell on the Rialto, creating the earliest liquid secondary sovereign bond market.",
+    "source": "Sidney Homer & Richard Sylla, A History of Interest Rates (2005)"
+  },
+  {
+    "id": 84,
+    "type": "history",
+    "snippet": "King Edward III's Default Collapses the Bardi and Peruzzi Banks (1345)",
+    "explanation": "After borrowing vast sums from Florence's super-banks to finance the opening phase of the Hundred Years' War, King Edward III of England repudiated his sovereign debts, triggering a systemic banking collapse across Florence.",
+    "source": "Edwin S. Hunt, The Medieval Super-Companies (1994)"
+  },
+  {
+    "id": 85,
+    "type": "history",
+    "snippet": "Mansa Musa's Gold Pilgrimage Crashes Cairo's Gold Value for a Decade (1324)",
+    "explanation": "During his hajj to Mecca, the Emperor of Mali distributed so much West African gold dust across Cairo and Medina that the metal's purchasing power plummeted by up to 25%, causing severe goods inflation across Mamluk Egypt.",
+    "source": "Al-Umari, Masalik al-Absar fi Mamalik al-Amsar (c. 1340)"
+  },
+  {
+    "id": 86,
+    "type": "history",
+    "snippet": "Luca Pacioli Codifies Double-Entry Bookkeeping in Venice (1494)",
+    "explanation": "Franciscan friar and mathematician Luca Pacioli published 'Summa de Arithmetica', documenting the Venetian method of debits, credits, trial balances, and ledgers that enabled modern corporate accounting and capital auditing.",
+    "source": "Luca Pacioli, Summa de Arithmetica, Geometria, Proportioni et Proportionalita (1494)"
+  },
+  {
+    "id": 87,
+    "type": "history",
+    "snippet": "The Spanish Price Revolution Driven by New World Silver (16th Century)",
+    "explanation": "Massive inflows of silver from Potosí (Bolivia) and Zacatecas (Mexico) expanded Europe's metallic money supply sixfold over a century, causing chronic inflation that eroded Spain's domestic manufacturing competitiveness.",
+    "source": "Earl J. Hamilton, American Treasure and the Price Revolution in Spain, 1501–1650 (1934)"
+  },
+  {
+    "id": 88,
+    "type": "history",
+    "snippet": "Dutch East India Company (VOC) Launches the First Public IPO (1602)",
+    "explanation": "To pool capital for risky spice voyages to Asia, the VOC invited ordinary Dutch citizens to subscribe to transferable shares in Amsterdam, inventing the permanent joint-stock corporation and the first modern stock exchange.",
+    "source": "Lodewijk Petram, The World's First Stock Exchange (2014)"
+  },
+  {
+    "id": 89,
+    "type": "history",
+    "snippet": "Isaac Le Maire Executes the First Recorded Bear Raid (1609)",
+    "explanation": "Former VOC director Isaac Le Maire formed a secret syndicate to short-sell Dutch East India Company shares forward while spreading rumors of naval losses, prompting the Dutch authorities to enact the world's first ban on naked short selling in 1610.",
+    "source": "Edward Chancellor, Devil Take the Hindmost: A History of Financial Speculation (1999)"
+  },
+  {
+    "id": 90,
+    "type": "history",
+    "snippet": "Dutch Tulip Mania Peaks and Collapses in Haarlem (February 1637)",
+    "explanation": "Speculative forward contracts on rare virus-streaked tulip bulbs reached prices exceeding skilled craftsmen's multi-year wages before buyers abruptly failed to show up at a routine bulb auction in Haarlem, freezing the contract market overnight.",
+    "source": "Anne Goldgar, Tulipmania: Money, Honor, and Knowledge in the Dutch Golden Age (2007)"
+  },
+  {
+    "id": 91,
+    "type": "history",
+    "snippet": "A Water Authority Bond Issued in 1648 Still Pays Interest Today",
+    "explanation": "The Hoogheemraadschap Lekdijk Bovendams (a Dutch water board) issued a perpetual bearer bond on goatskin parchment in 1648 to repair river dikes; Yale University holds the bond and still collects its annual 2.5% interest in euros.",
+    "source": "Beinecke Rare Book & Manuscript Library Archive, Yale University"
+  },
+  {
+    "id": 92,
+    "type": "history",
+    "snippet": "Sveriges Riksbank Founded as the World's Oldest Central Bank (1668)",
+    "explanation": "After Stockholm Banco collapsed from over-issuing Europe's first paper banknotes, the Swedish parliament took control and established Riksens Ständers Bank in 1668, laying the institutional template for central banking.",
+    "source": "Sveriges Riksbank Official Historical Archives"
+  },
+  {
+    "id": 93,
+    "type": "history",
+    "snippet": "Founding of the Bank of England to Finance the Nine Years' War (1694)",
+    "explanation": "After King William III's navy was defeated by France, Scottish financier William Paterson proposed raising £1.2 million from private subscribers in just 12 days in exchange for a royal charter to issue banknotes and manage government debt.",
+    "source": "Bank of England Royal Charter (July 27, 1694)"
+  },
+  {
+    "id": 94,
+    "type": "history",
+    "snippet": "Dojima Rice Exchange Establishes the First Formal Futures Market (1697–1730)",
+    "explanation": "Japanese merchants in Osaka traded standardized 'empty rice' warehouse receipts disconnected from immediate physical delivery, developing candlestick charting techniques later popularized globally by Munehisa Homma.",
+    "source": "Ulrike Schaede, Forwards and Futures in Tokugawa-Period Japan (1989)"
+  },
+  {
+    "id": 95,
+    "type": "history",
+    "snippet": "John Law's Mississippi Bubble Collapses French Public Finance (1720)",
+    "explanation": "Scottish economist John Law merged France's central bank with the Mississippi Company to swap royal debt for equity, printing so much paper currency to prop up the stock price that French inflation soared and the system collapsed in 1720.",
+    "source": "Antoin E. Murphy, John Law: Economic Theorist and Policy-Maker (1997)"
+  },
+  {
+    "id": 96,
+    "type": "history",
+    "snippet": "The British South Sea Bubble and the Bubble Act of 1720",
+    "explanation": "The South Sea Company assumed Britain's national debt on the promise of a trade monopoly with Spanish America; its stock rose nearly tenfold in 1720 before crashing by 80%, prompting Parliament to restrict new joint-stock charters for a century.",
+    "source": "Helen J. Paul, The South Sea Bubble: An Economic History of its Origins and Consequences (2011)"
+  },
+  {
+    "id": 97,
+    "type": "history",
+    "snippet": "Continental Currency Hyperinflation Spawns 'Not Worth a Continental' (1775–1781)",
+    "explanation": "Lacking taxation authority during the American Revolutionary War, the Continental Congress printed over $240 million in paper bills—further debased by British counterfeiters—until the notes lost 99% of their purchasing power.",
+    "source": "Farley Grubb, The Continental Dollar: How the American Revolution Was Financed (2023)"
+  },
+  {
+    "id": 98,
+    "type": "history",
+    "snippet": "Alexander Hamilton's Assumption of State Revolutionary War Debts (1790)",
+    "explanation": "In the Compromise of 1790, Treasury Secretary Alexander Hamilton secured federal assumption of $25 million in defaulted state war debts at par in exchange for locating the U.S. capital along the Potomac, instantly establishing high U.S. sovereign creditworthiness.",
+    "source": "Alexander Hamilton, First Report on the Public Credit (January 1790)"
+  },
+  {
+    "id": 99,
+    "type": "history",
+    "snippet": "The Buttonwood Agreement Establishes the New York Stock Exchange (1792)",
+    "explanation": "Following the Panic of 1792, twenty-four stockbrokers signed a two-sentence pact under a buttonwood tree at 68 Wall Street agreeing to trade securities exclusively with one another at a minimum 0.25% commission.",
+    "source": "Buttonwood Agreement Manuscript (May 17, 1792), NYSE Archives"
+  },
+  {
+    "id": 100,
+    "type": "history",
+    "snippet": "Britain Introduces the First Modern Income Tax Against Napoleon (1799)",
+    "explanation": "Prime Minister William Pitt the Younger introduced a graduated tax of up to 10% on incomes above £60 to pay for weapons and coalition subsidies in the Napoleonic Wars, establishing the fiscal template for modern state taxation.",
+    "source": "UK Parliament Tax Archives, Income Tax Act 1799"
+  },
+  {
+    "id": 101,
+    "type": "history",
+    "snippet": "Gregor MacGregor's Fictional 'Poyais' Sovereign Bond Fraud (1822)",
+    "explanation": "Scottish adventurer Gregor MacGregor invented a prosperous Central American country called 'Poyais'—complete with fake maps, currency, and a 370-page guidebook—successfully floating £200,000 in sovereign bonds on the London market.",
+    "source": "David Sinclair, The Land That Never Was (2003)"
+  },
+  {
+    "id": 102,
+    "type": "history",
+    "snippet": "President Andrew Jackson Vetoes the Second Bank of the United States (1832)",
+    "explanation": "Jackson's dismantling of the national central bank and shifting of federal deposits into state 'pet banks' fueled a wild western land-speculation boom that collapsed in the severe Panic of 1837 after he mandated gold and silver payments via the Specie Circular.",
+    "source": "Peter L. Rousseau, Jacksonian Monetary Policy, Specie Flows, and the Panic of 1837 (2002)"
+  },
+  {
+    "id": 103,
+    "type": "history",
+    "snippet": "British Railway Mania Absorbs 7% of UK GDP at Peak (1845–1847)",
+    "explanation": "Parliament authorized over 270 new railway companies in 1846 alone as middle-class investors poured life savings into leveraged 10%-deposit railway shares; when the Bank of England hiked interest rates, share prices crashed 50–85%, though the physical rail network transformed Britain.",
+    "source": "Gareth Campbell, Myopic Rationality in the British Railway Mania (2012)"
+  },
+  {
+    "id": 104,
+    "type": "history",
+    "snippet": "Chicago Board of Trade Standardizes Agricultural Futures Contracts (1865)",
+    "explanation": "Founded in 1848 to solve seasonal grain price swings, the CBOT formalized exchange-traded 'to-arrive' contracts in 1865 with standardized grain grades and margin requirements, creating the modern derivatives clearing model.",
+    "source": "William Cronon, Nature's Metropolis: Chicago and the Great West (1991)"
+  },
+  {
+    "id": 105,
+    "type": "history",
+    "snippet": "The First Transatlantic Telegraph Cable Unifies Global Arbitrage (1866)",
+    "explanation": "Before 1866, price discrepancies between London and New York stock and cotton markets took 10 days by steamship to arbitrage; the permanent undersea telegraph cable compressed cross-border price discovery to minutes, earning Wall Street connections the nickname 'cable'.",
+    "source": "Kenneth D. Garbade & William L. Silber, Technology, Communication and the Performance of Financial Markets (1978)"
+  },
+  {
+    "id": 106,
+    "type": "history",
+    "snippet": "Black Friday Gold Corner Attempt by Jay Gould and Jim Fisk (1869)",
+    "explanation": "Financiers Jay Gould and James Fisk attempted to corner the U.S. physical gold market while lobbying President Ulysses S. Grant not to sell Treasury gold; when Grant ordered $4 million in federal gold sold on September 24, 1869, gold prices plunged in minutes and bankrupted dozens of brokerage firms.",
+    "source": "Maury Klein, The Life and Legend of Jay Gould (1986)"
+  },
+  {
+    "id": 107,
+    "type": "history",
+    "snippet": "Walter Bagehot Formulates the 'Lender of Last Resort' Doctrine (1873)",
+    "explanation": "Following the Overend, Gurney & Co. collapse of 1866, Economist editor Walter Bagehot published 'Lombard Street', arguing that to stop banking panics, central banks must lend freely at a high penalty rate against good collateral.",
+    "source": "Walter Bagehot, Lombard Street: A Description of the Money Market (1873)"
+  },
+  {
+    "id": 108,
+    "type": "history",
+    "snippet": "The Panic of 1873 Triggers the Six-Year 'Long Depression'",
+    "explanation": "Overbuilding of post-Civil War railroads combined with the Coinage Act of 1873 (demonetizing silver) caused the collapse of banking powerhouse Jay Cooke & Co., forcing the New York Stock Exchange to close for 10 days for the first time in its history.",
+    "source": "Scott Reynolds Nelson, A Nation of Deadbeats: An Uncommon History of America's Financial Disasters (2012)"
+  },
+  {
+    "id": 109,
+    "type": "history",
+    "snippet": "Barings Bank Nearly Collapses from Argentine Sovereign Debt (1890)",
+    "explanation": "London's illustrious Barings Bank overextended itself underwriting Argentine waterworks and sovereign bonds; when Argentina defaulted in 1890, Bank of England Governor William Lidderdale organized the first modern central-bank-led private consortium bailout to prevent systemic contagion.",
+    "source": "Philip Ziegler, The Sixth Great Power: Barings 1762–1929 (1988)"
+  },
+  {
+    "id": 110,
+    "type": "history",
+    "snippet": "Charles Dow Launches the 12-Stock Dow Jones Industrial Average (1896)",
+    "explanation": "On May 26, 1896, Charles Dow published the first industrial stock average at 40.94, comprising 12 commodity-heavy titans like American Cotton Oil, U.S. Leather, and General Electric to give investors a single barometer of industrial business activity.",
+    "source": "The Wall Street Journal Archives (May 26, 1896)"
+  },
+  {
+    "id": 111,
+    "type": "history",
+    "snippet": "J.P. Morgan Locks Bankers in His Library During the Panic of 1907",
+    "explanation": "After a failed copper corner triggered runs on New York's unregulated trust companies, 70-year-old J.P. Morgan personally audited institutions and locked rival bank presidents in his Madison Avenue library until 4:45 AM to force them to sign a collective rescue pledge.",
+    "source": "Robert F. Bruner & Sean D. Carr, The Panic of 1907: Lessons Learned from the Market's Perfect Storm (2007)"
+  },
+  {
+    "id": 112,
+    "type": "history",
+    "snippet": "Secret Jekyll Island Meeting Designs the Federal Reserve System (1910)",
+    "explanation": "Travelling in a private railcar under first-name aliases to avoid press detection, Senator Nelson Aldrich and six senior Wall Street bankers met on Jekyll Island, Georgia, for nine days to draft the blueprint for the Federal Reserve Act of 1913.",
+    "source": "Federal Reserve Bank of Atlanta Historical Archives; Roger Lowenstein, America's Bank (2015)"
+  },
+  {
+    "id": 113,
+    "type": "history",
+    "snippet": "NYSE Closes for Four Months at the Outbreak of World War I (1914)",
+    "explanation": "When European powers declared war in July 1914 and foreign investors scrambled to liquidate U.S. stocks for gold, Treasury Secretary William Gibbs McAdoo and NYSE leadership shut the exchange from July 31 to December 12—marking the transition of world financial leadership from London to New York.",
+    "source": "William L. Silber, When Washington Shut Down Wall Street (2007)"
+  },
+  {
+    "id": 114,
+    "type": "history",
+    "snippet": "Charles Ponzi's Postal Reply Coupon Arbitrage Scheme Collapses (1920)",
+    "explanation": "In Boston, Charles Ponzi promised investors a 50% return in 45 days by claiming to arbitrage international postal reply coupons from war-torn Europe; in reality, he purchased almost no coupons and used new deposits to pay earlier investors until the Boston Post exposed the math.",
+    "source": "Mitchell Zuckoff, Ponzi's Scheme: The True Story of a Financial Legend (2005)"
+  },
+  {
+    "id": 115,
+    "type": "history",
+    "snippet": "Weimar Germany Hyperinflation Peaks at 4.2 Trillion Marks per Dollar (1923)",
+    "explanation": "When Germany printed marks unconditionally to pay striking workers during the French occupation of the Ruhr industrial valley, prices doubled every 3.7 days by November 1923 before Hjalmar Schacht stabilized the currency with the land-backed Rentenmark.",
+    "source": "Adam Fergusson, When Money Dies: The Nightmare of Deficit Spending, Devaluation, and Hyperinflation in Weimar Germany (1975)"
+  },
+  {
+    "id": 116,
+    "type": "history",
+    "snippet": "Wall Street Crash of 1929 Destroys 89% of Dow Value Over Three Years",
+    "explanation": "Fueled by 10%-margin retail brokerage accounts and leveraged investment trusts, the Roaring Twenties bull market unraveled on Black Thursday and Black Tuesday (October 1929), eventually falling from 381.17 in September 1929 to 41.22 in July 1932—a peak not recovered until 1954.",
+    "source": "John Kenneth Galbraith, The Great Crash, 1929 (1954)"
+  },
+  {
+    "id": 117,
+    "type": "history",
+    "snippet": "Smoot-Hawley Tariff Act Triggers Global Retaliation and Trade Collapse (1930)",
+    "explanation": "Despite a petition signed by 1,028 economists urging a veto, President Herbert Hoover signed the Smoot-Hawley Act raising U.S. duties on over 20,000 imported goods; trading partners immediately retaliated, contributing to a 66% collapse in global trade between 1929 and 1934.",
+    "source": "Douglas A. Irwin, Peddling Protectionism: Smoot-Hawley and the Great Depression (2011)"
+  },
+  {
+    "id": 118,
+    "type": "history",
+    "snippet": "Glass-Steagall Act Establishes the FDIC and Separates Banking (1933)",
+    "explanation": "After 9,000 U.S. banks failed during the early Great Depression, the Banking Act of 1933 created federal deposit insurance (FDIC), effectively ending retail bank runs, and barred commercial deposit banks from underwriting corporate securities.",
+    "source": "Banking Act of 1933 (Pub.L. 73–66), U.S. Statutes at Large"
+  },
+  {
+    "id": 119,
+    "type": "history",
+    "snippet": "Executive Order 6102 and the Gold Reserve Act Devalue the Dollar (1933–1934)",
+    "explanation": "To break the deflationary grip of the gold standard during the Great Depression, President Franklin D. Roosevelt required citizens to exchange monetary gold for paper dollars at $20.67/oz and then revalued gold to $35/oz in 1934, expanding the monetary base and reflating prices.",
+    "source": "Liaquat Ahamed, Lords of Finance: The Bankers Who Broke the World (2009); Ray Dalio, Big Debt Crises (2018)"
+  },
+  {
+    "id": 120,
+    "type": "history",
+    "snippet": "Bretton Woods Conference Establishes the Dollar-Gold Reserve Order (1944)",
+    "explanation": "Delegates from 44 Allied nations met in New Hampshire to design the post-WWII monetary order, pegging global currencies to the U.S. dollar, anchoring the dollar to gold at $35 per ounce, and establishing the IMF and World Bank.",
+    "source": "Bretton Woods Agreements Act (1944); Benn Steil, The Battle of Bretton Woods (2013)"
+  },
+  {
+    "id": 121,
+    "type": "history",
+    "snippet": "Hungarian Pengő Suffers the Worst Hyperinflation in Recorded History (1946)",
+    "explanation": "Devastated by World War II destruction and reparation obligations, Hungary saw prices double every 15 hours by July 1946, culminating in the issuance of a 100-quintillion (10^20) pengő banknote before currency reform introduced the gold-anchored forint.",
+    "source": "Steve H. Hanke & Nicholas Krus, World Hyperinflations Table, Cato Institute (2012)"
+  },
+  {
+    "id": 122,
+    "type": "history",
+    "snippet": "Alfred Winslow Jones Creates the First Modern 'Hedged Fund' (1949)",
+    "explanation": "Sociologist and journalist Alfred Winslow Jones raised $100,000 in 1949 for a partnership that combined leveraged long stock picks with short sales to neutralize broader market risk while charging a 20% performance incentive fee—inventing the modern hedge fund structure.",
+    "source": "Sebastian Mallaby, More Money Than God: Hedge Funds and the Making of a New Elite (2010)"
+  },
+  {
+    "id": 123,
+    "type": "history",
+    "snippet": "Diners Club Introduces the First Multi-Merchant Charge Card (1950)",
+    "explanation": "After businessman Frank McNamara forgot his wallet at a New York restaurant in 1949, he and Ralph Schneider launched Diners Club in 1950 with 200 cardboard cards accepted at 27 Manhattan restaurants, launching the global payment-card industry.",
+    "source": "David L. Stearns, Electronic Value Exchange: Origins of the VISA Electronic Payment System (2011)"
+  },
+  {
+    "id": 124,
+    "type": "history",
+    "snippet": "The 'Nifty Fifty' One-Decision Growth Stock Mania (1968–1973)",
+    "explanation": "Institutional investors piled into 50 premier blue-chip growth companies like Polaroid, Xerox, and Avon under the belief that no price was too high for quality, driving P/E multiples to 60–90x before the 1973–1974 bear market slashed their share prices by 60–80%.",
+    "source": "Jeremy Siegel, Valuing Growth Stocks: Revisiting the Nifty Fifty, AAII Journal (1998)"
+  },
+  {
+    "id": 125,
+    "type": "history",
+    "snippet": "The 'Nixon Shock' Ends the Bretton Woods Gold Convertibility (August 15, 1971)",
+    "explanation": "Faced with persistent U.S. fiscal deficits from the Vietnam War and Great Society programs and dwindling gold reserves as European central banks demanded bullion, President Richard Nixon suspended the dollar's convertibility into gold, ushering in the modern era of floating fiat currencies.",
+    "source": "Jeffrey E. Garten, Three Days at Camp David: How a Secret Meeting in 1971 Transformed the Global Economy (2021)"
+  },
+  {
+    "id": 126,
+    "type": "history",
+    "snippet": "Black-Scholes-Merton Formula Revolutionizes Options Pricing (1973)",
+    "explanation": "The same year the Chicago Board Options Exchange (CBOE) opened for standardized options trading, Fischer Black, Myron Scholes, and Robert C. Merton published a closed-form mathematical equation for pricing options through dynamic delta hedging, unlocking the multi-trillion-dollar derivatives industry.",
+    "source": "Fischer Black & Myron Scholes, The Pricing of Options and Corporate Liabilities, Journal of Political Economy (1973)"
+  },
+  {
+    "id": 127,
+    "type": "history",
+    "snippet": "OPEC Oil Embargo quadruples Crude Prices and Triggers Stagflation (1973–1974)",
+    "explanation": "During the 1973 Yom Kippur War, Arab oil exporters imposed an embargo on Western nations and cut production, causing oil prices to jump from $3 to nearly $12 a barrel and shattering the Keynesian assumption that high inflation and high unemployment could not coexist.",
+    "source": "Daniel Yergin, The Prize: The Epic Quest for Oil, Money, and Power (1991)"
+  },
+  {
+    "id": 128,
+    "type": "history",
+    "snippet": "John Bogle Launches the First Retail S&P 500 Index Fund at Vanguard (1976)",
+    "explanation": "Ridiculed by active Wall Street managers as 'Bogle's Folly' and 'un-American' for settling for average market returns, Vanguard's First Index Investment Trust raised just $11.3 million at its August 1976 launch before growing into a multi-trillion-dollar passive investing revolution.",
+    "source": "Robin Wigglesworth, Trillions: How a Band of Wall Street Renegades Invented the Index Fund (2021)"
+  },
+  {
+    "id": 129,
+    "type": "history",
+    "snippet": "Silver Thursday: The Hunt Brothers' Leveraged Silver Corner Collapses (1980)",
+    "explanation": "Billionaire brothers Nelson Bunker and William Herbert Hunt accumulated rights to over a third of the world's deliverable silver supply, driving prices from $6 to $50/oz until COMEX restricted margin buying to liquidation-only orders, crashing silver by 50% in a single day on March 27, 1980.",
+    "source": "Stephen Fay, Beyond Greed: The Hunt Family's Bold Attempt to Corner the Silver Market (1982)"
+  },
+  {
+    "id": 130,
+    "type": "history",
+    "snippet": "The 'Volcker Shock' Crushes Double-Digit U.S. Inflation (1979–1982)",
+    "explanation": "Appointed by President Jimmy Carter in 1979 with U.S. inflation approaching 14.8%, Federal Reserve Chairman Paul Volcker restricted money supply growth and allowed the federal funds rate to peak above 19% in 1981, enduring a steep recession to restore long-term price stability.",
+    "source": "William L. Silber, Volcker: The Triumph of Persistence (2012)"
+  },
+  {
+    "id": 131,
+    "type": "history",
+    "snippet": "The Plaza Accord Coordinated Intervention Weakens the U.S. Dollar by 50% (1985)",
+    "explanation": "Finance ministers and central bankers from the US, UK, West Germany, France, and Japan met at New York's Plaza Hotel on September 22, 1985, agreeing to jointly intervene in currency markets to depreciate the overvalued U.S. dollar—doubling the yen's value within two years.",
+    "source": "Yoichi Funabashi, Managing the Dollar: From the Plaza to the Louvre (1988)"
+  },
+  {
+    "id": 132,
+    "type": "history",
+    "snippet": "Black Monday Crash Erases 22.6% of the Dow in a Single Trading Session (1987)",
+    "explanation": "On October 19, 1987, automated 'portfolio insurance' hedging algorithms created a cascading feedback loop between index futures and cash equities, wiping out 22.6% of the Dow Jones Industrial Average in one day—still the largest single-day percentage drop in stock market history.",
+    "source": "Report of the Presidential Task Force on Market Mechanisms (The Brady Report, 1988)"
+  },
+  {
+    "id": 133,
+    "type": "history",
+    "snippet": "KKR's $31 Billion Leveraged Buyout of RJR Nabisco (1988)",
+    "explanation": "Fought over six weeks with high-yield junk-bond financing, Kohlberg Kravis Roberts's acquisition of tobacco and food giant RJR Nabisco marked the apex of the 1980s corporate takeover boom and inspired the classic chronicle 'Barbarians at the Gate'.",
+    "source": "Bryan Burrough & John Helyar, Barbarians at the Gate: The Fall of RJR Nabisco (1989)"
+  },
+  {
+    "id": 134,
+    "type": "history",
+    "snippet": "The U.S. Savings and Loan (S&L) Crisis Costs $160 Billion (1986–1995)",
+    "explanation": "Deregulation allowed regional thrifts to gamble federally insured deposits on speculative commercial real estate and junk bonds after rising interest rates squeezed their fixed-rate mortgages, ultimately leads to the failure of 1,043 S&Ls and creation of the Resolution Trust Corporation.",
+    "source": "FDIC Division of Research and Statistics, History of the Eighties—Lessons for the Future (1997)"
+  },
+  {
+    "id": 135,
+    "type": "history",
+    "snippet": "Japan's Asset Price Bubble Peaks With Imperial Palace Land Worth California (1989)",
+    "explanation": "Driven by post-Plaza Accord monetary easing and corporate 'zaitech' financial engineering, the Nikkei 225 reached 38,915 on December 29, 1989, while Tokyo's Imperial Palace grounds were theoretically valued higher than all real estate in California—before a 34-year bear market began.",
+    "source": "Richard C. Koo, The Holy Grail of Macroeconomics: Lessons from Japan's Great Recession (2008)"
+  },
+  {
+    "id": 136,
+    "type": "history",
+    "snippet": "Black Wednesday: George Soros and Speculators Break the Bank of England (1992)",
+    "explanation": "Recognizing that Britain's recessionary economy could not sustain the high German interest rates required by the European Exchange Rate Mechanism (ERM), Soros's Quantum Fund shorted over $10 billion in sterling on September 16, 1992, forcing the UK out of the ERM and netting roughly $1 billion.",
+    "source": "Sebastian Mallaby, More Money Than God (2010); UK Treasury Black Wednesday Papers (2005)"
+  },
+  {
+    "id": 137,
+    "type": "history",
+    "snippet": "Rogue Trader Nick Leeson Collapses 233-Year-Old Barings Bank (1995)",
+    "explanation": "Operating from Singapore while simultaneously running both the trading desk and the back-office settlement records, 28-year-old Nick Leeson hid £827 million in unauthorized Nikkei 225 futures and straddle losses in error account '88888' after the Kobe earthquake, rendering Britain's oldest merchant bank insolvent.",
+    "source": "Report of the Board of Banking Supervision Inquiry into the Circumstances of the Collapse of Barings (1995)"
+  },
+  {
+    "id": 138,
+    "type": "history",
+    "snippet": "The 1997 Asian Financial Crisis Begins With the Floating of the Thai Baht",
+    "explanation": "After booming 'Asian Tiger' economies accumulated massive short-term U.S. dollar debt while maintaining fixed exchange rates, Thailand exhausted its foreign reserves defending the baht on July 2, 1997, triggering currency devaluations and IMF bailouts across Indonesia, South Korea, and Malaysia.",
+    "source": "Paul Blustein, The Chastening: Inside the Crisis That Rocked the Global Financial System (2001)"
+  },
+  {
+    "id": 139,
+    "type": "history",
+    "snippet": "Collapse and $3.6 Billion Wall Street Bailout of Long-Term Capital Management (1998)",
+    "explanation": "Led by Wall Street veteran John Meriwether and two Nobel laureate economists, LTCM leveraged $4.7 billion of equity into over $125 billion of assets and $1.25 trillion in notional derivatives; when Russia defaulted on domestic ruble bonds in August 1998, global liquidity spreads blew out, forcing the New York Fed to coordinate a 14-bank rescue.",
+    "source": "Roger Lowenstein, When Genius Failed: The Rise and Fall of Long-Term Capital Management (2000)"
+  },
+  {
+    "id": 140,
+    "type": "history",
+    "snippet": "Launch of the Euro Creates a 11-Nation Monetary Union (January 1, 1999)",
+    "explanation": "Eleven European Union member states irrevocably locked their exchange rates and transferred monetary policy to the newly formed European Central Bank in Frankfurt on January 1, 1999, introducing physical euro banknotes and coins three years later in 2002.",
+    "source": "Maastricht Treaty (1992); European Central Bank Historical Archives"
+  },
+  {
+    "id": 141,
+    "type": "history",
+    "snippet": "Dot-Com Bubble Burst Wipes Out 78% of the Nasdaq Composite (2000–2002)",
+    "explanation": "After speculative euphoria pushed loss-making internet startups to multi-billion-dollar valuations simply for adding '.com' to their names, the Nasdaq peaked at 5,048.62 on March 10, 2000, and plummeted 78% to 1,114.11 by October 2002, erasing $5 trillion in market value.",
+    "source": "John Cassidy, Dot.con: How America Lost Its Mind and Money in the Internet Era (2002)"
+  },
+  {
+    "id": 142,
+    "type": "history",
+    "snippet": "Enron Bankruptcy and WorldCom Accounting Fraud Spur Sarbanes-Oxley (2001–2002)",
+    "explanation": "Enron used off-balance-sheet special purpose vehicles to hide billions in debt while WorldCom fraudulently capitalized routine line expenses; their twin collapses wiped out Arthur Andersen LLP and led Congress to pass the Sarbanes-Oxley Act holding CEOs and CFOs personally liable for financial statements.",
+    "source": "Bethany McLean & Peter Elkind, The Smartest Guys in the Room (2003); Sarbanes-Oxley Act of 2002"
+  },
+  {
+    "id": 143,
+    "type": "history",
+    "snippet": "Lehman Brothers Files the Largest Bankruptcy in U.S. History (September 15, 2008)",
+    "explanation": "Holding $639 billion in assets and choked by illiquid subprime mortgage-backed securities and 30-to-1 leverage, 158-year-old investment bank Lehman Brothers filed for Chapter 11 after weekend rescue talks failed, causing Reserve Primary Fund to 'break the buck' and freezing global commercial paper markets.",
+    "source": "Financial Crisis Inquiry Commission (FCIC) Final Report (2011); Andrew Ross Sorkin, Too Big to Fail (2009)"
+  },
+  {
+    "id": 144,
+    "type": "history",
+    "snippet": "Satoshi Nakamoto Embeds Bank Bailout Headline in Bitcoin's Genesis Block (2009)",
+    "explanation": "On January 3, 2009, pseudonymous creator Satoshi Nakamoto mined the first block of the Bitcoin blockchain, permanently embedding the London Times front-page headline: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks' as both a timestamp and monetary critique.",
+    "source": "Bitcoin Blockchain Block #0 (Coinbase Parameter Hex); Satoshi Nakamoto Whitepaper (2008)"
+  },
+  {
+    "id": 145,
+    "type": "history",
+    "snippet": "The 'Flash Crash' Erases $1 Trillion of U.S. Equity Value in 36 Minutes (May 6, 2010)",
+    "explanation": "Triggered by a large automated E-mini S&P 500 futures sell algorithm interacting with high-frequency trading liquidity withdrawal and spoofing, the Dow plunged nearly 1,000 points in minutes—with blue-chip stocks briefly trading for a penny—before rebounding mostly by the close.",
+    "source": "Joint CFTC-SEC Staff Report on the Market Events of May 6, 2010"
+  },
+  {
+    "id": 146,
+    "type": "history",
+    "snippet": "Swiss National Bank Abandons the 1.20 Euro Cap, Sending Franc Up 30% in Minutes (2015)",
+    "explanation": "Days after calling its 1.20 EUR/CHF exchange rate floor a 'cornerstone' policy, the Swiss National Bank unexpectedly scrapped the peg on January 15, 2015, ahead of ECB quantitative easing, triggering a 30% intraday surge in the Swiss franc that bankrupted retail FX brokers worldwide.",
+    "source": "Swiss National Bank Press Release (January 15, 2015); Bank for International Settlements Review"
+  },
+  {
+    "id": 147,
+    "type": "history",
+    "snippet": "WTI Crude Oil Futures Plunge Below Zero to -$37.63 per Barrel (April 20, 2020)",
+    "explanation": "As COVID-19 lockdowns crushed global fuel demand and storage tanks at the Cushing, Oklahoma delivery hub neared 100% capacity, financial traders holding expiring May WTI futures contracts had to pay buyers up to $37.63 per barrel to take physical delivery off their hands.",
+    "source": "CME Group Market Data & U.S. Commodity Futures Trading Commission WTI Report (2020)"
+  },
+  {
+    "id": 148,
+    "type": "history",
+    "snippet": "GameStop Short Squeeze Exposes Retail Order Flow and Clearing Margin Risk (January 2021)",
+    "explanation": "Coordinated retail buying of heavily shorted GameStop (GME) shares and call options—where short interest exceeded 140% of public float—drove the stock up over 1,700% in January 2021, inflicting multibillion-dollar losses on hedge funds and forcing brokers to halt buying due to NSCC clearinghouse collateral calls.",
+    "source": "U.S. Securities and Exchange Commission Staff Report on Equity and Options Market Structure Conditions in Early 2021"
+  },
+  {
+    "id": 149,
+    "type": "history",
+    "snippet": "UK 'Mini-Budget' Sparks LDI Pension Crisis and Bank of England Gilt Intervention (2022)",
+    "explanation": "When Prime Minister Liz Truss's government announced £45 billion of unfunded tax cuts on September 23, 2022, UK 30-year gilt yields spiked over 120 basis points in days, triggering margin calls on pension funds' Liability-Driven Investment (LDI) derivatives and forcing an emergency Bank of England bond-buying rescue.",
+    "source": "Bank of England Financial Policy Committee Post-Mortem on LDI Gilt Market Dysfunction (2022)"
+  },
+  {
+    "id": 150,
+    "type": "history",
+    "snippet": "Silicon Valley Bank Collapses After a $42 Billion Single-Day Digital Bank Run (2023)",
+    "explanation": "Having invested surge tech-startup deposits into long-duration Treasury and agency bonds near zero interest rates, SVB suffered huge unrealized losses when the Fed hiked rates in 2022–2023; when depositors pulled $42 billion via mobile banking in one day on March 9, 2023, it became the fastest major bank run in history.",
+    "source": "Federal Reserve Board Review of the Federal Reserve's Supervision and Regulation of Silicon Valley Bank (April 2023)"
+  }
+]

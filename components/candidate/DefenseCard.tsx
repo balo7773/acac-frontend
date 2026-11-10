@@ -52,7 +52,7 @@ export function DefenseCard({ data, offsetMs, onDone }: { data: PortalData; offs
       <div className="flex items-center justify-between mb-6">
         <div>
           <h1 className="text-2xl font-bold text-[#082552]">Defense Question</h1>
-          <p className="text-sm text-[#6B7280]">Player {data.participant_number}</p>
+          <p className="text-sm text-[#6B7280]">Candidate #{data.participant_number}</p>
         </div>
         <div className={`px-4 py-2 rounded-full font-mono font-bold ${expired ? 'bg-[#FFF1F2] text-[#FF0059]' : ms < 60000 ? 'bg-[#FFF1F2] text-[#FF0059]' : 'bg-[#EFF6FF] text-[#0067f5]'}`}>
           {expired ? 'TIME UP' : formatMMSS(ms)}

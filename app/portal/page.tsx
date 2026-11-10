@@ -4,6 +4,7 @@ import { apiFetch, ApiError } from '@/lib/api';
 import { useTimeOffset } from '@/lib/useTimeOffset';
 import { UploadCard } from '@/components/candidate/UploadCard';
 import { DefenseCard } from '@/components/candidate/DefenseCard';
+import VerdictReveal from '@/components/candidate/VerdictReveal';
 import {
   PreLaunchCard,
   WaitingCard,
@@ -40,6 +41,13 @@ export default function PortalPage() {
   const [verdict, setVerdict] = useState<Verdict | null>(null);
   const [error, setError] = useState<string | null>(null);
   const { offsetMs } = useTimeOffset();
+  
+  // Complaint state hooks (MUST be at the top before any early returns)
+  const [showComplaint, setShowComplaint] = useState(false);
+  const [compSubject, setCompSubject] = useState('');
+  const [compMsg, setCompMsg] = useState('');
+  const [compStatus, setCompStatus] = useState('');
+
 
   const load = async () => {
     try {
@@ -88,6 +96,22 @@ export default function PortalPage() {
     return <div className="p-16 text-center text-[#6B7280]">Loading your portal…</div>;
   }
 
+
+  const submitComplaint = async () => {
+    if (!compSubject || !compMsg) return;
+    setCompStatus('sending');
+    try {
+      await apiFetch('/api/candidate/complaints', {
+        method: 'POST',
+        body: JSON.stringify({ subject: compSubject, message: compMsg })
+      });
+      setCompStatus('sent');
+      setTimeout(() => { setShowComplaint(false); setCompStatus(''); setCompSubject(''); setCompMsg(''); }, 2000);
+    } catch (e) {
+      setCompStatus('error');
+    }
+  };
+
   const phase = data.current_phase;
 
   if (phase === 'pre_launch') {
@@ -95,11 +119,63 @@ export default function PortalPage() {
   }
 
   if (phase === 'results_published' || phase === 'stage_2_live' || phase === 'completed') {
-    return <VerdictCard verdict={verdict} pno={data.participant_number} />;
+    return <VerdictReveal verdict={verdict} pno={data.participant_number} />;
   }
 
   if (data.submission_status === 'draft') {
-    return <UploadCard data={data} onUploaded={load} />;
+    return (
+      <div className="max-w-2xl mx-auto space-y-6">
+        
+        {/* Competition Topic */}
+        <div className="bg-[#082552] text-white border border-[#1E3A8A] rounded-2xl p-6 md:p-8 shadow-sm">
+          <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#7cb4fc] mb-2">Competition Topic</p>
+          
+          <p className="text-[15px] leading-relaxed mb-4 font-medium text-white">
+            Acting as the Special Adviser to the President on Financial and Economic Reforms, propose a specific economic policy of your choice. Analyze its real-world viability, the trade-offs involved, and its potential impact on the Nigerian economy.
+          </p>
+          
+          <ul className="space-y-3 text-sm text-[#93C5FD]">
+            <li className="flex items-start gap-2">
+              <span className="text-[#7cb4fc] font-bold mt-0.5">•</span>
+              <span><strong className="text-white">Historical Context:</strong> If your proposed policy (or a similar one) has been implemented previously in Nigeria or elsewhere, you must explicitly reference that historical attempt and its outcomes.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#7cb4fc] font-bold mt-0.5">•</span>
+              <span><strong className="text-white">Fiscal Realism:</strong> You must explicitly address the fiscal cost of your proposed policy, how will it be funded, and what is the immediate trade-off?</span>
+            </li>
+          </ul>
+        </div>
+
+        {/* Submission Rules */}
+        <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8 mb-6 shadow-sm">
+          <h2 className="text-xl font-bold text-[#082552] mb-4">Submission Rules</h2>
+          <ul className="space-y-3 text-sm text-[#4B5563]">
+            <li className="flex items-start gap-2">
+              <span className="text-[#0067f5] font-bold mt-0.5">•</span>
+              <span><strong className="text-[#082552]">Format:</strong> PDF only.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#0067f5] font-bold mt-0.5">•</span>
+              <span><strong className="text-[#082552]">Length:</strong> Minimum 1,000 words. Maximum 2,500 words.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#0067f5] font-bold mt-0.5">•</span>
+              <span><strong className="text-[#082552]">Typography:</strong> Times New Roman, 12pt font size.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#0067f5] font-bold mt-0.5">•</span>
+              <span><strong className="text-[#082552]">Styling:</strong> All text must be in black. Anything worth highlighting must be underlined and italicized.</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-[#0067f5] font-bold mt-0.5">•</span>
+              <span><strong className="text-[#082552]">Originality:</strong> No AI-generated prose (AI for research is allowed). If you use AI to draft any text, you must edit it properly.</span>
+            </li>
+          </ul>
+        </div>
+        
+        <UploadCard data={data} onUploaded={load} />
+      </div>
+    );
   }
 
   if (data.window_outcome === 'preparing') {

@@ -15,6 +15,7 @@ const ico = (d: string) => (
 
 const navItems: NavItem[] = [
   { href: "/admin", label: "Dashboard", enabled: true, icon: ico("M3 10.5L10 4l7 6.5M5 9v7h4v-4h2v4h4V9") },
+  { href: "/admin/candidates", label: "Candidates", enabled: true, icon: ico("M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z") },
   {
     href: "/admin/judges",
     label: "Judges",
@@ -27,10 +28,11 @@ const navItems: NavItem[] = [
     enabled: true,
     icon: ico("M6 3.5h8v3.75a4 4 0 01-8 0V3.5zM6 5H3.5v1a2.5 2.5 0 002.6 2.5M14 5h2.5v1a2.5 2.5 0 01-2.6 2.5M10 11.25V14M7 16.5h6M8 14h4"),
   },
-  { href: "#", label: "Similarity", enabled: false, note: "Part 6", icon: ico("M7.5 13.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zM12.5 15.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9z") },
-  { href: "#", label: "Settings", enabled: false, note: "Part 6", icon: ico("M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM10 2.5v2M10 15.5v2M17.5 10h-2M4.5 10h-2M15.3 4.7l-1.4 1.4M6.1 13.9l-1.4 1.4M15.3 15.3l-1.4-1.4M6.1 6.1L4.7 4.7") },
-  { href: "#", label: "AI Health", enabled: false, note: "Part 6", icon: ico("M2.5 10h3l2-4.5 3 9 2-4.5h5") },
-  { href: "#", label: "Audit Log", enabled: false, note: "Part 6", icon: ico("M5.5 2.5h6.5l3 3v12h-9.5v-15zM12 2.5v3h3M8 9.5h4.5M8 12.5h4.5") },
+  { href: "/admin/similarity", label: "Similarity", enabled: true, icon: ico("M7.5 13.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zM12.5 15.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9z") },
+  { href: "/admin/settings", label: "Settings", enabled: true, icon: ico("M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM10 2.5v2M10 15.5v2M17.5 10h-2M4.5 10h-2M15.3 4.7l-1.4 1.4M6.1 13.9l-1.4 1.4M15.3 15.3l-1.4-1.4M6.1 6.1L4.7 4.7") },
+  { href: "/admin/ai-health", label: "AI Health", enabled: true, icon: ico("M2.5 10h3l2-4.5 3 9 2-4.5h5") },
+  { href: "/admin/complaints", label: "Complaints", enabled: true, icon: ico("M18 8a6 6 0 00-12 0c0 7-3 9-3 9h18s-3-2-3-9 M13.73 21a2 2 0 01-3.46 0") },
+  { href: "/admin/audit-log", label: "Audit Log", enabled: true, icon: ico("M5.5 2.5h6.5l3 3v12h-9.5v-15zM12 2.5v3h3M8 9.5h4.5M8 12.5h4.5") },
 ];
 
 function isActive(pathname: string, href: string) {

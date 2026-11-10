@@ -7,9 +7,10 @@ import { useState } from "react";
 import { portalPathFor, roleLabel, useAuth } from "@/lib/auth";
 
 const NAV_ITEMS = [
+  { label: "About", href: "/about" },
   { label: "Competition Stages", href: "/#stages" },
-  { label: "Rules", href: "/rules" },
-  { label: "FAQ", href: "/faq" },
+  { label: "Judges", href: "/judges" },
+  { label: "The Team", href: "/team" },
 ];
 
 export default function SiteHeader() {
@@ -19,16 +20,22 @@ export default function SiteHeader() {
   const { user, loading, logout } = useAuth();
 
   // Hide nav on auth pages
+  const isPortal = 
+    pathname === "/judge" || pathname?.startsWith("/judge/") ||
+    pathname === "/admin" || pathname?.startsWith("/admin/") ||
+    pathname === "/portal" || pathname?.startsWith("/portal/");
+
   if (
     pathname === "/login" ||
     pathname === "/register" ||
-    pathname?.startsWith("/admin-login")
+    pathname?.startsWith("/admin-login") ||
+    isPortal
   ) {
     return null;
   }
 
   // /api/auth/me doesn't return display_name, so fall back to the role after a reload.
-  const greeting = user ? user.display_name ?? roleLabel(user.role) : "";
+  const greeting = user ? (user.display_name || (user.role === "candidate" ? `Candidate #${user.user_id}` : roleLabel(user.role))) : "";
 
   const handleLogout = async () => {
     setOpen(false);
@@ -50,9 +57,6 @@ export default function SiteHeader() {
             priority
           />
           <span className="text-[20px] font-bold tracking-tight text-acac-navy">ACAC</span>
-          <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-acac-muted">
-            Arena
-          </span>
         </Link>
 
         {/* Center nav — desktop */}

@@ -1,3 +1,5 @@
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
@@ -19,7 +21,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={jakarta.variable}>
       <body className="font-sans bg-[#F7F9FC] text-[#082552] antialiased">
-        <Providers>{children}</Providers>
+        <Providers><SiteHeader />
+        {children}
+        <SiteFooter /></Providers>
       </body>
     </html>
   );

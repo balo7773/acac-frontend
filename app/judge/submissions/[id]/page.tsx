@@ -121,7 +121,7 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
       </button>
 
       <div className="mb-6">
-        <div className="text-xs uppercase tracking-wide text-[#6B7280]">Player</div>
+        <div className="text-xs uppercase tracking-wide text-[#6B7280]">Candidate</div>
         <h1 className="text-3xl font-bold text-[#082552]">
           #{data.submission.participant_number}
         </h1>

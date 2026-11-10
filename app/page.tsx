@@ -1,19 +1,19 @@
-import SiteHeader from "./components/SiteHeader";
 import HeroSection from "./components/HeroSection";
-import BubbleLayer from "./components/BubbleLayer";
 import ThreeStages from "./components/ThreeStages";
-import SiteFooter from "./components/SiteFooter";
+import GlowLayer from "./components/GlowLayer";
+import QuoteCards from "./components/QuoteCards";
 
 export default function Home() {
   return (
-    <>
-      <SiteHeader />
-      <main>
+    <main>
+      <div className="relative overflow-hidden">
+        <GlowLayer />
         <HeroSection />
-        <BubbleLayer />
-        <ThreeStages />
-      </main>
-      <SiteFooter />
-    </>
+      </div>
+      <div className="pb-16 pt-6">
+        <QuoteCards />
+      </div>
+      <ThreeStages />
+    </main>
   );
 }

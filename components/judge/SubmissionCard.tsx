@@ -31,8 +31,8 @@ export function SubmissionCard({ row }: { row: SubmissionRow }) {
     >
       <div className="flex items-start justify-between">
         <div>
-          <div className="text-xs uppercase tracking-wide text-[#6B7280] mb-1">Player</div>
-          <div className="text-2xl font-bold text-[#082552]">#{row.participant_number}</div>
+          <div className="text-xs uppercase tracking-wide text-[#6B7280] mb-1">Candidate</div>
+          <div className="text-2xl font-bold text-[#082552]">#{String(row.participant_number).padStart(3, '0')}</div>
         </div>
         <span
           className="px-3 py-1 rounded-full text-xs font-medium"

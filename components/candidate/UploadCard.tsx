@@ -57,7 +57,7 @@ export function UploadCard({ data, onUploaded }: { data: PortalData; onUploaded:
     <div className="max-w-2xl mx-auto px-6 py-12">
       <div className="mb-6">
         <h1 className="text-3xl font-bold text-[#082552]">Submit your essay</h1>
-        <p className="text-[#6B7280] mt-1">Player {data.participant_number}</p>
+        <p className="text-[#6B7280] mt-1">Candidate #{data.participant_number}</p>
       </div>
 
       <div className="bg-white rounded-2xl border border-[#E5E7EB] p-8">
