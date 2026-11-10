@@ -73,7 +73,25 @@ export default function JudgesGrid() {
   if (loading) return <div className="text-center py-12 text-gray-500">Loading panel...</div>;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <>
+      {/* The Identity Marker */}
+      <div className={`p-5 rounded-2xl text-center mb-12 shadow-sm max-w-2xl mx-auto border transition-colors duration-500 ${
+        isRevealed 
+          ? "bg-green-50 border-green-200 text-green-900" 
+          : "bg-[#E0E7FF] border-[#C7D2FE] text-[#082552]"
+      }`}>
+        <p className="font-bold text-sm uppercase tracking-wider mb-1">
+          {isRevealed ? "Identities Revealed" : "Identity Protected"}
+        </p>
+        <p className="text-sm">
+          {isRevealed 
+            ? "The final stage has begun. The judging panel has been unmasked." 
+            : "The identities of the judging panel will be revealed when the final stage of the competition begins."}
+        </p>
+      </div>
+
+      {/* Judges Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {JUDGES.map((judge) => {
         const displayName = isRevealed ? judge.realName : judge.anonymousName;
         const displayImage = isRevealed ? judge.realImage : `/judges/judge-${judge.id}.jpg`;
@@ -112,5 +130,6 @@ export default function JudgesGrid() {
         );
       })}
     </div>
+    </>
   );
 }
