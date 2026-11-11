@@ -57,9 +57,15 @@ function NavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
   const [alertCount, setAlertCount] = useState(0);
 
   useEffect(() => {
-    apiFetch<{ total: number }>('/api/admin/notification-counts')
-      .then(res => setAlertCount(res.total))
-      .catch(e => alert('Badge API Error: ' + e.message));
+    // Fetch both lists directly (same as the Complaints page does)
+    Promise.all([
+      apiFetch<any[]>('/api/admin/complaints').catch(() => []),
+      apiFetch<any[]>('/api/admin/help-requests').catch(() => [])
+    ]).then(([complaints, helpRequests]) => {
+      const openComplaints = complaints.filter((c: any) => c.status === 'open').length;
+      const openHelp = helpRequests.filter((h: any) => h.status === 'open').length;
+      setAlertCount(openComplaints + openHelp);
+    });
   }, []);
 
   return (
