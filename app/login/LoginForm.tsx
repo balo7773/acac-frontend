@@ -84,7 +84,7 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
       const res = await fetch("/api/public/help-request", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ identifier: helpIdent.trim(), message: helpMsg.trim() })
+        body: JSON.stringify({ participant_number: helpIdent.trim(), message: helpMsg.trim() })
       });
       if (res.ok) {
         setHelpStatus("sent");
@@ -179,7 +179,7 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
           <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-xl relative">
             <button onClick={() => setShowHelp(false)} className="absolute top-4 right-4 text-gray-400 hover:text-gray-700 font-bold text-xl">&times;</button>
             <h3 className="text-xl font-bold text-[#082552] mb-2 pr-6">Account Locked?</h3>
-            <p className="text-sm text-[#6B7280] mb-5">Enter your Matric Number and a brief message. The Admin will reset your password.</p>
+            <p className="text-sm text-[#6B7280] mb-5">Enter your Candidate Number and a brief message. The Admin will reset your password.</p>
             
             {helpStatus === "sent" ? (
               <div className="bg-green-50 text-green-700 p-4 rounded-lg text-sm font-medium text-center">
@@ -188,14 +188,14 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
             ) : (
               <form onSubmit={submitHelp} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Matric Number</label>
-                  <input value={helpIdent} onChange={e => setHelpIdent(e.target.value)} placeholder="e.g. U26XXX****" className="w-full border rounded-lg p-2.5 text-sm" required />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Candidate Number</label>
+                  <input value={helpIdent} onChange={e => setHelpIdent(e.target.value)} placeholder="e.g. 1" className="w-full border rounded-lg p-2.5 text-sm" required />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
                   <textarea value={helpMsg} onChange={e => setHelpMsg(e.target.value)} placeholder="I'm locked out and need my password reset." className="w-full border rounded-lg p-2.5 text-sm h-24 resize-none" required />
                 </div>
-                {helpStatus === "error" && <p className="text-xs text-red-500">Could not find that Matric Number in our system.</p>}
+                {helpStatus === "error" && <p className="text-xs text-red-500">Could not find that Candidate Number in our system.</p>}
                 <button disabled={helpStatus === "sending"} type="submit" className="w-full bg-[#0067f5] text-white font-bold py-2.5 rounded-lg hover:bg-blue-600 transition-colors">
                   {helpStatus === "sending" ? "Sending..." : "Send SOS Request"}
                 </button>
