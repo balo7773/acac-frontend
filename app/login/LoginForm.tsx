@@ -25,6 +25,7 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
   const [password, setPassword] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [alert, setAlert] = useState<Alert>(null);
+  const [isTempPassword, setIsTempPassword] = useState(false);
   
   const [showHelp, setShowHelp] = useState(false);
   const [helpIdent, setHelpIdent] = useState("");
@@ -33,7 +34,7 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
 
   // Already signed in → bounce home.
   useEffect(() => {
-    if (!authLoading && user) router.replace(portalPathFor(user.role));
+    if (!authLoading && user && !isTempPassword) router.replace(portalPathFor(user.role));
   }, [authLoading, user, router]);
 
   const isCandidate = role === "candidate";
@@ -60,8 +61,9 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
     try {
       const me = await login(ident, password, role);
       
-      // Simple, foolproof logic: if the password typed was the temp password, force a reset
+      // Block the useEffect redirect and send to reset password
       if (password === "TempPass2026!") {
+        setIsTempPassword(true);
         router.push("/reset-password");
       } else {
         router.push(portalPathFor(me.role));
