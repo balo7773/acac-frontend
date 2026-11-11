@@ -59,7 +59,7 @@ function NavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
   useEffect(() => {
     apiFetch<{ total: number }>('/api/admin/notification-counts')
       .then(res => setAlertCount(res.total))
-      .catch(console.error);
+      .catch(e => alert('Badge API Error: ' + e.message));
   }, []);
 
   return (
