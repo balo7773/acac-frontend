@@ -20,6 +20,18 @@ const judgeTypeLabel = (t?: string) => {
   return 'Judge';
 };
 
+
+const getJudgeName = (mask?: string) => {
+  if (!mask) return "Judge";
+  const map: Record<string, string> = {
+    mask_owl: "Judge 1",
+    mask_falcon: "Judge 2",
+    mask_lion: "Judge 3",
+    mask_panther: "Judge 4",
+  };
+  return map[mask] || "Judge";
+};
+
 export function JudgeShell({ children }: { children: React.ReactNode }) {
   const { user, logout } = useAuth();
   const router = useRouter();
@@ -53,12 +65,12 @@ export function JudgeShell({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-4">
             <div className="hidden md:block text-right">
               <div className="text-sm font-medium text-[#082552]">
-                {maskDisplay(user?.mask_avatar)}
+                {getJudgeName(user?.mask_avatar)}
               </div>
               <div className="text-xs text-[#6B7280]">{judgeTypeLabel(user?.judge_type)}</div>
             </div>
             <div className="w-10 h-10 rounded-full bg-[#EFF6FF] flex items-center justify-center text-[#0067f5] font-bold">
-              {maskDisplay(user?.mask_avatar).charAt(0)}
+              {getJudgeName(user?.mask_avatar).charAt(0)}
             </div>
             <button
               onClick={handleLogout}
