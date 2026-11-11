@@ -293,18 +293,7 @@ function phaseFromWarning(w: string): string | null {
 }
 
 export default function AdminJudgesPage() {
-  const handleResetPassword = async (id: number) => {
-    if (!confirm("Are you sure you want to reset this judge's password? They will be given a temporary password and unblocked.")) return;
-    try {
-      const res = await apiFetch<{ temp_password: string }>(`/api/admin/users/judge/${id}/reset-password`, {
-        method: 'POST'
-      });
-      alert(`✅ Password Reset Successful!\n\nTemporary Password: ${res.temp_password}\n\nPlease send this to the judge immediately.`);
-      window.location.reload();
-    } catch (e: any) {
-      alert('Error: ' + e.message);
-    }
-  };
+
 
   const { showToast } = useToast();
   const [judges, setJudges] = useState<Judge[] | null>(null);
@@ -528,9 +517,6 @@ export default function AdminJudgesPage() {
                         </td>
                         <td className="px-5 py-3.5 text-right">
                           <div className="flex items-center justify-end gap-3">
-                            {!j.is_active && (
-                              <button onClick={() => handleResetPassword(j.id)} className="text-[#0067f5] hover:underline font-medium text-sm">Reset Pass</button>
-                            )}
                             {actionButton(j)}
                           </div>
                         </td>
