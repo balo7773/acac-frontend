@@ -8,6 +8,18 @@ export default function CandidatesPage() {
 
   useEffect(() => { apiFetch<any[]>('/api/admin/candidates').then(setCandidates).catch(console.error); }, []);
 
+  const resetPassword = async (candidate_id: number) => {
+    if (!confirm("Are you sure you want to reset this candidate's password? They will be given a temporary password.")) return;
+    try {
+      const res = await apiFetch<{ temp_password: string }>(`/api/admin/users/candidate/${candidate_id}/reset-password`, {
+        method: 'POST'
+      });
+      alert(`✅ Password Reset Successful!\n\nTemporary Password: ${res.temp_password}\n\nPlease send this to the candidate immediately.`);
+    } catch (e: any) {
+      alert('Error: ' + e.message);
+    }
+  };
+
   const viewEssay = async (submission_id: number) => {
     const res = await apiFetch<{ text: string }>(`/api/admin/candidates/${submission_id}/essay`);
     setEssayModal(res.text);
@@ -57,8 +69,9 @@ export default function CandidatesPage() {
                     <span className="text-gray-400">None</span>
                   )}
                 </td>
-                <td className="px-6 py-4">
-                  <button onClick={() => viewEssay(c.submission_id)} className="text-[#0067f5] hover:underline font-medium">Read Essay</button>
+                <td className="px-6 py-4 space-x-3 whitespace-nowrap">
+                  <button onClick={() => viewEssay(c.submission_id)} className="text-[#0067f5] hover:underline font-medium text-sm">Read Essay</button>
+                  <button onClick={() => resetPassword(c.id)} className="text-amber-600 hover:text-amber-800 hover:underline font-medium text-sm">Reset Pass</button>
                 </td>
               </tr>
             ))}
