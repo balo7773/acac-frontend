@@ -6,10 +6,6 @@ import { apiFetch } from "@/lib/api";
 import { usePathname, useRouter } from "next/navigation";
 import { roleLabel, useAuth } from "@/lib/auth";
 
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { roleLabel, useAuth } from "@/lib/auth";
-
 type NavItem = { href: string; label: string; enabled: boolean; note?: string; icon: ReactNode };
 
 const ico = (d: string) => (
@@ -56,11 +52,43 @@ function Wordmark() {
   );
 }
 
+function SidebarFooter({ onSignOut }: { onSignOut: () => void }) {
+  const { user } = useAuth();
+  const displayName = user?.display_name || "Admin";
+  const initial = displayName.charAt(0).toUpperCase();
+
+  return (
+    <div className="mt-auto border-t border-[#E5E7EB] pt-4">
+      <div className="flex items-center gap-3 px-2">
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0067f5] text-sm font-bold text-white">
+          {initial}
+        </div>
+        <div className="min-w-0 flex-1">
+          <p className="truncate text-sm font-semibold text-[#082552]">
+            Hi, {displayName.split(" ")[0]}
+          </p>
+          <p className="truncate text-xs text-[#6B7280]">
+            {user?.role ? roleLabel(user.role) : "Administrator"}
+          </p>
+        </div>
+      </div>
+      <button
+        onClick={onSignOut}
+        className="mt-4 flex w-full items-center gap-2 rounded-lg px-2 py-2 text-sm font-medium text-[#6B7280] transition-colors hover:bg-[#F7F9FC] hover:text-[#082552]"
+      >
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M8 3H5a2 2 0 00-2 2v10a2 2 0 002 2h3M13 14l4-4-4-4M17 10H8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+        Sign out
+      </button>
+    </div>
+  );
+}
+
 function NavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () => void }) {
   const [alertCount, setAlertCount] = useState(0);
 
   useEffect(() => {
-    // Fetch both lists directly (same as the Complaints page does)
     Promise.all([
       apiFetch<any[]>('/api/admin/complaints').catch(() => []),
       apiFetch<any[]>('/api/admin/help-requests').catch(() => [])
@@ -124,14 +152,12 @@ function NavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
   );
 }
 
-export function AdminShell({
- children }: { children: ReactNode }) {
+export function AdminShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const { logout } = useAuth();
   const [open, setOpen] = useState(false);
 
-  // Close the drawer on Escape.
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && setOpen(false);
@@ -147,7 +173,6 @@ export function AdminShell({
 
   return (
     <div className="min-h-screen bg-[#F7F9FC]">
-      {/* Desktop sidebar */}
       <aside className="fixed inset-y-0 left-0 z-30 hidden w-60 flex-col border-r border-[#E5E7EB] bg-white px-4 py-6 md:flex">
         <div className="px-2">
           <Wordmark />
@@ -158,7 +183,6 @@ export function AdminShell({
         <SidebarFooter onSignOut={signOut} />
       </aside>
 
-      {/* Mobile top bar */}
       <header className="sticky top-0 z-30 flex h-14 items-center gap-3 border-b border-[#E5E7EB] bg-white px-4 md:hidden">
         <button
           id="admin-menu-toggle"
@@ -176,7 +200,6 @@ export function AdminShell({
         <Wordmark />
       </header>
 
-      {/* Mobile drawer */}
       {open && (
         <div className="fixed inset-0 z-40 md:hidden">
           <div className="modal-fade absolute inset-0 bg-black/40" aria-hidden="true" onClick={() => setOpen(false)} />
