@@ -25,6 +25,11 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
   const [password, setPassword] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [alert, setAlert] = useState<Alert>(null);
+  
+  const [showHelp, setShowHelp] = useState(false);
+  const [helpIdent, setHelpIdent] = useState("");
+  const [helpMsg, setHelpMsg] = useState("");
+  const [helpStatus, setHelpStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   // Already signed in → bounce home.
   useEffect(() => {
@@ -68,6 +73,26 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
         setAlert({ tone: "error", message: "Something went wrong. Please try again." });
       }
       setSubmitting(false);
+    }
+  }
+
+  async function submitHelp(e: FormEvent) {
+    e.preventDefault();
+    if (!helpIdent || !helpMsg) return;
+    setHelpStatus("sending");
+    try {
+      const res = await fetch("/api/public/help-request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ identifier: helpIdent.trim(), message: helpMsg.trim() })
+      });
+      if (res.ok) {
+        setHelpStatus("sent");
+      } else {
+        setHelpStatus("error");
+      }
+    } catch {
+      setHelpStatus("error");
     }
   }
 
@@ -140,6 +165,45 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
           Register →
         </Link>
       </p>
+
+      <p className="mt-4 text-center text-sm text-acac-muted">
+        Trouble logging in?{" "}
+        <button type="button" onClick={() => setShowHelp(true)} className="font-semibold text-[#0067f5] hover:underline">
+          Request Help
+        </button>
+      </p>
+
+      {/* SOS Modal */}
+      {showHelp && (
+        <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl p-6 w-full max-w-sm shadow-xl relative">
+            <button onClick={() => setShowHelp(false)} className="absolute top-4 right-4 text-gray-400 hover:text-gray-700 font-bold text-xl">&times;</button>
+            <h3 className="text-xl font-bold text-[#082552] mb-2 pr-6">Account Locked?</h3>
+            <p className="text-sm text-[#6B7280] mb-5">Enter your Matric Number and a brief message. The Admin will reset your password.</p>
+            
+            {helpStatus === "sent" ? (
+              <div className="bg-green-50 text-green-700 p-4 rounded-lg text-sm font-medium text-center">
+                ✅ Request sent! The Admin will contact you soon.
+              </div>
+            ) : (
+              <form onSubmit={submitHelp} className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Matric Number</label>
+                  <input value={helpIdent} onChange={e => setHelpIdent(e.target.value)} placeholder="e.g. U26XXX****" className="w-full border rounded-lg p-2.5 text-sm" required />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <textarea value={helpMsg} onChange={e => setHelpMsg(e.target.value)} placeholder="I'm locked out and need my password reset." className="w-full border rounded-lg p-2.5 text-sm h-24 resize-none" required />
+                </div>
+                {helpStatus === "error" && <p className="text-xs text-red-500">Could not find that Matric Number in our system.</p>}
+                <button disabled={helpStatus === "sending"} type="submit" className="w-full bg-[#0067f5] text-white font-bold py-2.5 rounded-lg hover:bg-blue-600 transition-colors">
+                  {helpStatus === "sending" ? "Sending..." : "Send SOS Request"}
+                </button>
+              </form>
+            )}
+          </div>
+        </div>
+      )}
     </AuthCard>
   );
 }
