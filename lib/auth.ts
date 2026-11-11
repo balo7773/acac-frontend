@@ -22,6 +22,7 @@ export type SessionUser = {
   judge_type?: "internal" | "external";
   /** Present only when role === "judge". e.g. "mask_owl" */
   mask_avatar?: string;
+  must_change_password?: boolean;
 };
 
 export type RegisterPayload = {
@@ -81,6 +82,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         display_name?: string;
         judge_type?: "internal" | "external";
         mask_avatar?: string;
+        must_change_password?: boolean;
       }>(
         "/api/auth/me"
       );
@@ -92,6 +94,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           (prev && prev.user_id === me.user_id && prev.role === me.role ? prev.display_name : null),
         judge_type: me.judge_type,
         mask_avatar: me.mask_avatar,
+        must_change_password: me.must_change_password,
       }));
     } catch (e) {
       // 401 = no session; anything else (network) is treated as logged out for now.
