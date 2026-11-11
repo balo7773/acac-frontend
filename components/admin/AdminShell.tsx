@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { apiFetch } from "@/lib/api";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState, type ReactNode } from "react";
 import { roleLabel, useAuth } from "@/lib/auth";
@@ -90,7 +92,12 @@ function NavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
                 <span className={active ? "text-[#0067f5]" : "text-[#6B7280] group-hover:text-[#0067f5]"}>
                   {item.icon}
                 </span>
-                {item.label}
+                <span className="flex-1">{item.label}</span>
+                {item.label === "Complaints" && alertCount > 0 && (
+                  <span className="ml-auto rounded-full bg-red-500 px-2 py-0.5 text-[10px] font-bold text-white">
+                    {alertCount}
+                  </span>
+                )}
               </Link>
             </li>
           );
@@ -129,7 +136,14 @@ function SidebarFooter({ onSignOut }: { onSignOut: () => void }) {
   );
 }
 
-export function AdminShell({ children }: { children: ReactNode }) {
+export function AdminShell({
+  const [alertCount, setAlertCount] = useState(0);
+  useEffect(() => {
+    apiFetch<{total: number}>('/api/admin/notification-counts')
+      .then(res => setAlertCount(res.total))
+      .catch(console.error);
+  }, []);
+ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const { logout } = useAuth();

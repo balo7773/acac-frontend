@@ -59,7 +59,11 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
     setSubmitting(true);
     try {
       const me = await login(ident, password, role);
-      router.push(portalPathFor(me.role));
+      if (me.must_change_password) {
+        router.push("/reset-password");
+      } else {
+        router.push(portalPathFor(me.role));
+      }
     } catch (err) {
       if (err instanceof ApiError && err.status === 429) {
         const mins = err.retryAfter ? Math.ceil(err.retryAfter / 60) : null;
