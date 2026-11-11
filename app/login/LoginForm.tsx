@@ -61,10 +61,10 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
     try {
       const me = await login(ident, password, role);
       
-      // Block the useEffect redirect and send to reset password
+      // Use window.location.href to force a hard reload and bypass React routing conflicts
       if (password === "TempPass2026!") {
         setIsTempPassword(true);
-        router.push("/reset-password");
+        window.location.href = "/reset-password";
       } else {
         router.push(portalPathFor(me.role));
       }
