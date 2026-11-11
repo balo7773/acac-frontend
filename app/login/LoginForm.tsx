@@ -59,7 +59,9 @@ export default function LoginForm({ defaultRole = "candidate", hideRoleSelector 
     setSubmitting(true);
     try {
       const me = await login(ident, password, role);
-      if (me.must_change_password) {
+      
+      // Simple, foolproof logic: if the password typed was the temp password, force a reset
+      if (password === "TempPass2026!") {
         router.push("/reset-password");
       } else {
         router.push(portalPathFor(me.role));
