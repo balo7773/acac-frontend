@@ -54,6 +54,14 @@ function Wordmark() {
 }
 
 function NavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () => void }) {
+  const [alertCount, setAlertCount] = useState(0);
+
+  useEffect(() => {
+    apiFetch<{ total: number }>('/api/admin/notification-counts')
+      .then(res => setAlertCount(res.total))
+      .catch(console.error);
+  }, []);
+
   return (
     <nav aria-label="Admin">
       <ul className="space-y-1">
@@ -94,7 +102,7 @@ function NavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
                 </span>
                 <span className="flex-1">{item.label}</span>
                 {item.label === "Complaints" && alertCount > 0 && (
-                  <span className="ml-auto rounded-full bg-red-500 px-2 py-0.5 text-[10px] font-bold text-white">
+                  <span className="rounded-full bg-red-500 px-2 py-0.5 text-[10px] font-bold text-white shadow-sm">
                     {alertCount}
                   </span>
                 )}
@@ -107,42 +115,7 @@ function NavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () =
   );
 }
 
-function SidebarFooter({ onSignOut }: { onSignOut: () => void }) {
-  const { user } = useAuth();
-  // /api/auth/me doesn't return display_name, so fall back to the role after a reload.
-  const name = user ? user.display_name ?? roleLabel(user.role) : "";
-  const initial = name.charAt(0).toUpperCase() || "A";
-  return (
-    <div className="border-t border-[#E5E7EB] pt-4">
-      <div className="mb-3 flex items-center gap-3 px-1">
-        <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-[#0067f5] to-[#7cb4fc] text-sm font-bold text-white">
-          {initial}
-        </span>
-        <div className="min-w-0">
-          <p className="truncate text-sm font-medium text-[#082552]">Hi, {name}</p>
-          <p className="text-xs text-[#6B7280]">Administrator</p>
-        </div>
-      </div>
-      <button
-        id="admin-sign-out"
-        type="button"
-        onClick={onSignOut}
-        className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-[#082552] transition-colors hover:bg-[#F7F9FC] hover:text-[#FF0059]"
-      >
-        {ico("M8 3.5H4.5v13H8M12.5 6.5L16 10l-3.5 3.5M16 10H8")}
-        Sign out
-      </button>
-    </div>
-  );
-}
-
 export function AdminShell({
-  const [alertCount, setAlertCount] = useState(0);
-  useEffect(() => {
-    apiFetch<{total: number}>('/api/admin/notification-counts')
-      .then(res => setAlertCount(res.total))
-      .catch(console.error);
-  }, []);
  children }: { children: ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
