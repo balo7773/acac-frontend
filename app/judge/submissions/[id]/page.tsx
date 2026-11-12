@@ -69,6 +69,23 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
     return () => clearInterval(id);
   }, [data?.ai_summary]);
 
+  // Calculate AI average scores from the evaluation bundle
+  const aiScores = data ? (() => {
+    const evals = (data.bundle as any)?.ai_evaluations || [];
+    const grouped: Record<string, number[]> = {};
+    evals.forEach((e: any) => {
+      if (e.mark !== null && e.mark !== undefined) {
+        if (!grouped[e.criterion_key]) grouped[e.criterion_key] = [];
+        grouped[e.criterion_key].push(Number(e.mark));
+      }
+    });
+    const averages: Record<string, number> = {};
+    Object.keys(grouped).forEach(k => {
+      averages[k] = grouped[k].reduce((a, b) => a + b, 0) / grouped[k].length;
+    });
+    return averages;
+  })() : {};
+
   // Poll while preparing or defense is still open — auto-unlocks the essay.
   useEffect(() => {
     if (!data) return;
