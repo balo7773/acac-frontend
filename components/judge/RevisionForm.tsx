@@ -15,6 +15,7 @@ type CriterionKey = typeof CRITERIA[number]['key'];
 
 export function RevisionForm({
   submissionId,
+  aiScores,
   currentScores,
   phase2ExpiresAt,
   offsetMs,
@@ -22,6 +23,7 @@ export function RevisionForm({
   onSubmitted,
 }: {
   submissionId: number;
+  aiScores: Record<string, number>;
   currentScores: Record<CriterionKey, number | null>;
   phase2ExpiresAt: string | null;
   offsetMs: number;
@@ -88,6 +90,11 @@ export function RevisionForm({
                 <label className="text-sm font-medium text-[#082552]">{c.label}</label>
                 <span className="text-sm font-mono text-[#082552]">
                   {orig} → <strong className="text-[#0067f5]">{cur}</strong>
+                  {aiScores[c.key] !== undefined && (
+                    <span className="text-[#6B7280] ml-2 text-xs font-semibold">
+                      (AI: {aiScores[c.key].toFixed(1)})
+                    </span>
+                  )}
                 </span>
               </div>
               {isExternal ? (

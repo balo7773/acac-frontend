@@ -369,6 +369,7 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
           {data.submission.judge_session_status === 'phase_2_review' && (
             <RevisionForm
               submissionId={submissionId}
+              aiScores={aiScores}
               currentScores={{
                 c1: data.my_essay_scores.find((x) => x.criterion_key === 'c1')?.final_raw_score
                   ?? data.my_essay_scores.find((x) => x.criterion_key === 'c1')?.initial_raw_score ?? null,
