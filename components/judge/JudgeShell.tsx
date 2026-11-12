@@ -4,16 +4,6 @@ import { usePathname, useRouter } from 'next/navigation';
 import { useAuth } from '@/lib/auth';
  // Adjust path if your SiteFooter is elsewhere
 
-const maskDisplay = (mask?: string) => {
-  const m = (mask || '').replace('mask_', '');
-  // Map the masks to Judge 1-4
-  if (m === 'owl') return 'Judge 1';
-  if (m === 'lion') return 'Judge 2';
-  if (m === 'fox') return 'Judge 3';
-  if (m === 'bear') return 'Judge 4';
-  return 'Judge'; // Fallback
-};
-
 const judgeTypeLabel = (t?: string) => {
   if (t === 'internal') return 'Internal judge';
   if (t === 'external') return 'External judge';
