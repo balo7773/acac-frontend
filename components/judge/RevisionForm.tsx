@@ -92,7 +92,10 @@ export function RevisionForm({
                   {orig} → <strong className="text-[#0067f5]">{cur}</strong>
                   {aiScores[c.key] !== undefined && (
                     <span className="text-[#6B7280] ml-2 text-xs font-semibold">
-                      (AI: {aiScores[c.key].toFixed(1)})
+                      (AI: {isExternal 
+                        ? (aiScores[c.key] * 3).toFixed(1) 
+                        : (aiScores[c.key] * 100).toFixed(0)}
+                      {isExternal ? '/3' : '/100'})
                     </span>
                   )}
                 </span>
@@ -133,6 +136,11 @@ export function RevisionForm({
       {error && (
         <div className="mb-3 bg-[#FFF1F2] border border-[#FF0059] rounded-lg p-3 text-sm text-[#FF0059]">{error}</div>
       )}
+
+      <div className="bg-[#F7F9FC] border border-[#E5E7EB] rounded-lg p-4 mb-4 text-sm text-[#6B7280]">
+        <p><strong>Need to change a score?</strong> Adjust the buttons above and click "Lock revisions" before the timer ends.</p>
+        <p className="mt-1">If you are satisfied with your scores, you can safely return to the portal. No further action is required.</p>
+      </div>
 
       <button onClick={submit} disabled={expired || submitting || changed.length === 0}
         className="w-full bg-[#0067f5] text-white py-3 rounded-lg font-medium hover:bg-[#0055cc] disabled:opacity-50">
