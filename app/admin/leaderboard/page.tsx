@@ -186,10 +186,21 @@ export default function AdminLeaderboardPage() {
   const canSelect = current === "finalist_check";
 
   async function compute(): Promise<boolean> {
+    const input = window.prompt("How many finalists should advance?", "5");
+    if (input === null) return false; // User cancelled
+    const top_n = parseInt(input, 10);
+    if (isNaN(top_n) || top_n < 1) {
+      alert("Please enter a valid number.");
+      return false;
+    }
+
     setComputing(true);
     setComputeError(null);
     try {
-      const res = await apiFetch<{ leaderboard: LeaderboardRow[] }>("/api/admin/compute-stage1", { method: "POST" });
+      const res = await apiFetch<{ leaderboard: LeaderboardRow[] }>("/api/admin/compute-stage1", { 
+        method: "POST",
+        body: JSON.stringify({ top_n })
+      });
       setRows(res.leaderboard ?? []);
       setComputedAt(new Date());
       return true;
