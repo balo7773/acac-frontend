@@ -93,6 +93,48 @@ export default function JudgeListPage() {
 
         </div>
       </details>
+      {/* Stage 2 Guidelines Accordion */}
+      <details className="mb-8 bg-white border border-[#E5E7EB] rounded-xl shadow-sm overflow-hidden group">
+        <summary className="px-6 py-4 cursor-pointer bg-[#F7F9FC] font-bold text-[#082552] flex justify-between items-center hover:bg-gray-100 transition-colors list-none">
+          <span className="flex items-center gap-2">
+            <span className="text-xl">🎤</span> Stage 2 (Live Finale) Scoring Guidelines
+          </span>
+          <span className="text-gray-400 group-open:rotate-180 transition-transform text-sm">▼</span>
+        </summary>
+        <div className="p-6 text-sm text-[#082552] space-y-6 border-t border-[#E5E7EB]">
+          
+          <div>
+            <h3 className="font-bold text-[#0067f5] mb-1 text-base">1. The Live Defense</h3>
+            <p className="text-[#6B7280]">In Stage 2, the approved finalists will present their arguments live (via Google Meet or in person). You will score them on 4 specific criteria based on their live performance, not their essay.</p>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-[#0067f5] mb-1 text-base">2. The 4 Scoring Criteria</h3>
+            <ul className="list-disc pl-5 text-[#6B7280] space-y-1 mb-2">
+              <li><strong>Depth of Knowledge (30%):</strong> How well do they understand the topic? Can they answer follow-up questions?</li>
+              <li><strong>Argument & Rebuttal (35%):</strong> How strong is their defense? Do they handle counter-arguments gracefully?</li>
+              <li><strong>Presentation & Confidence (20%):</strong> Are they clear, articulate, and confident on stage?</li>
+              <li><strong>Strategic Acumen (15%):</strong> Do they demonstrate quick thinking and strategic insight under pressure?</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-[#0067f5] mb-1 text-base">3. The Scoring Scale</h3>
+            <p className="text-[#6B7280] mb-2">Just like Stage 1, the scale depends on your Judge Type:</p>
+            <ul className="list-disc pl-5 text-[#6B7280] space-y-1">
+              <li><strong>Internal Judges:</strong> Use the slider to score <strong>0 to 100</strong> (decimals allowed).</li>
+              <li><strong>External Judges:</strong> Use the buttons to score <strong>0, 1, 2, or 3</strong> (whole numbers only).</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-[#0067f5] mb-1 text-base">4. Peer Score Reveal</h3>
+            <p className="text-[#6B7280]">You must submit your Stage 2 scores independently. Once the quorum is met, you will be able to see your peers' scores for that finalist. Do not discuss scores before submitting.</p>
+          </div>
+
+        </div>
+      </details>
+
 
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-[#082552]">Submissions</h1>
