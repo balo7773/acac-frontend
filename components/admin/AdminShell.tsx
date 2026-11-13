@@ -29,6 +29,7 @@ const navItems: NavItem[] = [
     enabled: true,
     icon: ico("M6 3.5h8v3.75a4 4 0 01-8 0V3.5zM6 5H3.5v1a2.5 2.5 0 002.6 2.5M14 5h2.5v1a2.5 2.5 0 01-2.6 2.5M10 11.25V14M7 16.5h6M8 14h4"),
   },
+  { href: "/admin/finalists", label: "Finalist Check", enabled: true, icon: ico("M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z") },
   { href: "/admin/similarity", label: "Similarity", enabled: true, icon: ico("M7.5 13.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9zM12.5 15.5a4.5 4.5 0 100-9 4.5 4.5 0 000 9z") },
   { href: "/admin/settings", label: "Settings", enabled: true, icon: ico("M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM10 2.5v2M10 15.5v2M17.5 10h-2M4.5 10h-2M15.3 4.7l-1.4 1.4M6.1 13.9l-1.4 1.4M15.3 15.3l-1.4-1.4M6.1 6.1L4.7 4.7") },
   { href: "/admin/ai-health", label: "AI Health", enabled: true, icon: ico("M2.5 10h3l2-4.5 3 9 2-4.5h5") },
