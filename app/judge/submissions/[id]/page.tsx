@@ -414,6 +414,7 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
               submissionId={submissionId}
               judgeType={user?.judge_type}
               disabled={false}
+              isPhaseLocked={data.global_phase !== 'stage_1_grading' && data.global_phase !== 'stage_1_review'}
               onSubmitted={load}
             />
           )}
