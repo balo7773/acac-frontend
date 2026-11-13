@@ -37,7 +37,8 @@ export default function CandidatesPage() {
               <th className="px-6 py-3">Judges Marked</th>
               <th className="px-6 py-3">Stage 1 Score</th>
               <th className="px-6 py-3">Complaints</th>
-              <th className="px-6 py-3">Essay</th>
+              <th className="px-6 py-3">Links</th>
+              <th className="px-6 py-3">Actions</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
@@ -67,6 +68,15 @@ export default function CandidatesPage() {
                     <span className="px-2 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">{c.open_complaints} OPEN</span>
                   ) : (
                     <span className="text-gray-400">None</span>
+                  )}
+                </td>
+                <td className="px-6 py-4">
+                  {c.linkedin_url ? (
+                    <a href={c.linkedin_url} target="_blank" rel="noopener noreferrer" className="text-[#0067f5] hover:underline font-medium text-sm">
+                      LinkedIn
+                    </a>
+                  ) : (
+                    <span className="text-gray-400 text-sm">—</span>
                   )}
                 </td>
                 <td className="px-6 py-4 space-x-3 whitespace-nowrap">

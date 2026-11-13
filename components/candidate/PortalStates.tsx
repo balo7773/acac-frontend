@@ -98,11 +98,6 @@ export function VerdictCard({ verdict, pno }: { verdict: { status: string; reaso
         <h1 className="text-3xl font-bold text-[#082552] mb-2">{config.title}</h1>
         <p className="text-sm text-[#6B7280] mb-4">Candidate #{String(pno).padStart(3, '0')}</p>
         <p className="text-[#082552]">{config.msg}</p>
-        {verdict.reason && (
-          <p className="mt-4 text-sm text-[#6B7280] bg-[#F7F9FC] rounded-lg p-3">
-            <strong className="text-[#082552]">Reason:</strong> {verdict.reason}
-          </p>
-        )}
       </div>
     </div>
   );
