@@ -6,9 +6,15 @@ import { apiFetch, ApiError } from '@/lib/api';
 export default function Stage2FinalistsPage() {
   const [finalists, setFinalists] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [globalPhase, setGlobalPhase] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    fetch("/api/auth/public-phase")
+      .then((res) => res.json())
+      .then((data) => setGlobalPhase(data.current_phase))
+      .catch(console.error);
+
     apiFetch<{ finalists: any[] }>('/api/judge/stage2/finalists')
       .then((res) => setFinalists(res.finalists))
       .catch((e) => {
@@ -31,6 +37,18 @@ export default function Stage2FinalistsPage() {
   }
 
   if (error) return <div className="p-10 text-center text-red-500">{error}</div>;
+
+  if (globalPhase === 'completed') {
+    return (
+      <div className="max-w-2xl mx-auto mt-16 p-10 bg-[#F7F9FC] border border-[#E5E7EB] rounded-2xl text-center shadow-sm">
+        <div className="text-6xl mb-6">🏁</div>
+        <h1 className="text-3xl font-bold text-[#082552] mb-3">Competition Ended</h1>
+        <p className="text-lg text-[#6B7280] mb-6">
+          The live stage has officially ended. Thank you for your service as a judge in the ACAC competition.
+        </p>
+      </div>
+    );
+  }
 
   // --- DUTY FULFILLED CHECK ---
   const allScored = finalists.length > 0 && finalists.every((f) => f.has_my_score);
