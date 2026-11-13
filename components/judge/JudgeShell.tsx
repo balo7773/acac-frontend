@@ -49,6 +49,10 @@ export function JudgeShell({ children }: { children: React.ReactNode }) {
               <span className="text-[20px] font-bold tracking-tight text-[#082552]">ACAC</span>
               <span className="text-[11px] font-medium uppercase tracking-[0.2em] text-[#6B7280]">Judge</span>
             </Link>
+            <div className="h-4 w-px bg-gray-300 ml-2 mr-2 hidden sm:block"></div>
+            <Link href="/judge/stage2" className="text-sm font-bold text-gray-500 hover:text-[#0067f5] transition-colors hidden sm:block">
+              Stage 2 (Live)
+            </Link>
           </div>
 
           {/* Right side: User Info */}
