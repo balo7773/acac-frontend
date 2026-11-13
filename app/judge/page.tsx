@@ -4,6 +4,15 @@ import { apiFetch, ApiError } from '@/lib/api';
 import { SubmissionCard, type SubmissionRow } from '@/components/judge/SubmissionCard';
 
 export default function JudgeListPage() {
+  const [globalPhase, setGlobalPhase] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch("/api/auth/public-phase")
+      .then((res) => res.json())
+      .then((data) => setGlobalPhase(data.current_phase))
+      .catch(console.error);
+  }, []);
+
   const [rows, setRows] = useState<SubmissionRow[] | null>(null);
   const [error, setError] = useState<string | null>(null);
 
@@ -28,6 +37,22 @@ export default function JudgeListPage() {
   }
 
   if (!rows) return <div className="p-16 text-center text-[#6B7280]">Loading…</div>;
+
+  if (globalPhase === 'completed') {
+    return (
+      <div className="max-w-2xl mx-auto mt-20 p-12 bg-white border border-[#E5E7EB] rounded-3xl text-center shadow-lg">
+        <div className="text-7xl mb-6">🏆</div>
+        <h1 className="text-4xl font-bold text-[#082552] mb-4">Competition Ended</h1>
+        <p className="text-lg text-[#6B7280] mb-8">
+          Thank you for your service as a Judge in the ACAC competition. 
+          The final results have been computed and the winners have been announced.
+        </p>
+        <div className="bg-[#F7F9FC] p-4 rounded-xl border border-[#E5E7EB] inline-block">
+          <p className="text-sm font-medium text-[#082552]">Your scores are permanently locked.</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-4xl mx-auto px-6 py-10">
