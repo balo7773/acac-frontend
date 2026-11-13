@@ -70,13 +70,20 @@ export default function CandidatesPage() {
                     <span className="text-gray-400">None</span>
                   )}
                 </td>
-                <td className="px-6 py-4">
+                <td className="px-6 py-4 text-sm space-y-1">
                   {c.linkedin_url ? (
-                    <a href={c.linkedin_url} target="_blank" rel="noopener noreferrer" className="text-[#0067f5] hover:underline font-medium text-sm">
+                    <a href={c.linkedin_url} target="_blank" rel="noopener noreferrer" className="block text-[#0067f5] hover:underline font-medium">
                       LinkedIn
                     </a>
                   ) : (
-                    <span className="text-gray-400 text-sm">—</span>
+                    <span className="block text-gray-400">—</span>
+                  )}
+                  {c.whatsapp_number ? (
+                    <a href={`https://wa.me/${c.whatsapp_number.replace(/\D/g,'')}`} target="_blank" rel="noopener noreferrer" className="block text-green-600 hover:underline font-medium">
+                      WhatsApp
+                    </a>
+                  ) : (
+                    <span className="block text-gray-400">—</span>
                   )}
                 </td>
                 <td className="px-6 py-4 space-x-3 whitespace-nowrap">
