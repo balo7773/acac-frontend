@@ -26,6 +26,7 @@ type EvaluationBundle = {
     phase_2_expires_at: string | null;
   };
   bundle: Record<string, unknown>;
+  global_phase: string;
   ai_claims: AiClaim[];
   ai_summary: { summary_text: string; model_name: string; created_at: string } | null;
   summary_pending: boolean;
@@ -386,6 +387,7 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
           {data.submission.judge_session_status === 'phase_2_review' && (
             <RevisionForm
               submissionId={submissionId}
+              isPhaseLocked={data.global_phase !== 'stage_1_grading' && data.global_phase !== 'stage_1_review'}
               aiScores={aiScores}
               currentScores={{
                 c1: data.my_essay_scores.find((x) => x.criterion_key === 'c1')?.final_raw_score

@@ -79,7 +79,12 @@ export function RevisionForm({
         Change any criteria to revise. A written reason is required. After the window closes, scores lock permanently.
       </p>
 
-      <div className="space-y-4 mb-4">
+      {isPhaseLocked && (
+              <div className="mb-4 bg-red-50 border border-red-200 text-red-700 p-4 rounded-lg text-sm font-medium">
+                🔒 The revision window is now closed. The admin has advanced the competition.
+              </div>
+            )}
+            <div className="space-y-4 mb-4">
         {CRITERIA.map((c) => {
           const cur = scores[c.key];
           const orig = currentScores[c.key] ?? 0;
@@ -142,7 +147,7 @@ export function RevisionForm({
         <p className="mt-1">If you are satisfied with your scores, you can safely return to the portal. No further action is required.</p>
       </div>
 
-      <button onClick={submit} disabled={expired || submitting || changed.length === 0}
+      <button onClick={submit} disabled={expired || submitting || changed.length === 0 || isPhaseLocked}
         className="w-full bg-[#0067f5] text-white py-3 rounded-lg font-medium hover:bg-[#0055cc] disabled:opacity-50">
         {submitting ? 'Submitting…' : 'Lock revisions →'}
       </button>
