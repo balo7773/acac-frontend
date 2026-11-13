@@ -11,18 +11,33 @@ export default function Stage2FinalistsPage() {
   useEffect(() => {
     apiFetch<{ finalists: any[] }>('/api/judge/stage2/finalists')
       .then((res) => setFinalists(res.finalists))
-      .catch((e) => setError(e instanceof ApiError ? e.detail : 'Failed to load'))
+      .catch((e) => {
+        if (e instanceof ApiError && e.status === 403) {
+          setError("locked"); // Clean state for phase lock
+        } else {
+          setError(e instanceof ApiError ? e.detail : 'Failed to load');
+        }
+      })
       .finally(() => setLoading(false));
   }, []);
 
   if (loading) return <div className="p-10 text-center text-gray-500">Loading finalists...</div>;
 
+  if (error === "locked") {
+    return (
+      <div className="max-w-2xl mx-auto mt-10 p-6 bg-[#F7F9FC] border border-[#E5E7EB] rounded-xl text-center">
+        <div className="text-4xl mb-4">🔒</div>
+        <h2 className="text-xl font-bold text-[#082552] mb-2">Stage 2 Not Started</h2>
+        <p className="text-[#6B7280]">Stage 2 scoring will unlock once the Admin officially starts the Live Stage.</p>
+      </div>
+    );
+  }
+
   if (error) {
     return (
       <div className="max-w-2xl mx-auto mt-10 p-6 bg-red-50 border border-red-200 rounded-xl text-center">
-        <h2 className="text-lg font-bold text-red-800 mb-2">Access Denied</h2>
+        <h2 className="text-lg font-bold text-red-800 mb-2">Error</h2>
         <p className="text-red-700">{error}</p>
-        <p className="text-sm text-red-600 mt-4">Stage 2 scoring will unlock once the Admin officially starts the Live Stage.</p>
       </div>
     );
   }
