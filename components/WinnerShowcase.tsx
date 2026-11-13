@@ -43,7 +43,7 @@ export default function WinnerShowcase() {
           <div className="p-8 text-center bg-[#F7F9FC]">
             <p className="text-[#082552] font-medium mb-6">
               The competition has officially ended. 
-              Congratulations to our winner for outstanding performance in the AFIT × Cowrywise Ambassadors Competition!
+              Congratulations to our winner for outstanding performance in the AFIT × Cowrywise Ambassadors Competition 2026!
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-3">
