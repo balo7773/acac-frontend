@@ -1,13 +1,26 @@
 'use client';
-import { use, useState } from 'react';
+import { use, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useAuth } from '@/lib/auth';
 import { Stage2ScoreForm } from '@/components/judge/Stage2ScoreForm';
+import { apiFetch } from '@/lib/api';
 
 export default function Stage2ScorePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
   const { user } = useAuth();
-  const [submitted, setSubmitted] = useState(false);
+  const [hasScored, setHasScored] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    // Check if this specific candidate has already been scored by this judge
+    apiFetch<{ finalists: any[] }>('/api/judge/stage2/finalists')
+      .then((res) => {
+        const match = res.finalists.find((f) => f.submission_id === Number(id));
+        setHasScored(match ? match.has_my_score : false);
+      })
+      .catch(() => setHasScored(false));
+  }, [id]);
+
+  if (hasScored === null) return <div className="p-10 text-center text-gray-500">Checking status...</div>;
 
   return (
     <div className="max-w-2xl mx-auto p-6">
@@ -18,8 +31,8 @@ export default function Stage2ScorePage({ params }: { params: Promise<{ id: stri
       <Stage2ScoreForm 
         submissionId={Number(id)} 
         judgeType={user?.judge_type} 
-        hasMyScore={submitted} 
-        onSubmitted={() => setSubmitted(true)} 
+        hasMyScore={hasScored} 
+        onSubmitted={() => setHasScored(true)} 
       />
     </div>
   );

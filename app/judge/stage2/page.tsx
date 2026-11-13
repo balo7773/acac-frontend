@@ -12,11 +12,8 @@ export default function Stage2FinalistsPage() {
     apiFetch<{ finalists: any[] }>('/api/judge/stage2/finalists')
       .then((res) => setFinalists(res.finalists))
       .catch((e) => {
-        if (e instanceof ApiError && e.status === 403) {
-          setError("locked"); // Clean state for phase lock
-        } else {
-          setError(e instanceof ApiError ? e.detail : 'Failed to load');
-        }
+        if (e instanceof ApiError && e.status === 403) setError("locked");
+        else setError(e instanceof ApiError ? e.detail : 'Failed to load');
       })
       .finally(() => setLoading(false));
   }, []);
@@ -33,11 +30,20 @@ export default function Stage2FinalistsPage() {
     );
   }
 
-  if (error) {
+  if (error) return <div className="p-10 text-center text-red-500">{error}</div>;
+
+  // --- DUTY FULFILLED CHECK ---
+  const allScored = finalists.length > 0 && finalists.every((f) => f.has_my_score);
+  
+  if (allScored) {
     return (
-      <div className="max-w-2xl mx-auto mt-10 p-6 bg-red-50 border border-red-200 rounded-xl text-center">
-        <h2 className="text-lg font-bold text-red-800 mb-2">Error</h2>
-        <p className="text-red-700">{error}</p>
+      <div className="max-w-2xl mx-auto mt-16 p-10 bg-green-50 border border-green-200 rounded-2xl text-center shadow-sm">
+        <div className="text-6xl mb-6">🏆</div>
+        <h1 className="text-3xl font-bold text-green-900 mb-3">Duty Fulfilled!</h1>
+        <p className="text-lg text-green-800 mb-6">
+          You have successfully submitted your Stage 2 scores for all finalists. 
+          Thank you for your service as a judge in the ACAC competition.
+        </p>
       </div>
     );
   }
@@ -60,9 +66,9 @@ export default function Stage2FinalistsPage() {
                 <p className="text-sm text-gray-500">Rank {f.stage1_rank} (Stage 1 Score: {Number(f.composite_score).toFixed(1)})</p>
               </div>
               <Link href={`/judge/stage2/${f.submission_id}`} className={`px-5 py-2.5 rounded-lg text-sm font-bold shadow-sm ${
-                f.has_my_score ? 'bg-green-100 text-green-700' : 'bg-[#0067f5] text-white hover:bg-blue-600'
+                f.has_my_score ? 'bg-green-100 text-green-700 cursor-not-allowed' : 'bg-[#0067f5] text-white hover:bg-blue-600'
               }`}>
-                {f.has_my_score ? 'Edit Score' : 'Score Live'}
+                {f.has_my_score ? '✅ Scored' : 'Score Live'}
               </Link>
             </div>
           ))}
