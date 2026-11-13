@@ -1,18 +1,18 @@
 'use client';
 import {
-  CompetitionEndedCard, useEffect, useState } from 'react';
+  useEffect, useState } from 'react';
 import {
-  CompetitionEndedCard, apiFetch, ApiError } from '@/lib/api';
+  apiFetch, ApiError } from '@/lib/api';
 import {
-  CompetitionEndedCard, useTimeOffset } from '@/lib/useTimeOffset';
+  useTimeOffset } from '@/lib/useTimeOffset';
 import {
-  CompetitionEndedCard, UploadCard } from '@/components/candidate/UploadCard';
+  UploadCard } from '@/components/candidate/UploadCard';
 import {
-  CompetitionEndedCard, DefenseCard } from '@/components/candidate/DefenseCard';
+  DefenseCard } from '@/components/candidate/DefenseCard';
 import VerdictReveal from '@/components/candidate/VerdictReveal';
 import {
+    PreLaunchCard,
   CompetitionEndedCard,
-  PreLaunchCard,
   WaitingCard,
   SubmittedCard,
   AutoZeroCard,
