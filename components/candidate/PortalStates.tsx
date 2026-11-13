@@ -102,3 +102,41 @@ export function VerdictCard({ verdict, pno }: { verdict: { status: string; reaso
     </div>
   );
 }
+
+export function CompetitionEndedCard({ rank }: { rank: number | null }) {
+  if (rank === 1) {
+    return (
+      <div className="max-w-2xl mx-auto mt-16 p-10 bg-gradient-to-br from-yellow-50 to-amber-100 border border-yellow-300 rounded-3xl text-center shadow-xl">
+        <div className="text-7xl mb-4">🏆</div>
+        <h1 className="text-4xl font-bold text-yellow-900 mb-2">ACAC Champion!</h1>
+        <p className="text-lg text-yellow-800">Congratulations! You are the winner of the AFIT × Cowrywise Ambassadors Competition.</p>
+      </div>
+    );
+  }
+  if (rank === 2) {
+    return (
+      <div className="max-w-2xl mx-auto mt-16 p-10 bg-gradient-to-br from-gray-50 to-gray-200 border border-gray-300 rounded-3xl text-center shadow-xl">
+        <div className="text-7xl mb-4">🥈</div>
+        <h1 className="text-4xl font-bold text-gray-800 mb-2">1st Runner Up!</h1>
+        <p className="text-lg text-gray-600">Outstanding performance. You placed 2nd overall.</p>
+      </div>
+    );
+  }
+  if (rank === 3) {
+    return (
+      <div className="max-w-2xl mx-auto mt-16 p-10 bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-300 rounded-3xl text-center shadow-xl">
+        <div className="text-7xl mb-4">🥉</div>
+        <h1 className="text-4xl font-bold text-orange-900 mb-2">2nd Runner Up!</h1>
+        <p className="text-lg text-orange-800">Excellent work. You placed 3rd overall.</p>
+      </div>
+    );
+  }
+  return (
+    <div className="max-w-2xl mx-auto mt-16 p-10 bg-white border border-[#E5E7EB] rounded-2xl text-center shadow-sm">
+      <div className="text-5xl mb-4">🏁</div>
+      <h1 className="text-2xl font-bold text-[#082552] mb-2">Competition Ended</h1>
+      <p className="text-[#6B7280]">Thank you for competing. The final results have been announced.</p>
+    </div>
+  );
+}
+

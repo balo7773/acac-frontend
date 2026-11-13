@@ -1,11 +1,17 @@
 'use client';
-import { useEffect, useState } from 'react';
-import { apiFetch, ApiError } from '@/lib/api';
-import { useTimeOffset } from '@/lib/useTimeOffset';
-import { UploadCard } from '@/components/candidate/UploadCard';
-import { DefenseCard } from '@/components/candidate/DefenseCard';
+import {
+  CompetitionEndedCard, useEffect, useState } from 'react';
+import {
+  CompetitionEndedCard, apiFetch, ApiError } from '@/lib/api';
+import {
+  CompetitionEndedCard, useTimeOffset } from '@/lib/useTimeOffset';
+import {
+  CompetitionEndedCard, UploadCard } from '@/components/candidate/UploadCard';
+import {
+  CompetitionEndedCard, DefenseCard } from '@/components/candidate/DefenseCard';
 import VerdictReveal from '@/components/candidate/VerdictReveal';
 import {
+  CompetitionEndedCard,
   PreLaunchCard,
   WaitingCard,
   SubmittedCard,
@@ -43,6 +49,16 @@ export default function PortalPage() {
   const { offsetMs } = useTimeOffset();
   
   // Complaint state hooks (MUST be at the top before any early returns)
+  const [finalRank, setFinalRank] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (data?.current_phase === 'completed') {
+      apiFetch<{ rank: number | null }>('/api/candidate/final-rank')
+        .then(res => setFinalRank(res.rank))
+        .catch(console.error);
+    }
+  }, [data?.current_phase]);
+
   const [showComplaint, setShowComplaint] = useState(false);
   const [compSubject, setCompSubject] = useState('');
   const [compMsg, setCompMsg] = useState('');
@@ -113,6 +129,10 @@ export default function PortalPage() {
   };
 
   const phase = data.current_phase;
+
+  if (phase === 'completed') {
+    return <CompetitionEndedCard rank={finalRank} />;
+  }
 
   if (phase === 'pre_launch') {
     return <PreLaunchCard pno={data.participant_number} />;
