@@ -57,9 +57,9 @@ function ClockIcon() {
   );
 }
 
-function Deadline({ label, iso, now }: { label: string; iso: string; now: number | null }) {
+function Deadline({ label, iso, now, forcePassed = false }: { label: string; iso: string; now: number | null; forcePassed?: boolean }) {
   const remaining = now === null ? null : new Date(iso).getTime() - now;
-  const passed = remaining !== null && remaining <= 0;
+  const passed = forcePassed || (remaining !== null && remaining <= 0);
   const urgent = remaining !== null && remaining > 0 && remaining < 60_000;
   return (
     <div className="grid gap-3 sm:grid-cols-2">
@@ -209,10 +209,10 @@ export default function AdminDashboardPage() {
 
             <div className="mt-5 space-y-3">
               {data.stage_1_submission_deadline && (
-                <Deadline label="Submission deadline" iso={data.stage_1_submission_deadline} now={now} />
+                <Deadline label="Submission deadline" iso={data.stage_1_submission_deadline} now={now} forcePassed={data.current_phase !== 'pre_launch' && data.current_phase !== 'stage_1_submitting'} />
               )}
               {data.stage_1_conclusion_closing_time && (
-                <Deadline label="Conclusion closing time" iso={data.stage_1_conclusion_closing_time} now={now} />
+                <Deadline label="Conclusion closing time" iso={data.stage_1_conclusion_closing_time} now={now} forcePassed={data.current_phase !== 'pre_launch' && data.current_phase !== 'stage_1_submitting'} />
               )}
               {!data.stage_1_submission_deadline && !data.stage_1_conclusion_closing_time && (
                 <p className="text-sm text-[#6B7280]">No deadlines set for this phase.</p>
