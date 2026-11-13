@@ -20,6 +20,7 @@ export function RevisionForm({
   phase2ExpiresAt,
   offsetMs,
   judgeType,
+  isPhaseLocked,
   onSubmitted,
 }: {
   submissionId: number;
@@ -28,6 +29,7 @@ export function RevisionForm({
   phase2ExpiresAt: string | null;
   offsetMs: number;
   judgeType: 'internal' | 'external' | undefined;
+  isPhaseLocked?: boolean;
   onSubmitted: () => void;
 }) {
   const isExternal = judgeType === 'external';

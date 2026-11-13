@@ -18,11 +18,13 @@ export function ScoreForm({
   submissionId,
   judgeType,
   disabled,
+  isPhaseLocked,
   onSubmitted,
 }: {
   submissionId: number;
   judgeType: JudgeType;
   disabled: boolean;
+  isPhaseLocked?: boolean;
   onSubmitted: () => void;
 }) {
   const isExternal = judgeType === 'external';
@@ -69,7 +71,12 @@ export function ScoreForm({
         </span>
       </div>
 
-      <div className="space-y-5">
+      {isPhaseLocked && (
+              <div className="mb-4 bg-red-50 border border-red-200 text-red-700 p-4 rounded-lg text-sm font-medium">
+                🔒 Stage 1 scoring is now closed. The admin has advanced the competition.
+              </div>
+            )}
+            <div className="space-y-5">
         {CRITERIA.map((c) => (
           <div key={c.key}>
             <div className="flex items-center justify-between mb-2">
