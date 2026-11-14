@@ -28,7 +28,7 @@ export const UNIT_LEADS: TeamMember[] = [
   {
     name: "Abdullahi Abdul Mumeen",
     role: "Academic Unit Lead",
-    image: "/team/academic_unit_lead.jpg",
+    image: "/team/academic_unit_lead_1.jpg",
     bio: "",
     linkedin: "https://www.linkedin.com/in/abdullahi-olalekan-abdulmumeen/",
   },
@@ -77,7 +77,7 @@ export const UNIT_LEADS: TeamMember[] = [
   {
     name: "Imran Salami",
     role: "Academic Unit Lead",
-    image: "/team/academic_unit_lead_1.png",
+    image: "/team/academic_unit_lead.png",
     bio: "",
     linkedin: "https://www.linkedin.com/in/imran-salami-2899b3440/",
   },
