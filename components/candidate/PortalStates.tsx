@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 'use client';
 
 export function PreLaunchCard({ pno }: { pno: number }) {
@@ -17,6 +19,14 @@ export function PreLaunchCard({ pno }: { pno: number }) {
 }
 
 export function WaitingCard({ pno, onRefresh }: { pno: number; onRefresh: () => void }) {
+  const [isRefreshing, setIsRefreshing] = useState(false);
+
+  const handleRefresh = () => {
+    setIsRefreshing(true);
+    onRefresh();
+    setTimeout(() => setIsRefreshing(false), 1000);
+  };
+
   return (
     <div className="max-w-2xl mx-auto px-6 py-16">
       <div className="bg-white rounded-2xl border border-[#E5E7EB] p-10 text-center">
@@ -27,8 +37,12 @@ export function WaitingCard({ pno, onRefresh }: { pno: number; onRefresh: () => 
         <p className="text-[#6B7280] mb-6">
           Question loading. Candidate #{String(pno).padStart(3, '0')}.
         </p>
-        <button onClick={onRefresh} className="text-sm text-[#0067f5] hover:underline">
-          Refresh now
+        <button 
+          onClick={handleRefresh} 
+          disabled={isRefreshing}
+          className="text-sm font-medium text-[#0067f5] hover:underline disabled:opacity-50"
+        >
+          {isRefreshing ? 'Refreshing...' : 'Refresh now'}
         </button>
       </div>
     </div>

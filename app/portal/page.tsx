@@ -172,7 +172,7 @@ export default function PortalPage() {
           <ul className="space-y-3 text-sm text-[#4B5563]">
             <li className="flex items-start gap-2">
               <span className="text-[#0067f5] font-bold mt-0.5">•</span>
-              <span><strong className="text-[#082552]">Format:</strong> PDF only.</span>
+              <span><strong className="text-[#082552]">Format:</strong> PDF only. Save the file as your Candidate Number (e.g., <code className="bg-gray-100 px-1 rounded">001.pdf</code>).</span>
             </li>
             <li className="flex items-start gap-2">
               <span className="text-[#0067f5] font-bold mt-0.5">•</span>
