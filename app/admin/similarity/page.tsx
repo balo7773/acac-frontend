@@ -60,6 +60,23 @@ export default function SimilarityPage() {
     closeModal();
   };
 
+  const [scanningId, setScanningId] = useState<number | null>(null);
+
+  const runAiScan = async (id: number) => {
+    setScanningId(id);
+    try {
+      const res = await apiFetch<{ ai_score: number; ai_reasoning: string }>(`/api/admin/similarity-pairs/${id}/ai-scan`, {
+        method: 'POST'
+      });
+      alert(`🤖 AI Analysis Complete!\n\nScore: ${res.ai_score}/100\nReasoning: ${res.ai_reasoning}`);
+      load(); // Refresh the list to show the new score
+    } catch (e: any) {
+      alert('AI Scan Failed: ' + e.message);
+    } finally {
+      setScanningId(null);
+    }
+  };
+
   const closeModal = () => {
     setActivePair(null); setDetails(null); setPenaltyReason('');
     load();
@@ -77,6 +94,11 @@ export default function SimilarityPage() {
                   Candidate #{String(p.participant_a || 0).padStart(3, '0')} vs Candidate #{String(p.participant_b || 0).padStart(3, '0')}
                 </p>
                 <p className="text-sm font-medium text-red-500 mt-1">Similarity: {(Number(p.similarity_score) * 100).toFixed(1)}%</p>
+                {p.shared_passages && typeof p.shared_passages === 'string' && (
+                  <p className="text-xs text-purple-700 mt-2 bg-purple-50 p-2 rounded border border-purple-100 italic max-w-sm">
+                    🤖 AI Reasoning: {p.shared_passages}
+                  </p>
+                )}
                 
                 {p.admin_decision !== 'pending' && (
                   <span className={`inline-block mt-3 px-3 py-1 rounded-full text-xs font-bold uppercase ${
@@ -88,9 +110,14 @@ export default function SimilarityPage() {
                   </span>
                 )}
               </div>
-              <button onClick={() => openCompare(p)} className={`px-5 py-2.5 rounded-lg text-sm font-bold shadow-sm ${p.admin_decision === 'pending' ? 'bg-[#0067f5] text-white hover:bg-blue-600' : 'bg-white text-gray-600 border border-gray-300 hover:bg-gray-50'}`}>
-                {p.admin_decision === 'pending' ? 'Compare Essays' : 'Review Evidence'}
-              </button>
+              <div className="flex gap-2">
+                <button onClick={() => runAiScan(p.id)} disabled={scanningId === p.id} className="px-4 py-2.5 bg-purple-600 text-white rounded-lg text-sm font-bold hover:bg-purple-700 disabled:opacity-50 flex items-center gap-2">
+                  {scanningId === p.id ? 'Scanning...' : '🤖 AI Deep Scan'}
+                </button>
+                <button onClick={() => openCompare(p)} className={`px-5 py-2.5 rounded-lg text-sm font-bold shadow-sm ${p.admin_decision === 'pending' ? 'bg-[#0067f5] text-white hover:bg-blue-600' : 'bg-white text-gray-600 border border-gray-300 hover:bg-gray-50'}`}>
+                  {p.admin_decision === 'pending' ? 'Compare Essays' : 'Review Evidence'}
+                </button>
+              </div>
             </div>
           ))}
         </div>
