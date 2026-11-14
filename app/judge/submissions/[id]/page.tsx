@@ -420,6 +420,16 @@ export default function JudgeSubmissionPage({ params }: { params: Promise<{ id: 
           )}
         </>
       )}
+
+      {/* Bottom Back Button */}
+      <div className="mt-12 flex justify-center pb-8">
+        <Link 
+          href="/judge" 
+          className="inline-flex items-center gap-2 rounded-full border border-[#E5E7EB] bg-white px-6 py-3 text-sm font-semibold text-[#6B7280] shadow-sm transition-colors hover:border-[#0067f5] hover:text-[#0067f5]"
+        >
+          <span>←</span> Back to submissions
+        </Link>
+      </div>
     </div>
   );
 }
