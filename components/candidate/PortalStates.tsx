@@ -1,6 +1,6 @@
 "use client";
+
 import { useState } from "react";
-'use client';
 
 export function PreLaunchCard({ pno }: { pno: number }) {
   return (
@@ -153,4 +153,3 @@ export function CompetitionEndedCard({ rank }: { rank: number | null }) {
     </div>
   );
 }
-
