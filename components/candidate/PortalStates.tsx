@@ -122,6 +122,12 @@ export function VerdictCard({ verdict, pno }: { verdict: { status: string; reaso
 export function CompetitionEndedCard({ rank }: { rank: number | null }) {
   useEffect(() => {
     if (rank === 1) {
+      // 1. Play the winning sound
+      const audio = new Audio('/sounds/pass.mp3');
+      audio.volume = 0.6; // Adjust volume so it's not too loud
+      audio.play().catch((e) => console.log('Autoplay prevented by browser:', e));
+
+      // 2. Fire the confetti
       const duration = 5 * 1000;
       const animationEnd = Date.now() + duration;
       const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
@@ -140,7 +146,11 @@ export function CompetitionEndedCard({ rank }: { rank: number | null }) {
         confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
       }, 250);
 
-      return () => clearInterval(interval);
+      // 3. Cleanup when they leave the page
+      return () => {
+        clearInterval(interval);
+        audio.pause();
+      };
     }
   }, [rank]);
 
