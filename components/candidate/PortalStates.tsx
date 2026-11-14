@@ -1,4 +1,6 @@
 "use client";
+import confetti from "canvas-confetti";
+import { useEffect } from "react";
 
 import { useState } from "react";
 
@@ -118,6 +120,30 @@ export function VerdictCard({ verdict, pno }: { verdict: { status: string; reaso
 }
 
 export function CompetitionEndedCard({ rank }: { rank: number | null }) {
+  useEffect(() => {
+    if (rank === 1) {
+      const duration = 5 * 1000;
+      const animationEnd = Date.now() + duration;
+      const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+      const randomInRange = (min: number, max: number) => Math.random() * (max - min) + min;
+
+      const interval: any = setInterval(function() {
+        const timeLeft = animationEnd - Date.now();
+
+        if (timeLeft <= 0) {
+          return clearInterval(interval);
+        }
+
+        const particleCount = 50 * (timeLeft / duration);
+        confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
+        confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+      }, 250);
+
+      return () => clearInterval(interval);
+    }
+  }, [rank]);
+
   if (rank === 1) {
     return (
       <div className="max-w-2xl mx-auto mt-16 p-10 bg-gradient-to-br from-yellow-50 to-amber-100 border border-yellow-300 rounded-3xl text-center shadow-xl">
