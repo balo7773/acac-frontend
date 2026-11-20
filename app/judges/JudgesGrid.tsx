@@ -32,9 +32,9 @@ const JUDGES = [
     id: 4,
     anonymousName: "Judge 4",
     role: "Internal Judge",
-    realName: "Balogun Abdulmalik",
+    realName: "Awesome Nwokolo",
     realImage: "/judges/real-judge-4.jpg",
-    linkedin: "https://www.linkedin.com/in/balo7773",
+    linkedin: "https://www.linkedin.com/in/awesome-nwokolo-460476348/",
   },
 ];
 
